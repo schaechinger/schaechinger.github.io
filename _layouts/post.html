@@ -1,9 +1,10 @@
 ---
 layout: default
 ---
+{% capture imgBase %}{{ site.layoutVars[page.layout].imgBase }}{{ page.url }}{% endcapture %}
 <div class="post">
   <img
-    src="https://www.schaechinger.com/img/{{ page.path }}/header.jpg"
+    src="https://www.schaechinger.com/img{{ page.url }}/header.jpg"
     title="{{ page.title }}"
   />
   <h1>{{ page.title }}</h1>

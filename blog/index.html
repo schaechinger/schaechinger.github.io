@@ -7,7 +7,7 @@ title: Manuels Blog
   {% for post in site.posts %}
   <li>
     <img title="{{ post.title }}"
-      src="https://www.schaechinger.com/img/{{ post.url }}/header-thumb.jpg"
+      src="https://www.schaechinger.com/img{{ post.url }}/header-thumb.jpg"
     />
     <span>{{ post.date | date: '%d.%m.%y' }}</span>
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
