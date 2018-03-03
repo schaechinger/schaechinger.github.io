@@ -3,9 +3,5 @@ markdown: kramdown
 
 permalink: /blog/:year-:title
 
-ayoutVars:
-  post:
-    imgBase: "https://www.schaechinger.com/img/blog"
-
 plugins:
   - jekyll-sitemap
