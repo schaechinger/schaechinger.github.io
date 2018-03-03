@@ -1,7 +1,7 @@
-<div class="post-image">
+<div class="post-image{% if include.fillsize %} post-image--fullsize{% endif %}">
   <img
     alt="{{ include.title }}"
-    src="https://www.schaechinger.com/img{{ include.url }}/{{ include.image }}"
+    src="https://www.schaechinger.com/img{{ page.url }}/{{ include.image }}"
   />
-  <p>{{ include.title }} - {{ page.url }}</p>
+  <p>{{ include.title }}</p>
 </div>
