@@ -8,14 +8,16 @@ h1 {
 }
 
 nav ul,
-footer ul {
+footer ul,
+.post .meta.meta-categories ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
 nav ul li,
-footer ul li {
+footer ul li,
+.post .meta.meta-categories ul li {
     display: inline-block;
     padding: 0.25rem 0.5rem;
 }

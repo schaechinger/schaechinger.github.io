@@ -1,11 +1,26 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}</h1>
-<p class="meta">Datum: {{ page.date | date_to_string }}</p>
-<p class="meta">Autor: {{ page.author | Manuel }}</p>
-<p class="meta">Kategorie: {{ page.category | Keine }}</p>
-
 <div class="post">
-  {{ content }}
+  <img
+    src="https://www.schaechinger.com/img/{{ page.path }}/header.jpg"
+    title="{{ page.title }}"
+  />
+  <h1>{{ page.title }}</h1>
+  <p class="meta meta-date">Datum: {{ page.date | date_to_string }}</p>
+  <p class="meta meta-categories">Kategorien:
+    <ul>
+      {% for category in page.categories %}
+        <li>{{ category }}</li>
+      {% endfor %}
+    </ul>
+  </p>
+
+  <p class="intro">
+    {{ page.categories[0] }} {{ page.intro }}
+  </p>
+
+  <div class="content">
+    {{ content }}
+  </div>
 </div>

@@ -6,8 +6,12 @@ title: Manuels Blog
 <ul class="posts">
   {% for post in site.posts %}
   <li>
-    <span>{{ post.date | date_to_string }}</span> »
+    <img title="{{ post.title }}"
+      src="https://www.schaechinger.com/img/{{ post.url }}/header-thumb.jpg"
+    />
+    <span>{{ post.date | date: '%d.%m.%y' }}</span>
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    <p>{{ post.intro }}</p>
   </li>
   {% endfor %}
 </ul>
