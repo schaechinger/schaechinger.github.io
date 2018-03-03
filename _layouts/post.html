@@ -1,11 +1,9 @@
 ---
 layout: default
 ---
-{% assign site.postImgBase = site.imgBase | append: page.url %}
 <div class="post">
-  <p>Post: {{ site.imgBase }}</p>
   <img
-    src="{{ imgBase }}/header.jpg"
+    src="https://www.schaechinger.com/img{{ page.url }}/header.jpg"
     title="{{ page.title }}"
   />
   <h1>{{ page.title }}</h1>
