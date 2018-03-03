@@ -1,2 +1,7 @@
 name: Schächinger
 markdown: kramdown
+
+permalink: /blog/:year-:title
+
+plugins:
+  - jekyll-sitemap
