@@ -5,3 +5,6 @@ permalink: /blog/:year-:title
 
 plugins:
   - jekyll-sitemap
+
+sass:
+  style: compressed
