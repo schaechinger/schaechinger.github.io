@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Backpacking in Yucatán, Mexico"
-date: 2017-02-05
 categories: travel backpacking
 location: "Tulum, QROO, Mexiko"
 shortkey: wizfd
@@ -11,11 +10,11 @@ intro: "Backpacking kurz und gut wäre wohl der passende Titel bei O'Reilly. Am 
 
 Da ich das erste Mal backpacken wollte, musste ich mich zuerst informieren, was man braucht und was nicht. Und natürlich glaubt man keinem, dass ein kleinerer Rucksack und weniger Gepäck auch vollkommen ausreichend ist, immerhin wurde der Koffer früher im Hotelurlaub auch voll und jetzt macht man ja viele verschiedene Dinge. Quatsch! Ich habe brav für die 12 Tage Klamotten mitgenommen, dass es in Mexiko genau wie überall auf der Welt auch Wäschereien gibt konnte ja keiner ahnen.
 
-Also habe ich mir das 65l-Monster [Venturesafe](http://www.pacsafe.com/venturesafe-exp65-anti-theft-65l-travel-pack-black.html) von Pacsafe gekauft - auf jeden Fall eine gute Wahl, vielleicht nur etwas zu groß für meine Bedürfnisse. Immerhin schleppt man den ja mit sich rum und muss damit durch enge, bevölkerte Gassen, Busse und mehr. Vor Reiseantritt waren mir noch Kleinigkeiten wie eine Stirnlampe, um nachts auch mal etwas zu finden, eine Trinkflasche mit Filtersystem, um auch wirklich immer und überall trinkbares Waser herzubekommen und ein Selfie-Stick wichtig. Gegen diese Modeerscheinung sträube ich mich nicht nur seit Jahren, ich betone es auch bei jedem Anlass. Alles habe ich nicht einmal genutzt, so wird die Wohnung wenigstens effizienter als Lagerhalle zweckentfremdet ...
+Also habe ich mir das 65l-Monster [Venturesafe](https://www.amazon.de/dp/B00E8BJXXC) von Pacsafe gekauft - auf jeden Fall eine gute Wahl, vielleicht nur etwas zu groß für meine Bedürfnisse. Immerhin schleppt man den ja mit sich rum und muss damit durch enge, bevölkerte Gassen, Busse und mehr. Vor Reiseantritt waren mir noch Kleinigkeiten wie eine Stirnlampe, um nachts auch mal etwas zu finden, eine Trinkflasche mit Filtersystem, um auch wirklich immer und überall trinkbares Waser herzubekommen und ein Selfie-Stick wichtig. Gegen diese Modeerscheinung sträube ich mich nicht nur seit Jahren, ich betone es auch bei jedem Anlass. Alles habe ich nicht einmal genutzt, so wird die Wohnung wenigstens effizienter als Lagerhalle zweckentfremdet ...
 
 Nächstes Mal werde ich weniger Sachen mitnehmen, diese dafür aber gezielter auswählen, immerhin müssen sie einiges aushalten und sollten nicht unterwegs kaputt gehen. Der Rucksack wird auf das Handgepäck minimiert und der Komfort sowie der Abenteuerfaktor gehen dafür nach oben, aber fangen wir von vorne an, das werde ich ein anderes Mal thematisieren.
 
-{% include postImage.html title="Der malerische Karibikstrand von Tulum" image="tulum-beach.jpg" %}
+{% include postImage.html title="Der malerische Karibikstrand von Tulum" image="tulum-beach.jpg" fullsize=1 %}
 
 ##  Cancún
 
@@ -27,6 +26,7 @@ Nach einer gefühlten Ewigkeit bin ich dann im Mezcal Hostal (der Name war Progr
 
 Eigentlich wollte ich noch auf die Isla Mujeres, die habe ich dann aber wenigstens aus der Ferne von einer gemütlichen Liege aus gesehen.
 
+{% include postImage.html title="Die Nohoch Mul-Pyramide in Cobá" image="coba.jpg" %}
 
 ##  Tulum & Cobá
 
@@ -44,6 +44,8 @@ Danach ging es noch auf dem Rad in eine Cenote (unterirdische, mit Wasser gefül
 
 Am Tag darauf besichtigte ich die Ruinen von Tulum und konnte am Strand etwas chillen. Die Bilder sollten ja den Rest erklären, super!
 
+{% include postImage.html title="Die Kukulcán-Pyramide in Chichén Itzá" image="chichen-itza.jpg" %}
+
 ##  Valladolid & Chichén Itzá
 
 Das nächste Ziel stand fest: Auf nach Valladolid! Die kleine Stadt liegt im Landesinneren, ist nicht so touristisch wie Tulum oder Cancún, die Menschen sind etwas ruhiger und freuen sich, wenn man wenigstens versucht, Spanisch zu sprechen. Zuerst war ich etwas verwirrt, aber in der Tat bin ich mit dem Bus innerhalb von knapp zwei Stunden in eine andere Zeitzone gereist, verrückt.
@@ -58,6 +60,8 @@ Die Ruhe konnte ich genießen und mir so alles ganz entspannt ansehen, ohne ewig
 
 Aber gut, Haken dran und zurück ins Hostel, den nächsten Tag war ich mit dem Rad unterwegs zu den Cenoten. Wie immer war ich nicht allein, es ist wirklich erstaunlich, wie leicht man eine Begleitung für einen Ausflug findet. Auf dem Rückweg hielten wir an einem kleinen Streetfood-Stand an. Das Essen sah sehr lecker aus. Auf die Frage, worauf wir denn Lust haben (mittlerweile konnte ich relativ gut erahnen, was man von mir will), griff die Dame einfach einmal quer durch die Töpfe und bot uns alles zum Testen an. Hygienisch vielleicht etwas problematisch, geschmacklich dafür umso besser, gab es dann die leckersten Burritos überhaupt.
 
+{% include postImage.html title="Die bunte Stadt Mérida" image="merida.jpg" %}
+
 ##  Mérida
 
 Da ich noch genug Zeit hatte bis der Flug zurück ging, wagte ich einen Abstecher nach Mérida und fuhr damit ein gutes Stück weiter an die Westküste von Yucatán in dessen Hauptstadt.
@@ -71,6 +75,8 @@ Abends gab es dann zum Vorglühen Bier aus stattlichen 1,2 l Flaschen, danach gi
 Der Tag darauf fing langsam an. Ich kann nicht sagen, ob es an den Folgen der letzten Nacht lag aber zum ersten Mal hatte ich absolut keine Lust, etwas zu unternehmen und so ging ich einfach durch die ganze Stadt und sah mir die Häuser an. Es hatte ja nur um die 30° ...
 
 Schon in Valladolid habe ich gemerkt, dass kein Hostel mehr für die Insel Holbox frei war und ich hatte noch keine Antwort auf meine Anfrage in einem schönen Hostel bekommen, aber dann endlich einen Tag davor kam die E-Mail und ich konnte doch noch dort hin fahren.
+
+{% include postImage.html title="Auf der Suche nach Flamingos auf der Insel Holbox" image="holbox-beach.jpg" fullsize=1 %}
 
 ##  Holbox
 
@@ -91,6 +97,6 @@ Der letzte Tag auf der Insel stand im Zeichen der Flamingos. Nachdem die geplant
 
 Am Abend ging es dann auch schon wieder mit der Fähre zurück aufs Festland und mit dem Bus nach Cancún, da die Isla Mujeres komplett ausgebucht war. Den letzten Tag verbrachte ich noch mit der endlosen Suche nach Postkarten und Souveniers, gar nicht so einfach. Nachdem ich vom Hostel aus bis ins Zentrum der Hotel Zone gelaufen war, hatte ich alles zusammen und durfte dann zurück im Hostel erfahren, dass die Post derzeit streikt.
 
-
+{% include postImage.html title="Die Strandstraßen auf Holbox mit Golfkarts" image="holbox.jpg" %}
 
 Das war also mein kleiner Trip nach Mexiko, es war zwar viel zu kurz, ich kann es aber nur jedem empfehlen. Reisen lohnt sich immer. Es ist keine Sache der Planung, sondern der Einstellung. Mexiko bietet für jeden etwas: Strände, Ruinen, Dschungel und viele andere besondere Kleinigkeiten, die das Land so schön machen. Ich komme definitiv wieder hier her!
