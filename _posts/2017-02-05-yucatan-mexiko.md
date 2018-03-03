@@ -15,7 +15,7 @@ Also habe ich mir das 65l-Monster [Venturesafe](http://www.pacsafe.com/venturesa
 
 Nächstes Mal werde ich weniger Sachen mitnehmen, diese dafür aber gezielter auswählen, immerhin müssen sie einiges aushalten und sollten nicht unterwegs kaputt gehen. Der Rucksack wird auf das Handgepäck minimiert und der Komfort sowie der Abenteuerfaktor gehen dafür nach oben, aber fangen wir von vorne an, das werde ich ein anderes Mal thematisieren.
 
-{% include postImage title="Der malerische Karibikstrand von Tulum" url="{{ page.url }}" image="tulum-beach" %}
+{% include postImage.html title="Der malerische Karibikstrand von Tulum" url="{{ page.url }}" image="tulum-beach" %}
 
 ##  Cancún
 
