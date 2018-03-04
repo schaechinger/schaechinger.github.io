@@ -1,11 +1,10 @@
 ---
 ---
-@import 'bourbon/bourbon';
-@import 'bitters/base';
-@import 'neat/neat';
+@import 'vendors/vendors';
 
-@import 'site/all';
-@import 'blog/all';
+@import 'partials/partials';
+@import 'modules/modules';
+@import 'layouts/layouts';
 
 nav ul,
 footer ul,
