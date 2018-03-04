@@ -5,5 +5,10 @@ a {
 
   &:hover {
     border-bottom-color: $blue;
+    color: $blue;
+  }
+
+  &:focus {
+    outline: hidden;
   }
 }
