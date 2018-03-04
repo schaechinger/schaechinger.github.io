@@ -1,0 +1,17 @@
+.post {
+  .post-header {
+    &.post-image {
+      @include background-image;
+      height: 20rem;
+    }
+
+    .post-location {
+      @include outer-container;
+      background-color: rgba(255, 255, 255, 0.65);
+
+      p {
+        text-align: right;
+      }
+    }
+  }
+}
