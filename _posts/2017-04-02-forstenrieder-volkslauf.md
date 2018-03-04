@@ -22,7 +22,7 @@ Nach einer Stunde auf dem Unigelände wurde mir klar, dass ich die Zeit doch ein
 
 Ich war immer noch nicht unbedingt fit, trotz Kaffee und rad fahren aber immerhin wach. Also ging es dann zu Fuß weiter zum Start. Einen Teil der Strecke sind wir vor einer Woche schon geradelt, da aber zum Biergarten, war alles etwas entspannter macht. Vor Ort waren schon viele Teilnehmer da. Das liebe ich an einem Volkslauf, es ist einfach für jeden etwas dabei. Vom 400m-Lauf für die 10-jährigen, über ein paar Stufen zu 10km und dann zum Halbmarathon. Es waren sowohl die richtig sportlichen Athleten anwesend wie auch Familien, die zusammen einfach ein bisschen Spaß haben wollten. Wir kamen genau pünktlich zum Kinderlauf um 13:00 Uhr an, unser Lauf war erst um 13:45 Uhr. Also konnten wir noch in Ruhe unsere Startunterlagen abholen und den Rucksack loswerden. Dieses Jahr gab es statt einem Handtuch ein Buff-Tuch, davon kann man bekanntlich nie genug kriegen. Das Tuch gab es in drei verschiedenen Farben. Ich habe mich für grau mit einem orange-rötlichen Schriftzug des Volkslaufs darauf entschieden.
 
-{% include postImage.html title="Kurz vor dem Lauf an der Startlinie" image="am-start.jpg" %}
+{% include post-image.html title="Kurz vor dem Lauf an der Startlinie" image="am-start.jpg" %}
 
 ## Auf die Plätze, fertig, ...
 
@@ -44,7 +44,7 @@ Ich habe mein schönstes Lächeln aufgesetzt – auf den Fotos sah das dann aber
 
 Quatsch! Natürlich suchte ich nur nach dem Bierstand für das wohlverdiente alkoholfreie Weißbier! Das schmeckte dann aber nicht mal so richtig, ich bin generell kein Weißbiertrinker aber anscheinend gibt es auch hier schlechte und grottenschlechte Brauereien ... Mit einer Banane bewaffnet ging es dann auch gang gemütlich mit meinem Kumpel zu ihm. Da stand dann auch schon mein Rad bereit. Soweit hatte ich heute mittag nicht gedacht, darauf hatte ich jetzt gar keine Lust mehr! Aber mit ein paar Gängen niedriger als sonst ging das dann auch und ich konnte mich nach dem Duschen in Jogginghose auf die Couch legen. Auch wenn ich extra heute Morgen noch lecker Essen eingekauft hatte – am Wochenende wird immer etwas ausgewogener gekocht – habe ich mich für die Pizza von Domino's entschieden, das war deutlich leichter! Viel länger wurde der Abend dann auch nicht, außer einem gemütlichen Netflixabend war nicht mehr viel geboten.
 
-{% include postImage.html title="Beim Radeln auf der Suche nach einem Biergarten" image="radeln.jpg" %}
+{% include post-image.html title="Beim Radeln auf der Suche nach einem Biergarten" image="radeln.jpg" %}
 
 ## Ein Tag Ruhe
 
@@ -52,5 +52,5 @@ Am nächsten  Morgen bin ich dann top fit aufgewacht, so hätte das gestern lauf
 
 Alles in allem also ein sehr erfolgreiches Wochenende!
 
-{% include postImage.html title="Bei super Wetter nach einem anstrengenden Wochenende im Biergarten" image="biergarten.jpg" %}
+{% include post-image.html title="Bei super Wetter nach einem anstrengenden Wochenende im Biergarten" image="biergarten.jpg" %}
 
