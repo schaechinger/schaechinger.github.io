@@ -1,0 +1,13 @@
+.page.page-blog {
+  @include outer-container;
+
+  ul {
+    @include clearfix;
+
+    li {
+      @include grid-column(4);
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
