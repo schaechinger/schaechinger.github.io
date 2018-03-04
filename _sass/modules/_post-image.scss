@@ -4,7 +4,9 @@
     background-position: 50%;
     height: 20rem;
 
-    @include media
+    @include grid-media($mobile-only) {
+      height: 10rem;
+    }
   }
 
   &:not(.post-image--fullsize) {

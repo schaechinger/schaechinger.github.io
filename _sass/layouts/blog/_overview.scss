@@ -16,6 +16,11 @@
         height: 6.25rem;
         text-shadow: 0 0 5px $black;
       }
+
+      p {
+        height: 4.5rem;
+        overflow-y: hidden;
+      }
     }
   }
 }

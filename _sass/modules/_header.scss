@@ -4,7 +4,7 @@ header {
   background-color: $white;
   border-bottom: 1px solid $gray-light;
   color: $white;
-  font-family: 'ClearSans-Bk', $font-stack-helvetica;
+  font-family: 'ClearSans', 'ClearSans-Bk', $font-stack-helvetica;
   width: 100%;
 
   nav {
@@ -20,18 +20,20 @@ header {
         display: inline-block;
         padding: 0.5rem 0.625rem;
 
-        &.active {
-          a {
-            color: $black;
-          }
-        }
-
         a {
           border-bottom: none;
           color: $gray;
 
           &:hover {
             color: $blue;
+            font-size: 0.875rem;
+          }
+        }
+
+        &.active {
+          a {
+            color: $black;
+            font-family: 'ClearSans-Bk', $font-stack-helvetica;
           }
         }
       }
