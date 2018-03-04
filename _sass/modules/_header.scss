@@ -2,6 +2,7 @@ header {
   @include clearfix;
 
   background-color: $white;
+  border-bottom: 1px soid $gray-light;
   color: $white;
   font-family: 'ClearSans-Bk', $font-stack-helvetica;
   width: 100%;
