@@ -8,12 +8,15 @@
 @mixin media-columns($columns...) {
   $breakpoints: ( '40rem', '48rem', '64rem');
 
-  @each $i,$column in $columns {
+  @for $i from 1 through length($columns) {
+    $column: nth($columns, $i);
     $custom-grid: (
       columns: 12,
       gutter: 1.25rem,
       media: nth($breakpoints, $i),
     );
-    @include grid-column($column);
+    @include grid-media($custom-grid) {
+      @include grid-column($column);
+    }
   }
 }
