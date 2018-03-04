@@ -1,0 +1,19 @@
+@mixin outer-container() {
+  @include grid-container;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 64rem;
+}
+
+@mixin media-columns($columns...) {
+  $breakpoints: ( '40rem', '48rem', '64rem');
+
+  @each $i,$column in $columns {
+    $custom-grid: (
+      columns: 12,
+      gutter: 1.25rem,
+      media: nth($breakpoints, $i),
+    );
+    @include grid-column($column);
+  }
+}
