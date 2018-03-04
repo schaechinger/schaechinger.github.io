@@ -1,7 +1,7 @@
 header {
-  background-color: $color-white;
-  border-bottom: 1px solid $color-gray-dark;
-  color: $color-white;
+  background-color: $white;
+  border-bottom: 1px solid $gray-dark;
+  color: $white;
   font-family: 'ClearSans', 'ClearSans-Bk', $font-stack-helvetica;
   height: 3rem;
   width: 100%;
@@ -15,15 +15,15 @@ header {
 
   a {
     border-bottom: none;
-    color: $color-gray;
+    color: $gray;
 
     &:hover {
-      color: $color-blue;
+      color: $blue;
       border-bottom: none;
     }
 
     &.active {
-      color: $color-black;
+      color: $black;
     }
   }
 }

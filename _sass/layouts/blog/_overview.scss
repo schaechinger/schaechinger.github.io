@@ -8,6 +8,17 @@
       @include media-columns(12, 6, 4);
       margin-top: 1rem;
       margin-bottom: 1rem;
+
+      .header-image {
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: $white;
+        display: block;
+        height: 6.25rem;
+        text-shadow: 0 0 5px $black;
+        width: 100%;
+      }
     }
   }
 }

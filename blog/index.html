@@ -8,8 +8,9 @@ class: blog
   <ul class="posts">
     {% for post in site.posts %}
     <li>
-      <img title="{{ post.title }}" src="https://www.schaechinger.com/img{{ post.url }}/header-thumb.jpg" />
-      <span>{{ post.date | date: '%d.%m.%y' }}</span>
+      <span class="background-image" style="background-image:url(https://www.schaechinger.com/img{{ post.url }}/header-thumb.jpg)">
+        <span>{{ post.date | date: '%d.%m.%y' }}</span>
+      </span>
       <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
       <p>{{ post.excerpt }}</p>
     </li>

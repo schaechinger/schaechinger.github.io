@@ -25,7 +25,7 @@ $grid-desktop: (
     }
   }
 
-  @if ($desktopColumns) {
+  @if ($desktopColumn) {
     @include grid-media($grid-desktop) {
       @include grid-column($desktopColumn);
     }
