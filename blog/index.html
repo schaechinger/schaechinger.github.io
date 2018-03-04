@@ -1,17 +1,20 @@
 ---
 layout: default
 title: Manuels Blog
+class: blog
 ---
-<h1>{{ page.title }}</h1>
-<ul class="posts">
-  {% for post in site.posts %}
-  <li>
-    <img title="{{ post.title }}"
+<div class="blog-overview">
+  <h1>{{ page.title }}</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+    <li>
+      <img title="{{ post.title }}"
       src="https://www.schaechinger.com/img{{ post.url }}/header-thumb.jpg"
-    />
-    <span>{{ post.date | date: '%d.%m.%y' }}</span>
-    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-    <p>{{ post.intro }}</p>
-  </li>
-  {% endfor %}
-</ul>
+      />
+      <span>{{ post.date | date: '%d.%m.%y' }}</span>
+      <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+      <p>{{ post.intro }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
