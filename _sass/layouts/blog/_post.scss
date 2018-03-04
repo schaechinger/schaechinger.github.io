@@ -2,7 +2,7 @@
   .post-header {
     &.post-image {
       @include background-image;
-      height: 20rem;
+      padding-top: 20rem;
     }
 
     .post-info {
@@ -10,9 +10,11 @@
 
       .post-location {
         @include outer-container;
-        
+
         p {
+          font-size: 0.875rem;
           text-align: right;
+          text-transform: uppercase;
         }
       }
     }
