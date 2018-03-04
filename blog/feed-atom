@@ -1,0 +1,41 @@
+---
+layout: feed
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+	<title>schaechinger.com</title>
+	<link href="{{ page.url | absolute_url }}" rel="self" type="application/atom+xml"/>
+	<link href="{{ site.url }}/blog" rel="alternate" type="text/html" title="{{ page.title | xml_escape }}"/>
+	<updated>{{ site.time | date_to_xmlschema }}</updated>
+	<id>{{ site.url }}/blog</id>
+	<author>
+		<name>{{ 'Manuel Schächinger' | xml_escape }}</name>
+	</author>
+
+  {% assign posts = site.posts | where_exp: "post", "post.draft != true" %}
+	{% for post in posts limit: 25 %}
+		<entry{% if post.lang %}{{" "}}xml:lang="{{ post.lang }}"{% endif %}>
+      <title type="html">{{ post.title | smartify | strip_html | normalize_whitespace | xml_escape }}</title>
+			<link href="https://schchn.gr/{{ post.shortkey }}"/>
+			<published>{{ post.date | date_to_xmlschema }}</published>
+      <updated>{{ post.last_modified_at | default: post.date | date_to_xmlschema }}</updated>
+			<id>{{ 'https://schchn.gr/' | append: post.shortkey | xml_escape }}</id>
+			<content type="html">{{ post.content | strip | xml_escape }}</content>
+      {% if post.category %}
+        <category term="{{ post.category | xml_escape }}" />
+      {% endif %}
+
+      {% for tag in post.tags %}
+        <category term="{{ tag | xml_escape }}" />
+      {% endfor %}
+
+      <author>
+        <name>{{ 'Manuel Schächinger' | xml_escape }}</name>
+      </author>
+
+			<media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="{{ 'https://www.schaechinger.com/img' | append: page.url | append: '/header-thumb.jpg' | xml_escape }}"post_image | xml_escape }}" />
+		</entry>
+	{% endfor %}
+
+</feed>

@@ -10,8 +10,5 @@ plugins:
 
 markdown: kramdown
 
-feed:
-  path: /blog/atom.xml
-
 sass:
   style: compressed
