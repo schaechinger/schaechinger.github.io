@@ -16,10 +16,10 @@ $grid-desktop: (
   media: 'only screen and (min-width: 64rem)',
 );
 
-@mixin media-columns($column, $tableColumn: 0, $desktopColumn: 0) {
+@mixin media-columns($column, $tabletColumn: 0, $desktopColumn: 0) {
   @include grid-column($column);
 
-  @if ($tableColumns) {
+  @if ($tabletColumn) {
     @include grid-media($grid-tablet) {
       @include grid-column($tabletColumn);
     }
