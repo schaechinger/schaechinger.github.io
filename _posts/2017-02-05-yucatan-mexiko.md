@@ -1,7 +1,10 @@
 ---
 layout: post
+lang: de
+id: https://schchn.gr/wizfd
 title: "Backpacking in Yucatán, Mexico"
-categories: travel backpacking
+category: travel
+tags: travel backpacking
 location: "Tulum, QROO, Mexiko"
 shortkey: wizfd
 excerpt: "Backpacking kurz und gut wäre wohl der passende Titel bei O'Reilly. Am 27. Nov 2016 war es dann so weit: Endlich ging es für knapp zwei Wochen nach Mexiko in den Urlaub. Der war längst überfällig. Zum ersten Mal war ich allein unterwegs und wollte mit dem Rucksack die Halbinsel Yucatán erkunden. Ob es Nachteile hat, allein zu reisen? Man kann jeden Tag selbst entscheiden wo es hin gehen soll, ich kann es jedem nur empfehlen!"

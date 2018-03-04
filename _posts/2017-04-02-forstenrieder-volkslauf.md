@@ -1,7 +1,10 @@
 ---
 layout: post
+lang: de
+id: https://schchn.gr/qyhr0
 title: "Forstenrieder Volkslauf 2017"
-categories: running
+category: running
+tags: running sport
 location: "Forstenried, München"
 shortkey: qyhr0
 excerpt: "Zum zweiten Mal stand der Forstenrieder Volkslauf für mich an. Der Lauf, bei dem ich vor einem Jahr mein Halbmarathon-Debüt absolvierte. Seit dem ist viel passiert, aber der Winter war lang, ich war quasi durchgehend erkältet und so war es doch eine Herausforderung, die Zeit des letzten Jahres zu überbieten."
