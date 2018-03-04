@@ -2,9 +2,11 @@
 layout: default
 ---
 <div class="post">
-  <div class="post-header post-image" style="background-color:url(https://www.schaechinger.com/img{{ page.url }}/header.jpg);background-position:{{ page.imagePosition | default: 'center' }}">
-    <div class="post-location">
-      <p>{{ page.location }}</p>
+  <div class="post-header post-image" style="background-image:url(https://www.schaechinger.com/img{{ page.url }}/header.jpg);background-position:{{ page.imagePosition | default: 'center' }}">
+    <div class="post-info">
+      <div class="location">
+        <p>{{ page.location }}</p>
+      </div>
     </div>
   </div>
   <img src="https://www.schaechinger.com/img{{ page.url }}/header-thumb.jpg" style="display:none"/>

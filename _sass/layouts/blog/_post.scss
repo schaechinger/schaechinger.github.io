@@ -5,12 +5,15 @@
       height: 20rem;
     }
 
-    .post-location {
-      @include outer-container;
+    .post-info {
       background-color: rgba(255, 255, 255, 0.65);
 
-      p {
-        text-align: right;
+      .post-location {
+        @include outer-container;
+        
+        p {
+          text-align: right;
+        }
       }
     }
   }
