@@ -2,30 +2,36 @@ header {
   @include clearfix;
 
   background-color: $white;
-  border-bottom: 1px solid $gray-dark;
   color: $white;
   font-family: 'ClearSans-Bk', $font-stack-helvetica;
   width: 100%;
 
   nav {
     @include outer-container;
-    
-    li {
-      display: inline-block;
-      padding: 0.25rem 0.5rem;
+    overflow: hidden;
 
-      &.active {
-        a {
-          color: $black;
+    ul {
+      overflow-x: scroll;
+      padding: 0 0.625rem;
+      white-space: nowrap;
+
+      li {
+        display: inline-block;
+        padding: 0.5rem 0.625rem;
+
+        &.active {
+          a {
+            color: $black;
+          }
         }
-      }
 
-      a {
-        border-bottom: none;
-        color: $gray;
+        a {
+          border-bottom: none;
+          color: $gray;
 
-        &:hover {
-          color: $blue;
+          &:hover {
+            color: $blue;
+          }
         }
       }
     }
