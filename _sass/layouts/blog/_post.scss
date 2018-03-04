@@ -35,9 +35,11 @@
     }
 
     > .post-image {
-      @include background-image;
-      background-position: 50%;
-      height: 20rem;
+      .image {
+        @include background-image;
+        background-position: 50%;
+        height: 20rem;
+      }
 
       &:not(.post-image--fullsize) {
         @include outer-container;
