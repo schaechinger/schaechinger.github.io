@@ -8,11 +8,15 @@ class: blog
    {% assign posts = site.posts | where_exp: "post", "post.draft != true" %}
   {% for post in posts %}
   <li>
-    <span class="header-image" style="background-image:url({{ site.imageBase }}{{ post.url }}/header-thumb.jpg)">
-      <span>{{ post.date | date: '%d.%m.%y' }}</span>
-    </span>
-    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-    <p>{{ post.excerpt }}</p>
+    <a href="{{ post.url }}">
+      <span class="header-image" style="background-image:url({{ site.imageBase }}{{ post.url }}/header-thumb.jpg)">
+        <span>{{ post.date | date: '%d. %b %Y' }}</span>
+      </span>
+    </a>
+    <h2>
+      <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    </h2>
+    <p>{{ post.category | capitalize }} {{ post.excerpt }}</p>
   </li>
   {% endfor %}
 </ul>

@@ -23,13 +23,13 @@ $desktop: (
 @mixin media-columns($column, $tabletColumn: 0, $desktopColumn: 0) {
   @include grid-column($column);
 
-  @if ($tabletColumn) {
+  @if (0 != $tabletColumn) {
     @include grid-media($tablet) {
       @include grid-column($tabletColumn);
     }
   }
 
-  @if ($desktopColumn) {
+  @if (0 != $desktopColumn) {
     @include grid-media($desktop) {
       @include grid-column($desktopColumn);
     }

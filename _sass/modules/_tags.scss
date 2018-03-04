@@ -1,0 +1,16 @@
+.meta.meta-tags {
+  p,
+  ul {
+    display: inline-block;
+  }
+
+  ul {
+    li {
+      border: 1px solid $blue;
+      border-radius: 0.125rem;
+      display: inline-block;
+      margin: 0.125rem 0.5rem;
+      padding: 0.125rem 0.25rem;
+    }
+  }
+}

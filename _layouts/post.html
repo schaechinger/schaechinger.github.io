@@ -14,14 +14,15 @@ layout: default
   <div class="post-info">
     <h1>{{ page.title }}</h1>
     <p class="meta meta-date">Datum: {{ page.date | date_to_string }}</p>
-    <p class="meta meta-tags">Tags:
-      <ul>
-        <li>{{ page.category }}</li>
-        {% for tag in page.tags %}
-        <li>{{ tag }}</li>
-        {% endfor %}
-      </ul>
-    </p>
+    <dvi class="meta meta-tags">
+      <p>Tags:</p>
+        <ul>
+          <li>{{ page.category | capitalize }}</li>
+          {% for tag in page.tags %}
+          <li>{{ tag | capitalize }}</li>
+          {% endfor %}
+        </ul>
+    </dvi>
     
     <p class="excerpt">
       <span class="category">{{ page.category | capitalize }}</span> {{ page.excerpt }}

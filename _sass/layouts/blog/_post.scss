@@ -3,6 +3,10 @@
     &.post-image {
       @include background-image;
       padding-top: 20rem;
+
+      @include grid-media($mobile-only) {
+        padding-top: 8rem;
+      }
     }
 
     .post-header-bg {
@@ -19,6 +23,12 @@
           text-transform: uppercase;
         }
       }
+    }
+  }
+
+  .post-info {
+    .meta.meta-tags {
+      @include column-margin;
     }
   }
 

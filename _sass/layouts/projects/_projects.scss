@@ -1,0 +1,13 @@
+.page.page-projects {
+  @include outer-container;
+
+  ul {
+    @include clearfix;
+
+    li {
+      @include media-columns(12, 6);
+      margin-top: 1.25rem;
+      margin-bottom: 1.25rem;
+    }
+  }
+}

@@ -4,7 +4,7 @@ lang: de
 title: "BMW Berlin Marathon 2017"
 category: running
 tags: travel
-imagePosition: center 25%
+imagePosition: center 27.5%
 location: "Berlin, Deutschland"
 shortkey: jrlkx
 excerpt: "Der Tag war gekommen. Nach monatelanger Vorbereitung ging es endlich nach Berlin, um meinen ersten Marathon zu bestreiten."
