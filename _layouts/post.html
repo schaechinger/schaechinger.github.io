@@ -3,34 +3,39 @@ layout: default
 ---
 <div class="post">
   <div class="post-header post-image" style="background-image:url(https://www.schaechinger.com/img{{ page.url }}/header.jpg);background-position:{{ page.imagePosition | default: 'center' }}">
-    <div class="post-info">
-      <div class="location">
+    <div class="post-header-bg">
+      <div class="post-location">
         <p>{{ page.location }}</p>
       </div>
     </div>
   </div>
   <img src="https://www.schaechinger.com/img{{ page.url }}/header-thumb.jpg" style="display:none"/>
-  <h1>{{ page.title }}</h1>
-  <p class="meta meta-date">Datum: {{ page.date | date_to_string }}</p>
-  <p class="meta meta-tags">Tags:
-    <ul>
-      <li>{{ page.category }}</li>
-      {% for tag in page.tags %}
+
+  <div class="post-info">
+    <h1>{{ page.title }}</h1>
+    <p class="meta meta-date">Datum: {{ page.date | date_to_string }}</p>
+    <p class="meta meta-tags">Tags:
+      <ul>
+        <li>{{ page.category }}</li>
+        {% for tag in page.tags %}
         <li>{{ tag }}</li>
-      {% endfor %}
-    </ul>
-  </p>
+        {% endfor %}
+      </ul>
+    </p>
+    
+    <p class="excerpt">
+      {{ page.category }} {{ page.excerpt }}
+    </p>
+  </div>
 
-  <p class="excerpt">
-    {{ page.category }} {{ page.excerpt }}
-  </p>
-
-  <div class="content">
+  <div class="post-content">
     {{ content }}
   </div>
 
-  <div class="share">
+  <div class="post-share">
     <h2>Post teilen</h2>
-    <a href="{{ page.id }}">ID: {{ page.shortkey }}</a>
+    <p>
+      <a href="{{ page.id }}">ID: {{ page.shortkey }}</a>
+    </p>
   </div>
 </div>

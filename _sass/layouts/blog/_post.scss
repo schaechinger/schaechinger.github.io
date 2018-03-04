@@ -5,18 +5,65 @@
       padding-top: 20rem;
     }
 
-    .post-info {
+    .post-header-bg {
       background-color: rgba(255, 255, 255, 0.65);
 
       .post-location {
         @include outer-container;
 
         p {
+          @include column-margin;
           font-size: 0.875rem;
           text-align: right;
           text-transform: uppercase;
         }
       }
+    }
+  }
+
+  .post-content {
+    > p,
+    > h1,
+    > h2,
+    > h3,
+    > h4,
+    > h5,
+    > h6 {
+      @include outer-container;
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+    }
+
+    > .post-image {
+      @include background-image;
+      background-position: 50%;
+      height: 20rem;
+
+      &:not(.post-image--fullsize) {
+        @include outer-container;
+      }
+
+      p {
+        color: $gray-dark;
+        font-size: 0.75rem;
+        margin-top: 0.25rem;
+        text-align: center;
+      }
+    }
+  }
+
+  .post-info,
+  .post-share {
+    @include outer-container;
+
+    > p,
+    > h1,
+    > h2,
+    > h3,
+    > h4,
+    > h5,
+    > h6 {
+      @include column-margin;
     }
   }
 }

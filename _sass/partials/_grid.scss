@@ -5,6 +5,11 @@
   max-width: 64rem;
 }
 
+@mixin column-margin {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
 $grid-tablet: (
   columns: 12,
   gutter: 1.25rem,
