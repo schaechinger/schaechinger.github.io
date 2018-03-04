@@ -5,7 +5,8 @@ class: blog
 ---
 <h1>{{ page.title }}</h1>
 <ul class="posts">
-  {% for post in site.posts %}
+   {% assign posts = site.posts | where_exp: "post", "post.draft != true" %}
+  {% for post in posts %}
   <li>
     <span class="header-image" style="background-image:url({{ site.imageBase }}{{ post.url }}/header-thumb.jpg)">
       <span>{{ post.date | date: '%d.%m.%y' }}</span>
