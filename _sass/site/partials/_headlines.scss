@@ -3,8 +3,8 @@
 h2,
 h3,
 h4 {
-  font-family: 'ClearSans', 'ClearSans-Bk', Arial, Helvetica, sans-serif;
   color: $color-blue;
+  font-family: 'ClearSans', 'ClearSans-Bk', Arial, Helvetica, sans-serif;
 }
 
 h1,
@@ -12,6 +12,7 @@ h2,
 h3,
 h4 {
   color: $color-blue;
+  font-weight: normal;
 }
 
 h1 {
