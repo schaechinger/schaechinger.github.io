@@ -5,16 +5,3 @@
 @import 'partials/partials';
 @import 'modules/modules';
 @import 'layouts/layouts';
-
-nav ul,
-footer ul,
-.post .meta.meta-categories ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-
-    li {
-      display: inline-block;
-      padding: 0.25rem 0.5rem;
-    }
-}

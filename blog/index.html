@@ -11,7 +11,7 @@ class: blog
       <img title="{{ post.title }}" src="https://www.schaechinger.com/img{{ post.url }}/header-thumb.jpg" />
       <span>{{ post.date | date: '%d.%m.%y' }}</span>
       <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-      <p>{{ post.intro }}</p>
+      <p>{{ post.excerpt }}</p>
     </li>
     {% endfor %}
   </ul>

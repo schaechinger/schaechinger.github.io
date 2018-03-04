@@ -1,10 +1,17 @@
-name: Schächinger
-markdown: kramdown
-
+name: schaechinger.com
+url: 'https://github.schaechinger.com'
+description: "In meinem Blog dreht sich alles um Laufen, Reisen und Webentwicklung mit JavaScript und Node.js."
+author: "Manuel Schächinger"
 permalink: /blog/:year-:title
 
 plugins:
+  - jekyll-feed
   - jekyll-sitemap
+
+markdown: kramdown
+
+feed:
+  path: /blog/atom.xml
 
 sass:
   style: compressed

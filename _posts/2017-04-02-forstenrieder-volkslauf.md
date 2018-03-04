@@ -4,7 +4,7 @@ title: "Forstenrieder Volkslauf 2017"
 categories: running
 location: "Forstenried, München"
 shortkey: qyhr0
-intro: "Zum zweiten Mal stand der Forstenrieder Volkslauf für mich an. Der Lauf, bei dem ich vor einem Jahr mein Halbmarathon-Debüt absolvierte. Seit dem ist viel passiert, aber der Winter war lang, ich war quasi durchgehend erkältet und so war es doch eine Herausforderung, die Zeit des letzten Jahres zu überbieten."
+excerpt: "Zum zweiten Mal stand der Forstenrieder Volkslauf für mich an. Der Lauf, bei dem ich vor einem Jahr mein Halbmarathon-Debüt absolvierte. Seit dem ist viel passiert, aber der Winter war lang, ich war quasi durchgehend erkältet und so war es doch eine Herausforderung, die Zeit des letzten Jahres zu überbieten."
 ---
 Ein Jahr ist es nun her, seit dem ich meinen ersten Halbmarathon hier gelaufen bin. Kommt mir ein  bisschen vor wie eine Ewigkeit. Damals war das Ziel, unter zwei Stunden im Ziel anzukommen. Das habe ich auch geschafft, wenn auch nur knapp. Das Ziel für dieses Jahr war ursprünglich 01:45h. Die Zeit, die ich letztes Jahr im Oktober beim Münchner Halbmarathon laufen wollte aber dank Erkältung nicht teilnehmen konnte. Über den Winter ist so einiges passiert, allerdings nicht in sportlicher Hinsicht und  so  scheint mir mein Ziel jetzt in weiter Ferne ...
 
