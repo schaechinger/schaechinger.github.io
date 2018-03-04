@@ -2,4 +2,5 @@
 
 .page {
   @include grid-container;
+  max-width: 64rem;
 }
