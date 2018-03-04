@@ -1,0 +1,20 @@
+.post-image {
+  .image {
+    @include background-image;
+    background-position: 50%;
+    height: 20rem;
+
+    @include media
+  }
+
+  &:not(.post-image--fullsize) {
+    @include outer-container;
+  }
+
+  p {
+    color: $gray-dark;
+    font-size: 0.75rem;
+    margin-top: 0.25rem;
+    text-align: center;
+  }
+}

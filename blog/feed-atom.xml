@@ -34,7 +34,7 @@ layout: feed
         <name>{{ 'Manuel Schächinger' | xml_escape }}</name>
       </author>
 
-			<media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="{{ 'https://www.schaechinger.com/img' | append: post.url | append: '/header-thumb.jpg' | xml_escape }}" />
+			<media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="{{ site.imageBase | append: post.url | append: '/header-thumb.jpg' | xml_escape }}" />
 		</entry>
 	{% endfor %}
 
