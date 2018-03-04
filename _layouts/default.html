@@ -12,21 +12,14 @@
   <header>
     <nav>
       <ul>
-        <li>
+        <li{% if page.url == element.url %} class="active"{% endif %}>
           <a href="/">Schächinger</a>
         </li>
-        <li>
-          <a href="/about">Über mich</a>
-        </li>
-        <li>
-          <a href="/projects">Projekte</a>
-        </li>
-        <li>
-          <a href="/blog">Blog</a>
-        </li>
-        <li>
-          <a href="/resume">Lebenslauf</a>
-        </li>
+        {% for element in site.data.nav %}
+          <li{% if page.url contains element.url %} class="active"{% endif %}>
+            <a href="{{ element.url }}">{{ element.title }}</a>
+          </li>
+        {% endfor %}
       </ul>
     </nav>
   </header>

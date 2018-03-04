@@ -10,20 +10,21 @@ header {
     li {
       display: inline-block;
       padding: 0.25rem 0.5rem;
-    }
-  }
 
-  a {
-    border-bottom: none;
-    color: $gray;
+      &.active {
+        a {
+          color: $black;
+        }
+      }
 
-    &:hover {
-      color: $blue;
-      border-bottom: none;
-    }
+      a {
+        border-bottom: none;
+        color: $gray;
 
-    &.active {
-      color: $black;
+        &:hover {
+          color: $blue;
+        }
+      }
     }
   }
 }
