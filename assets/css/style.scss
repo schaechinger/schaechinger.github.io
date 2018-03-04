@@ -1,18 +1,7 @@
 ---
 ---
 
-@import 'colors', 'fonts';
-
-@import 'header/header';
-
-body {
-  background-color: $color-gray-light;
-  font: 1rem 'ClearSans-Bk', Arial, Helvetica, sans-serif;
-}
-
-h1 {
-  color: $color-blue;
-}
+@import 'site/all';
 
 nav ul,
 footer ul,

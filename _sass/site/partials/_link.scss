@@ -1,0 +1,11 @@
+@import 'color';
+
+a {
+  border-bottom: 0.125rem solid transparent;
+  color: $color-blue;
+  text-decoration: none;
+
+  &:hover {
+    border-bottom-color: $color-blue;
+  }
+}
