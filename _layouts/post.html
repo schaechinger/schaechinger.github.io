@@ -17,9 +17,9 @@ layout: default
     <dvi class="meta meta-tags">
       <p>Tags:</p>
         <ul>
-          <li>{{ page.category | capitalize }}</li>
+          <li>{{ site.data.categories[page.category] }}</li>
           {% for tag in page.tags %}
-          <li>{{ tag | capitalize }}</li>
+            <li>{{ site.data.categories[tag] | default }}</li>
           {% endfor %}
         </ul>
     </dvi>

@@ -1,4 +1,4 @@
-a {
+.app a {
   border-bottom: 0.125rem solid transparent;
   color: $blue;
   text-decoration: none;
@@ -9,6 +9,6 @@ a {
   }
 
   &:focus {
-    outline: hidden;
+    outline: 0;
   }
 }

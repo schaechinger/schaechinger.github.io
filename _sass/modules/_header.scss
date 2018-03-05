@@ -1,4 +1,4 @@
-header {
+.app header {
   @include clearfix;
 
   background-color: $white;
@@ -12,9 +12,12 @@ header {
     overflow: hidden;
 
     ul {
-      overflow-x: scroll;
       padding: 0 0.625rem;
-      white-space: nowrap;
+
+      @include grid-media($mobile-only) {
+        overflow-x: scroll;
+        white-space: nowrap;
+      }
 
       li {
         display: inline-block;

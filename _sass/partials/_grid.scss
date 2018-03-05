@@ -6,8 +6,8 @@
 }
 
 @mixin column-margin {
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
+  margin-left: map-get($neat-grid, gutter);
+  margin-right: map-get($neat-grid, gutter);
 }
 
 $mobile-only: (

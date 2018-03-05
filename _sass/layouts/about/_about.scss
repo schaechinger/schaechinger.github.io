@@ -1,0 +1,7 @@
+.page.page-about {
+  > * {
+    @include outer-container;
+    padding-left: map-get($neat-grid, gutter);
+    padding-right: map-get($neat-grid, gutter);
+  }
+}

@@ -6,8 +6,7 @@
 
     li {
       @include media-columns(12, 6);
-      margin-top: 1.25rem;
-      margin-bottom: 1.25rem;
+      margin-bottom: map-get($neat-grid, gutter);
     }
   }
 }

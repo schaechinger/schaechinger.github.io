@@ -1,5 +1,5 @@
 title: schaechinger.com
-url: http://github.schaechinger.com
+url: http://gh.schaechinger.com
 description: "In meinem Blog dreht sich alles um Laufen, Reisen und Webentwicklung mit JavaScript und Node.js."
 author: Manuel Schächinger
 permalink: /blog/:year-:title
@@ -8,6 +8,7 @@ imageBase: https://images.schaechinger.com
 
 plugins:
   - jekyll-feed
+  - jekyll-redirect-from
   - jekyll-sitemap
 
 markdown: kramdown
