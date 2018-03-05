@@ -19,7 +19,7 @@ layout: default
         <ul>
           <li>{{ site.data.categories[page.category] }}</li>
           {% for tag in page.tags %}
-            <li>{{ site.data.categories[tag] | default }}</li>
+            <li>{{ site.data.categories[tag] | default: tag }}</li>
           {% endfor %}
         </ul>
     </dvi>
