@@ -32,6 +32,19 @@
     }
   }
 
+  .content-map {
+    @include outer-container;
+
+    > div {
+      height: 20rem !important;
+      margin: 1.25rem 0;
+
+      @include grid-media($mobile-only) {
+        height: 10rem !important;
+      }
+    }
+  }
+
   .post-content {
     > p,
     > h1,

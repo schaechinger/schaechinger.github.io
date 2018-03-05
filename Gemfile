@@ -5,6 +5,7 @@ group :jekyll_plugins do
   gem 'jekyll-coffeescript'
   gem 'jekyll-feed'
   gem 'jekyll-gist'
+  gem 'jekyll-maps'
   gem 'jekyll-redirect-from'
   gem 'jekyll-sitemap'
 end

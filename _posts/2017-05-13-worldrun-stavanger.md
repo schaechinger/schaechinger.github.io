@@ -5,7 +5,7 @@ title: "Wings for Life World Run in Norwegen"
 category: running
 tags: travel
 imagePosition: center 60%
-location: "Stavanger, Rogaland, Norwegen"
+imageLocation: "Stavanger, Rogaland, Norwegen"
 shortkey: tiryk
 excerpt: "Mit dem World Run stand wieder einer der inspirierendsten Läufe an. In diesem Jahr ging es nach Norwegen ins schöne Stavanger, wo ich meine Leistung von letztem Jahr toppen wollte und wieder ein Land mehr abhaken konnte!"
 ---

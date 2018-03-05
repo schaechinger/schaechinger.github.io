@@ -8,8 +8,15 @@ imageBase: https://images.schaechinger.com
 
 plugins:
   - jekyll-feed
+  - jekyll-maps
   - jekyll-redirect-from
   - jekyll-sitemap
+
+maps:
+  google:
+    api_key: AIzaSyA5M0ChH7z265Ypy6LLg8NIloj2ZHiADms
+    marker_cluster:
+      enabled: false
 
 markdown: kramdown
 
