@@ -1,3 +1,27 @@
 .page.page-home {
-  @include outer-container;
+  > * {
+    @include outer-container;
+    padding-left: map-get($neat-grid, gutter);
+    padding-right: map-get($neat-grid, gutter);
+  }
+
+  .post-image {
+    margin: 0 0 2rem;
+    padding: 0;
+    max-width: 100%;
+
+    .image {
+      background-position: center 30%;
+      height: 30rem;
+      padding-top: 7.5rem;
+
+      h1,
+      h3 {
+        color: $gray-dark;
+        font-family: 'ClearSans', $font-stack-helvetica;
+        margin: 0;
+        text-align: center;
+      }
+    }
+  }
 }
