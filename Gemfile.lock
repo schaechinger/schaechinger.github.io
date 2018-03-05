@@ -253,6 +253,7 @@ DEPENDENCIES
   jekyll-coffeescript
   jekyll-feed
   jekyll-gist
+  jekyll-redirect-from
   jekyll-sitemap
 
 BUNDLED WITH
