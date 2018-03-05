@@ -8,7 +8,7 @@ imagePosition: center 30%
 imageLocation: "Tulum, QROO, Mexiko"
 shortkey: wizfd
 excerpt: "Backpacking kurz und gut wäre wohl der passende Titel bei O'Reilly. Am 27. Nov 2016 war es dann so weit: Endlich ging es für knapp zwei Wochen nach Mexiko in den Urlaub. Der war längst überfällig. Zum ersten Mal war ich allein unterwegs und wollte mit dem Rucksack die Halbinsel Yucatán erkunden. Ob es Nachteile hat, allein zu reisen? Man kann jeden Tag selbst entscheiden wo es hin gehen soll, ich kann es jedem nur empfehlen!"
-location:
+mapMarkers:
   - title: "Cancún"
     latitude: 21.168719
     longitude: -86.851029
@@ -31,10 +31,6 @@ location:
     latitude: 21.522012
     longitude: -87.379978
 ---
-<div class="content-map">
-  {% google_map width="100%" %}
-</div>
-
 ##  Backpacking für Anfänger
 
 Da ich das erste Mal backpacken wollte, musste ich mich zuerst informieren, was man braucht und was nicht. Und natürlich glaubt man keinem, dass ein kleinerer Rucksack und weniger Gepäck auch vollkommen ausreichend ist, immerhin wurde der Koffer früher im Hotelurlaub auch voll und jetzt macht man ja viele verschiedene Dinge. Quatsch! Ich habe brav für die 12 Tage Klamotten mitgenommen, dass es in Mexiko genau wie überall auf der Welt auch Wäschereien gibt konnte ja keiner ahnen.

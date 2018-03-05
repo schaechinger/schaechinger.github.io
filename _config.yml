@@ -1,6 +1,6 @@
 title: schaechinger.com
-url: http://gh.schaechinger.com
-description: "In meinem Blog dreht sich alles um Laufen, Reisen und Webentwicklung mit JavaScript und Node.js."
+url: http://github.schaechinger.com
+description: "Hi, ich bin Manuel. Ein leidenschaftlicher JavaScript Entwickler aus München. Hier findest du neben meinem bisherigen Werdegang auch Informationen zu meinen Projekten und Auszüge aus meinem Leben im Blog."
 author: Manuel Schächinger
 permalink: /blog/:year-:title
 
@@ -8,15 +8,8 @@ imageBase: https://images.schaechinger.com
 
 plugins:
   - jekyll-feed
-  - jekyll-maps
   - jekyll-redirect-from
   - jekyll-sitemap
-
-maps:
-  google:
-    api_key: AIzaSyA5M0ChH7z265Ypy6LLg8NIloj2ZHiADms
-    marker_cluster:
-      enabled: false
 
 markdown: kramdown
 
