@@ -1,0 +1,28 @@
+---
+layout: default
+title: Über mich
+class: about
+---
+{% assign age = 'now' | date: '%Y' | minus: 1991 %}
+{% assign month = 'now' | date: '%m' | minus: 0 %}
+{% assign day = 'now' | date: '%d' | minus: 0 %}
+{% if 2 > month or 2 == month and 14 > day %}
+  {% assign age = age | minus: 1 %}
+{% endif %}
+<h1>Hi, ich bin Manuel.</h1>
+
+<p>Ich bin {{ age }} Jahre alt und lebe in München. Seit dem Abschluss meines Informatik Studiums an der Hochschule für angewandte Wissenschaften München arbeite ich als Entwickler. Die letzten drei Jahre erweiterte ich mein Wissen im Webbereich – besonders
+JavaScript. Ich liebe es, Tools mit React und dem MEAN-Stack zu entwickeln, da er ein schlankes Design aufweist und die Stärken
+von JavaScript im Backend und Frontend aufweist.</p>
+
+<div class="highlight-block">
+  <p>Test</p>
+</div>
+
+<p>Neben dem Programmieren laufe ich so oft wie möglich und fahre mit dem Mountainbike, falls das mal nicht geht. Derzeit bereite
+ich mich auf die nächste Marathonsaison vor. Ich interessiere mich für Architektur und habe ein Faible für Clean Design und
+die damit verbundene Schönheit der Einfachheit moderner UI.</p>
+
+<p>Meine Leidenschaft ist das Reisen um die Welt, um verschiedene
+Länder und deren Kulturen kennen zu lernen. Der Blog auf dieser Website spiegelt diesen bunten Mix aus Reisen, Sportevents
+und Coding-Themen wider und gibt dir ein paar Einblicke in meine Welt!</p>
