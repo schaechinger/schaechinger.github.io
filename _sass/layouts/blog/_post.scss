@@ -58,7 +58,8 @@
       padding-right: map-get($neat-grid, gutter);
     }
 
-    .post-image {
+    .post-image,
+    .post-map {
       margin-bottom: 2rem;
       margin-top: 2rem;
     }
