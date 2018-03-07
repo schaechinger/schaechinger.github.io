@@ -1,0 +1,178 @@
+{
+  "travel": [
+    {
+      "lat": 48.137515,
+      "lng": 11.575823,
+      "title": "München, Deutschland",
+      "color": "red"
+    },
+    {
+      "lat": 20.97326,
+      "lng": -88.179195,
+      "title": "Yucatán, Méxiko",
+      "color": "green",
+      "link": "/blog/2016-yucatan-mexiko"
+    },
+    {
+      "lat": 58.970533,
+      "lng": 5.730976,
+      "title": "Stavanger, Norge",
+      "color": "green",
+      "link": "/blog/2017-worldrun-stavanger"
+    },
+    {
+      "lat": 41.862547,
+      "lng": -87.611313,
+      "title": "Chicago, IL, USA"
+    },
+    {
+      "lat": 42.20083,
+      "lng": -85.581754,
+      "title": "Portage, MI, USA"
+    },
+    {
+      "lat": 43.656835,
+      "lng": -79.378065,
+      "title": "Toronto, Canada"
+    },
+    {
+      "lat": 53.538296,
+      "lng": 9.993734,
+      "title": "Hamburg, Deutschland"
+    },
+    {
+      "lat": 51.507194,
+      "lng": -0.12907,
+      "title": "London, England"
+    },
+    {
+      "lat": 55.951812,
+      "lng": -3.187532,
+      "title": "Edinburgh, Scotland"
+    },
+    {
+      "lat": 39.613162,
+      "lng": 2.95694,
+      "title": "Mallorca, España"
+    },
+    {
+      "lat": 53.350478,
+      "lng": -6.262876,
+      "title": "Dublin, Ireland"
+    },
+    {
+      "lat": 52.370399,
+      "lng": 4.895866,
+      "title": "Amsterdam, Nederland"
+    },
+    {
+      "lat": 39.611584,
+      "lng": 19.84949,
+      "title": "Κέρκυρα, Ελλάδα"
+    },
+    {
+      "lat": 43.709494,
+      "lng": 7.262202,
+      "title": "Nice, France"
+    },
+    {
+      "lat": 48.207624,
+      "lng": 16.372505,
+      "title": "Wien, Österreich"
+    },
+    {
+      "lat": 43.769417,
+      "lng": 11.255044,
+      "title": "Firenze, Italia"
+    },
+    {
+      "lat": 45.438832,
+      "lng": 12.330238,
+      "title": "Venezia, Italia"
+    },
+    {
+      "lat": 44.128187,
+      "lng": 9.713299,
+      "title": "Cinque Terre, Italia"
+    },
+    {
+      "lat": 54.662597,
+      "lng": 11.357866,
+      "title": "Rødbyhavn, Danmark"
+    },
+    {
+      "lat": 48.156312,
+      "lng": 17.107671,
+      "title": "Bratislava, Slovenija"
+    },
+    {
+      "lat": 47.552566,
+      "lng": 19.05516,
+      "title": "Budapest, Magyarország"
+    },
+    {
+      "lat": -8.507401,
+      "lng": 115.262606,
+      "title": "Bali, Indonesia"
+    }
+  ],
+  "running": [
+    {
+      "lat": 48.076495,
+      "lng": 11.472034,
+      "title": "München, Deutschland",
+      "color": "green",
+      "link": "/blog/2017-forstenrieder-volkslauf"
+    },
+    {
+      "lat": 21.529133,
+      "lng": -87.373841,
+      "title": "Isla Holbox, Méxiko",
+      "color": "green",
+      "link": "/blog/2017-yucatan-mexiko"
+    },
+    {
+      "lat": 58.970533,
+      "lng": 5.730976,
+      "title": "Stavanger, Norge",
+      "color": "green",
+      "link": "/blog/2017-worldrun-stavanger"
+    },
+    {
+      "lat": 53.569879,
+      "lng": 9.951251,
+      "title": "Hamburg, Deutschland"
+    },
+    {
+      "lat": 53.287982,
+      "lng": -6.122732,
+      "title": "Dublin, Ireland"
+    },
+    {
+      "lat": 42.201021,
+      "lng": -85.582955,
+      "title": "Portage, MI, USA"
+    },
+    {
+      "lat": 49.019168,
+      "lng": 12.098173,
+      "title": "Regensburg, Deutschland"
+    },
+    {
+      "lat": 47.075353,
+      "lng": 12.751196,
+      "title": "Großglockner, Österreich"
+    },
+    {
+      "lat": 52.516245,
+      "lng": 13.377738,
+      "title": "Berlin, Deutschland",
+      "color": "red"
+    },
+    {
+      "lat": -8.674901,
+      "lng": 115.146471,
+      "title": "Bali, Indonesia"
+    }
+  ]
+}
