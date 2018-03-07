@@ -2,7 +2,7 @@
   @include clearfix;
 
   background-color: $white;
-  border-bottom: 1px solid $gray;
+  border-bottom: 1px solid $gray-middle;
   color: $white;
   font-family: 'ClearSans', 'ClearSans-Bk', $font-stack-helvetica;
   width: 100%;
@@ -25,7 +25,7 @@
 
         a {
           border-bottom: none;
-          color: $gray;
+          color: $gray-nav;
           font-size: 0.875rem;
 
           &:hover {
