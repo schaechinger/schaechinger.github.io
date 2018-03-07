@@ -3,7 +3,9 @@ function initMaps() {
   var drawLine = false;
 
   window.maps.forEach(function(locations, id) {
-    var map = new google.maps.Map(document.getElementById('post-map-' + id));
+    var map = new google.maps.Map(document.getElementById('post-map-' + id), {
+      mapTypeId: 'terrain'
+    });
     var bounds = new google.maps.LatLngBounds();
     var path = [];
 
