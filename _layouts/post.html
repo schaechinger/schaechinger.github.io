@@ -40,3 +40,7 @@ layout: default
     </p>
   </div>
 </div>
+<script>
+  function enableMaps(){if(window.initMaps){initMaps();}}
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?libraries=geometry&key={{ site.maps.google.key }}&callback=enableMaps"></script>

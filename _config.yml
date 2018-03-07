@@ -13,5 +13,9 @@ plugins:
 
 markdown: kramdown
 
+maps:
+  google:
+    key: "AIzaSyA5M0ChH7z265Ypy6LLg8NIloj2ZHiADms"
+
 sass:
   style: compressed
