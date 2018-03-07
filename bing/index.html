@@ -1,0 +1,17 @@
+---
+layout: default
+title: Bing
+class: Bing
+---
+<h1>Bing Image Archive</h1>
+
+<p>Die Bing Galerie steht bald wieder zur Verfügung.</p>
+
+<div class="images">
+  {% assign day = 'now' | date: '%d' | minus: 0 %}
+  {% for i in (1..day) reversed %}
+    <div class="bing-image">
+      
+    </div>
+  {% endfor %}
+</div>
