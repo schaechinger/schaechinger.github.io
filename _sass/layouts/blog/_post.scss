@@ -27,20 +27,19 @@
   }
 
   .post-info {
-    .meta.meta-tags {
-      @include column-margin;
-    }
-  }
+    .meta {
+      font-size: 0.875rem;
 
-  .content-map {
-    @include outer-container;
+      &.meta-tags {
+        @include column-margin;
 
-    > div {
-      height: 20rem !important;
-      margin: 1.25rem 0;
+        ul {
+          margin-bottom: 1rem;
+        }
+      }
 
-      @include grid-media($mobile-only) {
-        height: 10rem !important;
+      &.meta-date {
+        color: $gray;
       }
     }
   }
@@ -60,8 +59,13 @@
 
     .post-image,
     .post-map {
+      margin-bottom: 3.5rem;
+      margin-top: 3.5rem;
+
+      @include grid-media($mobile-only) {
       margin-bottom: 2rem;
       margin-top: 2rem;
+      }
     }
   }
 

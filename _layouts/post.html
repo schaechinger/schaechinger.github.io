@@ -10,23 +10,25 @@ layout: default
     </div>
   </div>
   <img src="{{ site.imageBase | append: page.url }}/header-thumb.jpg" style="display:none"/>
+  {% assign day = page.date | date: '%d' %}
+  {% assign month = page.date | date: '%m' | minus: 0 %}
+  {% assign month = site.data.date.months[month] | upcase %}
+  {% assign year = page.date | date: '%Y' %}
+  {% assign postDate = day | append: '. ' | append: month | append: ' ' | append: year %}
 
   <div class="post-info">
     <h1>{{ page.title }}</h1>
-    <p class="meta meta-date">Datum: {{ page.date | date_to_string }}</p>
+    <p class="meta meta-date">{{ postDate }}</p>
     <dvi class="meta meta-tags">
-      <p>Tags:</p>
-        <ul>
-          <li>{{ site.data.categories[page.category] }}</li>
-          {% for tag in page.tags %}
-            <li>{{ site.data.categories[tag] | default: tag }}</li>
-          {% endfor %}
-        </ul>
+      <ul>
+        <li>{{ site.data.categories[page.category] }}</li>
+        {% for tag in page.tags %}
+          <li>{{ site.data.categories[tag] | default: tag }}</li>
+        {% endfor %}
+      </ul>
     </dvi>
     
-    <p class="excerpt">
-      <span class="category">{{ page.category | capitalize }}</span> {{ page.excerpt }}
-    </p>
+    <p class="excerpt">{{ page.excerpt }}</p>
   </div>
 
   <div class="post-content">
