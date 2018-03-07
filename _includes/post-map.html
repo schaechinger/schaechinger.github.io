@@ -1,0 +1,12 @@
+{% assign mapId = include.id | default: 0 %}
+<div class="post-map{% if 1 == include.fullsize %} post-map--fullsize{% endif %}">
+  <div id="post-map-{{ mapId }}" class="map"></div>
+  <script>
+    window.maps = window.maps || [];
+    window.maps[{{ mapId }}] = [
+    {% for loc in include.locations %}
+      {lat:{{ loc.lat }},lng:{{ loc.lng }},color:"{{ loc.color }}",link:"{{ loc.link }}",title:"{{ loc.title }}"}{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+    ];
+  </script>
+</div>
