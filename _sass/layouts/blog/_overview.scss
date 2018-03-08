@@ -11,6 +11,11 @@
     }
   }
 
+  .blog-content {
+    margin-bottom: 1.25rem;
+    margin-top: 1.25rem;
+  }
+
   .posts {
     ul {
       @include clearfix;
