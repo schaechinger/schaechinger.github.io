@@ -37,9 +37,44 @@ layout: default
 
   <div class="post-share">
     <h2>Post teilen</h2>
-    <p>
-      <a href="{{ page.id }}">ID: {{ page.shortkey }}</a>
-    </p>
+    <ul>
+      <li class="twitter">
+        <i class="social social-twitter"></i>
+        <a href="https://twitter.com/intent/tweet?text=Hier%20ein%20interessanter%20Post%3A&url=https%3A%2F%2Fschchn.gr%2F{{ page.shortkey }}t&via=theschaechinger" target="_blank">
+          Twitter
+        </a>
+      </li>
+      <li class="facebook">
+        <i class="social social-facebook"></i>
+        <a href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fschchn.gr%2F{{ page.shortkey }}f&t=hat%20gerade%20einen%20interessanten%20Post%20gelesen" target="_blank">
+          Facebook
+        </a>
+      </li>
+      <li class="google-plus">
+        <i class="social social-google-plus"></i>
+        <a href="https://plus.google.com/share?url=https%3A%2F%2Fschchn.gr%2F{{ page.shortkey }}g" target="_blank">
+          Google+
+        </a>
+      </li>
+      <li class="xing">
+        <i class="social social-xing"></i>
+        <a href="https://www.xing-share.com/app/user?op=share&sc_p=xing-share&url=https%3A%2F%2Fschchn.gr%2F{{ page.shortkey }}x&lang={{ page.lang | default: de }}" target="_blank">
+          Xing
+        </a>
+      </li>
+      <li class="linked-in">
+        <i class="social social-linked-in"></i>
+        <a href="https://linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fschchn.gr%2F{{ page.shortkey }}l&title={{ page.title }}&summary=Ich%20kann%20diesen%20Post%20empfehlen&source=https://schaechinger.com" target="_blank">
+          LinkedIn
+        </a>
+      </li>
+      <li class="mail">
+        <i class="social social-e-mail"></i>
+          <a href="mailto:?subject={{ page.title }}&body=Hi%2C%0Adiesen%20Post%20kann%20ich%20nur%20empfehlen%3A%20https%3A%2F%2Fschchn.gr%2F{{ page.shortkey }}m">
+          E-Mail
+        </a>
+      </li>
+    </ul>
   </div>
 </div>
 <script>
