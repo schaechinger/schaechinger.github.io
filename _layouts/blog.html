@@ -15,8 +15,10 @@ layout: default
   <ul>
     {% assign posts = site.posts | where_exp: "post", "post.draft != true" %}
     {% for post in posts %}
-      {% if page.category and page.category != post.category %}
-        {% continue %}
+      {% if page.category %}
+        {% unless page.category == post.category or post.tags contains page.category %}
+          {% continue %}
+        {% endunless %}
       {% endif %}
       {% assign day = post.date | date: '%d' %}
       {% assign month = post.date | date: '%m' | minus: 0 %}
