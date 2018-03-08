@@ -19,14 +19,14 @@ layout: default
   <div class="post-info">
     <h1>{{ page.title }}</h1>
     <p class="meta meta-date">{{ postDate }}</p>
-    <dvi class="meta meta-tags">
+    <div class="meta meta-tags">
       <ul>
-        <li>{{ site.data.categories[page.category] }}</li>
+        <li>{% include post-category.html category=page.category %}</li>
         {% for tag in page.tags %}
-          <li>{{ site.data.categories[tag] | default: tag }}</li>
+          <li>{% include post-category.html category=tag %}</li>
         {% endfor %}
       </ul>
-    </dvi>
+    </div>
     
     <p class="excerpt">{{ page.excerpt }}</p>
   </div>

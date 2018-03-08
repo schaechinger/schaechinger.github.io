@@ -1,16 +1,21 @@
 .meta.meta-tags {
-  p,
   ul {
     display: inline-block;
-  }
-
-  ul {
+    
     li {
       border: 1px solid $blue;
       border-radius: 0.125rem;
       display: inline-block;
       margin: 0.125rem 0.5rem 0.125rem 0;
       padding: 0.125rem 0.25rem;
+
+      &:hover {
+        background-color: $blue;
+
+        a {
+          color: $white;
+        }
+      }
     }
   }
 }

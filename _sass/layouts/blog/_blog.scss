@@ -1,2 +1,13 @@
 @import 'overview';
 @import 'post';
+
+.page {
+  &.page-blog,
+  &.page-post {
+    .post-category {
+      color: $green;
+      font-size: 0.875rem;
+      text-transform: uppercase;
+    }
+  }
+}
