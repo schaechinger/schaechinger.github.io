@@ -10,7 +10,6 @@ layout: default
       </div>
     </div>
   </div>
-  <img src="{{ site.imageBase | append: page.url }}/header-thumb.jpg" style="display:none"/>
   {% assign day = page.date | date: '%d' %}
   {% assign month = page.date | date: '%m' | minus: 0 %}
   {% assign month = site.data.date.months[month] | upcase %}
