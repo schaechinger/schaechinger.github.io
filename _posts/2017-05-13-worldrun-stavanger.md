@@ -4,6 +4,7 @@ lang: de
 title: "Wings for Life World Run in Norwegen"
 category: running
 tags: travel
+image: https://images.schaechinger.com/blog/2017-worldrun-stavanger/header-thumb.jpg
 imagePosition: center 60%
 imageLocation: "Stavanger, Rogaland, Norwegen"
 shortkey: tiryk

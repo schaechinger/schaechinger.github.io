@@ -1,6 +1,7 @@
 title: schaechinger.com
-url: http://github.schaechinger.com
+url: https://github.schaechinger.com
 description: "Hi, ich bin Manuel. Ein leidenschaftlicher JavaScript Entwickler aus München. Hier findest du neben meinem bisherigen Werdegang auch Informationen zu meinen Projekten und Auszüge aus meinem Leben im Blog."
+lang: de_DE
 author: Manuel Schächinger
 permalink: /blog/:year-:title
 
@@ -9,6 +10,7 @@ imageBase: https://images.schaechinger.com
 plugins:
   - jekyll-feed
   - jekyll-redirect-from
+  - jekyll-seo-tag
   - jekyll-sitemap
 
 markdown: kramdown
@@ -16,6 +18,17 @@ markdown: kramdown
 maps:
   google:
     key: "AIzaSyA5M0ChH7z265Ypy6LLg8NIloj2ZHiADms"
+
+twitter:
+  username: theschaechinger
+
+social:
+  links:
+    - https://twitter.com/theschaechinger
+    - https://www.facebook.com/schaechinger
+    - https://www.linkedin.com/in/schaechinger
+    - https://github.com/schaechinger
+    - https://keybase.io/schaechinger
 
 sass:
   style: compressed

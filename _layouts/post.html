@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+{% assign page.image = site.imageBase | append: page.url | append: '/header.jpg' %}
 <div class="post">
   <div class="post-header post-image post-image--fullsize" style="background-image:url({{ site.imageBase | append: page.url }}/header.jpg);background-position:{{ page.imagePosition | default: 'center' }}">
     <div class="post-header-bg">

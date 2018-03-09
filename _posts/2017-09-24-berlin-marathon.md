@@ -4,6 +4,7 @@ lang: de
 title: "BMW Berlin Marathon 2017"
 category: running
 tags: travel
+image: https://images.schaechinger.com/blog/2017-berlin-marathon/header-thumb.jpg
 imagePosition: center 27.5%
 imageLocation: "Berlin, Deutschland"
 shortkey: jrlkx

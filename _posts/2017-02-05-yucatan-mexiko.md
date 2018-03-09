@@ -4,6 +4,7 @@ lang: de
 title: "Backpacking in Yucatán, Mexico"
 category: travel
 tags: backpacking
+image: https://images.schaechinger.com/blog/2017-yucatan-mexiko/header-thumb.jpg
 imagePosition: center 30%
 imageLocation: "Tulum, QROO, Mexiko"
 shortkey: wizfd
