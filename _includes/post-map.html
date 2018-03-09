@@ -3,6 +3,8 @@
   <div id="post-map-{{ mapId }}" class="map"></div>
   <script>
     window.maps = window.maps || [];
+    window.mapTypes = window.mapTypes || [];
     window.maps[{{ mapId }}] = {{ include.locations | jsonify }};
+    window.mapTypes[{{ mapId }}] = {% if 1 == include.track %}'track'{% else %}'markers'{% endif %};
   </script>
 </div>

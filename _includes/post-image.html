@@ -1,4 +1,9 @@
+{% capture src %}{{ site.imageBase | append: page.url }}/{{ include.image }}{% endcapture %}
 <div class="post-image{% if 1 == include.fullsize %} post-image--fullsize{% endif %}">
-  <div class="image" style="background-image:url({{ site.imageBase | append: page.url }}/{{ include.image }})"></div>
+    {% if 'img' == include.render %}
+      <img src="{{ src }}" alt="{{ include.title }}">
+    {% else %}
+      <div class="image" style="background-image:url({{ src }})"></div>
+    {% endif %}
   <p>{{ include.title }}</p>
 </div>
