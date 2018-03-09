@@ -5,7 +5,7 @@ title: "B2RUN München"
 category: running
 tags: 
 imagePosition: center 60%
-location: "Olympiapark, München"
+imageLocation: "Olympiapark, München"
 shortkey: ka2i4
 excerpt: "Der B2RUN war für mich dieses Jahr etwas Besonderes: Ich war der Laufbeauftragte der Firma und somit für die Organisation des Events für uns zuständig."
 ---

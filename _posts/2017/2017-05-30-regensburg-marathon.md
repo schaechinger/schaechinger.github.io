@@ -4,7 +4,7 @@ lang: de
 title: "Halbmarathon in Regensburg"
 category: running
 imagePosition: center
-location: "Westbad, Regensburg"
+imageLocation: "Westbad, Regensburg"
 shortkey: bv0b1
 excerpt: "Endlich ging es wieder in meine Heimatstadt Regensbug und ich konnte beim Halbmarathon mitlaufen. Bei warmen Temparatoren ging es einmal komplett durch die schöne Altstadt von West nach Ost und zurück zum Westbad."
 ---

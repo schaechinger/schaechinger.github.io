@@ -3,9 +3,8 @@ layout: post
 lang: de
 title: "SportScheck Stadtlauf München"
 category: running
-tags: 
 imagePosition: center
-location: "Odeonsplatz, München"
+imageLocation: "Odeonsplatz, München"
 shortkey: flogw
 excerpt: "Zurück in München wartete der Stadtlauf auf mich. Gemeinsam mit meinen Geschwistern ging es am 25. Juni an den Start über 10km bzw. den Halbmarathon. Das Wetter war uns gut gesinnt und die neue Zielgerade lud zu einem neuen Rekord auf der Leopoldstraße ein."
 ---
