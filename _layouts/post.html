@@ -3,14 +3,16 @@ layout: default
 ---
 {% assign page.image = site.imageBase | append: page.url | append: '/header.jpg' %}
 <div class="post">
-  <div class="post-header post-image post-image--fullsize" style="background-image:url({{ site.imageBase | append: page.url }}/header.jpg);background-position:{{ page.imagePosition | default: 'center' }}">
-    <div class="post-header-bg">
-      <div class="post-location">
-        <p>{{ page.imageLocation }}</p>
+  {%if page.imagePosition %}
+    <div class="post-header post-image post-image--fullsize" style="background-image:url({{ site.imageBase | append: page.url }}/header.jpg);background-position:{{ page.imagePosition | default: 'center' }}">
+      <div class="post-header-bg">
+        <div class="post-location">
+          <p>{{ page.imageLocation }}</p>
+        </div>
       </div>
     </div>
-  </div>
-  <img src="{{ site.imageBase | append: page.url }}/header-thumb.jpg" style="display:none"/>
+    <img src="{{ site.imageBase | append: page.url }}/header-thumb.jpg" style="display:none"/>
+  {% endif %}
   {% assign day = page.date | date: '%d' %}
   {% assign month = page.date | date: '%m' | minus: 0 %}
   {% assign month = site.data.date.months[month] | upcase %}

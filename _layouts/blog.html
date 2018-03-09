@@ -27,7 +27,11 @@ layout: default
       {% assign postDate = day | append: '. ' | append: month | append: ' ' | append: year %}
     <li>
       <a href="{{ post.url }}">
-        <span class="header-image" style="background-image:url({{ site.imageBase }}{{ post.url }}/header-thumb.jpg)">
+        {% if post.imagePosition %}
+          <span class="header header-image" style="background-image:url({{ site.imageBase }}{{ post.url }}/header-thumb.jpg)">
+        {% else %}
+          <span class="header">
+        {% endif %}
           <span>{{ post.date | date: '%d. %b %Y' }}</span>
         </span>
       </a>
