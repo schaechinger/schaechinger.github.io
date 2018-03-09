@@ -13,15 +13,9 @@ layout: default
     </div>
     <img src="{{ site.imageBase | append: page.url }}/header-thumb.jpg" style="display:none"/>
   {% endif %}
-  {% assign day = page.date | date: '%d' %}
-  {% assign month = page.date | date: '%m' | minus: 0 %}
-  {% assign month = site.data.date.months[month] | upcase %}
-  {% assign year = page.date | date: '%Y' %}
-  {% assign postDate = day | append: '. ' | append: month | append: ' ' | append: year %}
-
   <div class="post-info">
     <h1>{{ page.title }}</h1>
-    <p class="meta meta-date">{{ postDate }}</p>
+    <p class="meta meta-date">{% include date.html date=page.date %}</p>
     <div class="meta meta-tags">
       <ul>
         <li>{% include post-category.html category=page.category %}</li>
