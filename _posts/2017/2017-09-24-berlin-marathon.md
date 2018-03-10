@@ -11,7 +11,7 @@ shortkey: jrlkx
 excerpt: "Der Tag war gekommen. Nach monatelanger Vorbereitung ging es endlich nach Berlin, um meinen ersten Marathon zu bestreiten."
 draft: true
 ---
-{% include post-map.html locations=site.data.posts.berlinMarathon2017.track track=1 %}
+{% include post-map.html locations=site.data.posts.2017.berlinMarathon.track track=1 %}
 
 Bereits am Donnerstag ging es los. Natürlich mit Air Berlin. Die Marathon-Woche war gekommen. Nach den diversen Urlauben in den letzten sechs Wochen war ich zwar nicht optimal in Form, die vergangenen Monate Training hatten sich aber ausgezahlt und ich war ausreichend vorbereitet. Sofern man das vor dem ersten Marathon wissen kann. Ich fühlte mich gut, erholt und hatte eine riesige Vorfreude auf Sonntag, den Tag der Wahrheit.
 

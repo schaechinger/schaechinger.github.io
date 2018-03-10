@@ -1,6 +1,19 @@
 .page.page-projects {
   @include outer-container;
 
+  h3 {
+    a {
+      border-bottom-width: 0;
+      color: $gray;
+      font-size: 0.75em;
+      margin-left: 0.5rem;
+
+      &:hover {
+        color: $github;
+      }
+    }
+  }
+
   ul {
     @include clearfix;
 

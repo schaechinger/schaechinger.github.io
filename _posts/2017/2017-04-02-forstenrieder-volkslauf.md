@@ -3,7 +3,7 @@ layout: post
 lang: de
 title: "Forstenrieder Volkslauf 2017"
 category: running
-tags: sport
+tags: race
 image: https://images.schaechinger.com/blog/2017-forstenrieder-volkslauf/header-thumb.jpg
 imagePosition: "center 80%"
 imageLocation: "Forstenried, München"

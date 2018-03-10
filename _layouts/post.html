@@ -13,6 +13,11 @@ layout: default
     </div>
     <img src="{{ site.imageBase | append: page.url }}/header-thumb.jpg" style="display:none"/>
   {% endif %}
+  {% if page.draft %}
+  <div class="highlight-block">
+    <h1 style="text-align:center;font-style:italic;color:#fff">D R A F T</h1>
+  </div>
+  {% endif %}
   <div class="post-info">
     <h1>{{ page.title }}</h1>
     <p class="meta meta-date">{% include date.html date=page.date %}</p>
