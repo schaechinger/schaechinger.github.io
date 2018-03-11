@@ -20,7 +20,6 @@ layout: default
   {% endif %}
   <div class="post-info">
     <h1>{{ page.title }}</h1>
-    <p class="meta meta-date">{% include date.html date=page.date %}</p>
     <div class="meta meta-tags">
       <ul>
         <li>{% include post-category.html category=page.category %}</li>
@@ -30,7 +29,17 @@ layout: default
       </ul>
     </div>
     
-    <p class="excerpt">{{ page.excerpt }}</p>
+    <div class="post-excerpt">
+      <div class="post-excerpt__date--desktop">
+        {% include post-date.html date=page.date short=1 %}
+      </div>
+      <div class="post-excerpt__date--mobile">
+        {% include post-date.html date=page.date simple=1 %}
+      </div>
+      <div class="post-excerpt__text">
+        <p>{{ page.excerpt }}</p>
+      </div>
+    </div>
   </div>
 
   <div class="post-content">
