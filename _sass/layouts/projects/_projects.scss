@@ -14,12 +14,17 @@
     }
   }
 
-  ul {
+  ul.overview {
     @include clearfix;
 
     li {
       @include media-columns(12, 6);
       margin-bottom: map-get($neat-grid, gutter);
     }
+  }
+
+  ul:not(.overview) {
+    list-style-type: disc;
+    margin-left: 2.5rem;
   }
 }
