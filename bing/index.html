@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Bing
-class: Bing
+class: bing
 ---
 <h1>Bing Image Archive</h1>
 
@@ -9,9 +9,21 @@ class: Bing
 
 <div class="images">
   {% assign day = 'now' | date: '%d' | minus: 0 %}
+  {% assign prefix = 'now' | date: '%Y-%m-' %}
   {% for i in (1..day) reversed %}
+    {% assign date = prefix | append: i | date: '%Y-%m-%d' %}
+    {% assign baseUrl = 'https://bing.schaechinger.com/images/' %}
+    {% assign thumbUrl = baseUrl %}
+    {% unless forloop.first %}
+      {% assign thumbUrl = thumbUrl | append: 'thumb/' %}
+    {% endunless %}
     <div class="bing-image">
-      
+      <a href="{{ baseUrl }}{{ date | date: '%Y-%m-%d' }}.jpg" target="_blank">
+        <div class="thumb"
+          style="background-image:url({{ thumbUrl }}{{ date | date: '%Y-%m-%d' }}.jpg)">
+          <span class="bing-image__day">{{ i }}</span>
+        </div>
+      </a>
     </div>
   {% endfor %}
 </div>
