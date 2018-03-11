@@ -13,6 +13,7 @@
     .image {
       background-position: center 30%;
       height: 30rem;
+      overflow-y: hidden;
       padding-top: 7.5rem;
 
       h1,
@@ -21,6 +22,33 @@
         font-family: 'ClearSans', $font-stack-helvetica;
         margin: 0;
         text-align: center;
+      }
+
+      @for $i from 1 through 100 {
+        div:nth-child(#{$i}) {
+          background-color: rgba(0, 0, 0, random(100) * 0.002)
+        }
+      }
+
+      > div {
+        display: none;
+        @include grid-media($mobile-only) {
+          @include grid-column(1, ( columns: 6, gutter: 0 ));
+        }
+        @include grid-media($tablet) {
+          @include grid-column(1, ( columns: 12, gutter: 0 ));
+        }
+        @include grid-media($desktop) {
+          @include grid-column(1, ( columns: 24, gutter: 0 ));
+        }
+        border-bottom: 1px solid $gray-dark;
+        border-right: 1px solid $gray-dark;
+
+        &::after {
+          content: '';
+          display: block;
+          padding-bottom: 100%;
+        }
       }
     }
   }
