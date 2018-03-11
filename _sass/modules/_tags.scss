@@ -3,17 +3,30 @@
     display: inline-block;
     
     li {
-      border: 1px solid $blue;
-      border-radius: 0.125rem;
       display: inline-block;
-      margin: 0.125rem 0.5rem 0.125rem 0;
-      padding: 0.125rem 0.25rem;
+      
+      .post-category {
+        border: 1px solid $blue;
+        border-radius: 0.125rem;
+        margin: 0.125rem 0.5rem 0.125rem 0;
+        padding: 0.125rem 0.25rem;
 
-      &:hover {
-        background-color: $blue;
+        &:hover {
+          background-color: $blue;
 
-        a {
-          color: $white;
+          a {
+            color: $white;
+          }
+        }
+      }
+
+      .post-tag {
+        color: $green;
+
+        &::before {
+          color: $gray;
+          content: '#';
+          padding-right: 0.0625rem;
         }
       }
     }

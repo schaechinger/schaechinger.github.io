@@ -1,8 +1,8 @@
 {% assign category = site.data.categories[include.category] %}
+{% if category %}
 <span class="post-category">
-  {% if category %}
     <a href="/blog/category/{{ include.category }}">{{ category }}</a>
-  {% else %}
-    {{ include.category | capitalize }}
-  {% endif %}
 </span>
+{% else %}
+<span class="post-tag">{{ include.category | capitalize }}</span>
+{% endif %}
