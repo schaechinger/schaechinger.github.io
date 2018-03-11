@@ -23,7 +23,7 @@ Der B2RUN hatte seine Route ein wenig verändert. Sie verlief nun nicht mehr dur
 
 Mit etwas Verzögerung war unser Block dann endlich an der Reihe und wir durften in den Startbereich und versuchten, uns einen möglichst guten Platz für den Start zu ergattern. Da unser Block auch gleichzeitig die Nordic Walker beherbergte, die nicht unbedingt ganz hinten bleiben wollten, war Vorsicht geboten. Überall sahen wir Stöcke um uns herum, die uns aber auch ein Stück weit motivierten. Den Letzten fressen die Hunde oder in diesem Fall die Nordic-Walking-Stöcke. Das war vor allem im engen Start- und Zielbereich gar nicht mal so ungefährlich.
 
-{% include post-image.html title="Gleicher Ort, gleiche Zeit: Kurz vor dem Start auf der Brücke" image="startaufstellung" fullsize=0 render="img" %}
+{% include post-image.html title="Gleicher Ort, gleiche Zeit: Kurz vor dem Start auf der Brücke" image="startaufstellung.jpg" fullsize=0 render="img" %}
 
 Der Startschuss fiel endlich. Das Wetter war angenehm warm, vor uns zwar ein paar mehr Läufer als gehofft aber wir machten das Beste draus. Sobald wir die Startlinie überschritten hatten ging es mit großen Schritten durch die Masse, einmal links, einmal rechts, einmal untendurch. Der erste Kilometer war wie immer mehr Tanz als Lauf. Überall Menschen, überall vergeudete Zeit.
 
@@ -31,7 +31,7 @@ Zusammen mit Maik und Sascha ging es durch die Masse immer der unverbrauchten Lu
 
 Es ging entlang dem Olympiasee, an der Straße Richtung Gern entlang und schon war die Abbiegung bei Kilometer 5 erreicht, die langsam den Weg ins Stadion eröffnete. Nun gab ich noch einmal Gas und quetschte mich durch die Läufer durch. Die Straße wurde den letzten halben Kilometer wieder etwas enger und endlich war das Olympiastadion erreicht. Es ging noch auf die andere Seite zum Marathontor. Eine meiner Lieblingsstellen der letzten Jahr. Auch wenn ich es beim B2RUN nicht genießen konnte, so war es doch ein tolles Gefühl, wie die Olympioniken früher durch das Tor zu laufen. Die letzen Meter und da war auch schon die Zielgerade! Das Tempo war nun noch einmal höher als vorher und ich sprintete dem Ziel entgegen. Mir war klar, dass ich mein Ziel von unter 26 Minuten nicht erreicht hatte, war jedoch auch mit 26:29 Minuten zufrieden. Bestzeit!
 
-{% include post-image.html title="Die Mannschaft nach einem Bier glücklich im Ziel" image="gruppenfoto-2jpg" fullsize=0 render="img" %}
+{% include post-image.html title="Die Mannschaft nach einem Bier glücklich im Ziel" image="gruppenfoto-2.jpg" fullsize=0 render="img" %}
 
 Kurz vor mir sah ich dann auch wieder Maik und Sascha, die beiden hatten es knapp unter 26 Minuten geschafft! Wir gingen zufrieden und zielstrebig zum Bierstand, sahnten unterwegs noch bei den Mädels die Medaillen ab, die in diesem Jahr hässlicher kaum hätten sein können. Aber was solls, dann verschwindet sie eben hinter anderen ihrer Art.
 
