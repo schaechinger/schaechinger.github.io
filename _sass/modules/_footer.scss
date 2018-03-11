@@ -1,0 +1,48 @@
+footer {
+  margin-top: 2rem;
+  padding: 2rem 0;
+  position: relative;
+
+  &::before {
+    border-top: 1px dashed $gray;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .footer {
+    @include outer-container;
+    font-size: 0.875rem;
+    position: relative;
+  
+    > i.glyphicons {
+      color: $gray-dark;
+      font-size: 1.25rem;
+      left: 1rem;
+      position: absolute;
+      top: -3rem;
+    }
+
+    .footer__links {
+      @include media-columns(12, 4);
+
+      ul {
+        text-align: right;
+      }
+    }
+
+    .footer__text {
+      @include media-columns(12, 5);
+
+      i.glyphicons {
+        color: #fb3958;
+
+        &::before {
+          padding-top: 0;
+        }
+      }
+    }
+  }
+}

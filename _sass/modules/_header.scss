@@ -9,19 +9,45 @@
 
   nav {
     @include outer-container;
+
+    height: 2.25rem;
     overflow: hidden;
+    position: relative;
 
-    ul {
-      padding: 0 0.625rem;
-
+    ul.main {
       @include grid-media($mobile-only) {
         overflow-x: scroll;
         white-space: nowrap;
       }
 
+      padding: 0 0.625rem;
+
       li {
         display: inline-block;
-        padding: 0.5rem 0.625rem;
+        padding: 0.375rem 0.625rem;
+
+        &.logo {
+          padding-bottom: 0.3125rem;
+          padding-top: 0.3125rem;
+
+          a {
+            color: $black;
+            font-family: 'ClearSans-Bk', $font-stack-helvetica;
+            font-size: 1.125rem;
+
+            .m {
+              color: $blue;
+            }
+
+            &:hover {
+              color: $green;
+
+              .m {
+                color: $black;
+              }
+            }
+          }
+        }
 
         a {
           border-bottom: none;
@@ -38,6 +64,28 @@
             color: $black;
             font-family: 'ClearSans-Bk', $font-stack-helvetica;
           }
+        }
+      }
+    }
+
+    ul.socials {
+      color: $gray;
+      display: none;
+      float: right;
+      position: absolute;
+      right: 1.25rem;
+      text-align: right;
+      top: 0;
+
+      @include grid-media($desktop) {
+        display: inline-block;
+      }
+
+      li {
+        display: inline-block;
+
+        a {
+          
         }
       }
     }
