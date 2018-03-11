@@ -1,8 +1,0 @@
-{% assign day = include.date | date: '%-d' %}
-{% assign month = include.date | date: '%m' | minus: 0 %}
-{% assign month = site.data.date.months[month] | upcase %}
-{% if include.short %}
-  {% assign month = month | truncate: 3, '' %}
-{% endif %}
-{% assign year = include.date | date: '%Y' %}
-{{ day | append: '. ' | append: month | append: ' ' | append: year }}

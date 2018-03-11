@@ -1,0 +1,16 @@
+<span class="post-date">
+{% assign day = include.date | date: '%-d' %}
+{% assign month = include.date | date: '%m' | minus: 0 %}
+{% assign month = site.data.date.months[month] %}
+{% if include.short %}
+  {% assign month = month | truncate: 3, '' %}
+{% endif %}
+{% assign year = include.date | date: '%Y' %}
+{% if include.simple %}
+  {{ day | append: '. ' | append: month | append: ' ' | append: year }}
+{% else %}
+  <span class="post-date__month">{{ month }}</span>
+  <span class="post-date__day">{{ day }}</span>
+  <span class="post-date__year">{{ year }}</span>
+{% endif %}
+</span>

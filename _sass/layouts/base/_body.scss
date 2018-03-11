@@ -9,6 +9,10 @@ body {
   padding: 0;
 }
 
+.app {
+  @include clearfix;
+}
+
 .page {
   @include clearfix;
 
