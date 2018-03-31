@@ -3,14 +3,16 @@ layout: default
 title: Bing
 class: bing
 ---
-<h1>Bing Image Archive</h1>
-
-<p>Die Bing Galerie steht bald wieder zur Verfügung.</p>
+{% assign currentDay = site.time | date: '%d' | minus: 0 %}
+{% assign prefix = site.time | date: '%Y-%m-' %}
+{% assign monthDate = prefix | append: '01' %}
+<h1>
+  Bing Image Archive
+  {% include post-date.html date=monthDate short=1 simple=1 noday=1 %}
+</h1>
 
 <div class="images">
-  {% assign day = 'now' | date: '%d' | minus: 0 %}
-  {% assign prefix = 'now' | date: '%Y-%m-' %}
-  {% for i in (1..day) reversed %}
+  {% for i in (1..currentDay) reversed %}
     {% assign date = prefix | append: i | date: '%Y-%m-%d' %}
     {% assign baseUrl = 'https://bing.schaechinger.com/images/' %}
     {% assign thumbUrl = baseUrl %}

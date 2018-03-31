@@ -3,9 +3,9 @@ layout: default
 title: Über mich
 class: about
 ---
-{% assign age = 'now' | date: '%Y' | minus: 1991 %}
-{% assign month = 'now' | date: '%m' | minus: 0 %}
-{% assign day = 'now' | date: '%d' | minus: 0 %}
+{% assign age = site.time | date: '%Y' | minus: 1991 %}
+{% assign month = site.time | date: '%m' | minus: 0 %}
+{% assign day = site.time | date: '%d' | minus: 0 %}
 {% if 2 > month or 2 == month and 14 > day %}
   {% assign age = age | minus: 1 %}
 {% endif %}

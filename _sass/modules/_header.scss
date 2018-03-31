@@ -37,6 +37,9 @@
 
             .m {
               color: $blue;
+              font-family: 'ClearSans', 'ClearSans-Bk', $font-stack-helvetica;
+              letter-spacing: -2px;
+              padding: 0 0.25rem 0 0.125rem;
             }
 
             &:hover {

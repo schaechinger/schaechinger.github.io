@@ -1,0 +1,16 @@
+<div class="resume-job-header">
+  <h3>{{ include.data.job }}</h3>
+
+  <p>
+    <a href="{{ include.data.company.link }}">
+      {{ include.data.company.title }}
+    </a>
+    {% if include.data.company.location %} in {{ include.data.company.location }} {% endif %}
+    <br>
+    {% unless include.data.dates.end %}Seit {% endunless %}
+    {% include post-date.html date=include.data.dates.start short=1 simple=1 noday=1 %}
+    {% if include.data.dates.end %}
+      - {% include post-date.html date=include.data.dates.end short=1 simple=1 noday=1 %}
+    {% endif %}
+  </p>
+</div>

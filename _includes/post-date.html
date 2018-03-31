@@ -7,7 +7,10 @@
 {% endif %}
 {% assign year = include.date | date: '%Y' %}
 {% if include.simple %}
-  {{ day | append: '. ' | append: month | append: ' ' | append: year }}
+  {% unless include.noday %}
+    {{ day | append: '. ' }}
+  {% endunless %}
+  {{ month | append: ' ' | append: year }}
 {% else %}
   <span class="post-date__month">{{ month }}</span>
   <span class="post-date__day">{{ day }}</span>
