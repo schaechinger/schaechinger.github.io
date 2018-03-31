@@ -44,6 +44,22 @@ function initMaps() {
   });
 }
 
-if (window.google) {
-  initMaps();
+function checkLinks() {
+  var links = document.getElementsByTagName('a');
+
+  for (var i = 0; links.length > i; i++) {
+    var link = links[i];
+
+    if (link.getAttribute('href').match(/:\/\//)) {
+      link.setAttribute('target', '_blank');
+    }
+  }
+}
+
+window.onload = function() {
+  if (window.google) {
+    initMaps();
+  }
+
+  checkLinks();
 }

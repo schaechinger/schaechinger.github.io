@@ -1,0 +1,139 @@
+.page.page-resume {
+  @include outer-container;
+
+  .arrow {
+    padding: 1rem 0;
+    position: relative;
+
+    &::before {
+      border-bottom: 3px solid $blue;
+      border-right: 3px solid $blue;
+      bottom: 2px;
+      content: '';
+      height: 2rem;
+      left: calc(50% - 1rem);
+      position: absolute;
+      top: 0;
+      transform: rotate(-135deg);
+      width: 2rem;
+    }
+  }
+
+  .block {
+    > div {
+      @include clearfix;
+
+      padding-bottom: 1.25rem;
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: calc(50% - 1px);
+        border-left: 2px solid $green;
+
+      }
+
+      &:first-of-type::before {
+        top: 1.5rem;
+      }
+
+      &:last-of-type::before {
+        bottom: 2rem;
+      }
+    }
+  }
+
+  .resume-job {
+    @include media-columns(12, 6);
+
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    &:first-of-type .resume-job-header h3 {
+      &::before {
+        right: -0.5rem;
+        transform: rotate(-45deg);
+      }
+
+      &::after {
+        right: -3rem;
+      }
+    }
+
+    &:nth-child(2) .resume-job-header h3 {
+      padding-top: 3rem;
+
+      &::before {
+        left: -0.5rem;
+        transform: rotate(135deg);
+      }
+
+      &::after {
+        left: -3rem;
+      }
+    }
+
+    .resume-job-header {
+      p {
+      }
+
+      h3 {
+        border-bottom: 2px solid $blue;
+        font-size: 1.25rem;
+        margin: 0 0 1.25rem;
+        padding-bottom: 0.5rem;
+        padding-top: 0.5rem;
+        position: relative;
+
+        &::before {
+          border-bottom: 2px solid $blue;
+          border-right: 2px solid $blue;
+          bottom: 2px;
+          content: '';
+          height: 1rem;
+          position: absolute;
+          width: 1rem;
+        }
+
+        &::after {
+          background-color: $green;
+          border-radius: 10rem;
+          bottom: 0.375rem;
+          content: '';
+          height: 0.75rem;
+          position: absolute;
+          width: 0.75rem;
+        }
+      }
+
+      .post-date {
+        text-transform: none;
+      }
+    }
+
+    ul {
+      li {
+        margin-left: 1rem;
+        padding-bottom: 0.25rem;
+        position: relative;
+
+        &::before {
+          border-top: 1px solid black;
+          content: '';
+          left: -1rem;
+          position: absolute;
+          top: 0.625rem;
+          width: 0.375rem;
+        }
+      }
+    }
+
+    .resume-job-header > *,
+    > ul {
+        padding: 0 1rem;
+      }
+  }
+}
