@@ -3,9 +3,15 @@
     "title": "Hochschule für angewandte Wissenschaften München",
     "link": "http://cs.hm.edu"
   },
-  "job": "Informatik",
+  "job": "B.Sc. Informatik",
   "dates": {
     "start": "2009-10-01",
     "end": "2014-02-18"
-  }
+  },
+  "tags": [
+    "Java",
+    "C++",
+    "Objective-C",
+    "JavaScript"
+  ]
 }

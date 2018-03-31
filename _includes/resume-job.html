@@ -13,4 +13,11 @@
       - {% include post-date.html date=include.data.dates.end short=1 simple=1 noday=1 %}
     {% endif %}
   </p>
+  {% if include.data.tags %}
+    <ul class="tags">
+      {% for tag in include.data.tags %}
+        <li class="tag">{{ tag }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
 </div>

@@ -8,5 +8,11 @@
   "dates": {
     "start": "2014-06-01",
     "end": "2017-06-30"
-  }
+  },
+  "tags": [
+    "JavaScript",
+    "PHP",
+    "Ext JS",
+    "React"
+  ]
 }

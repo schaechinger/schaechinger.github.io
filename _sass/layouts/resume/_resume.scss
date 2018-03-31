@@ -77,8 +77,7 @@
     }
 
     .resume-job-header {
-      p {
-      }
+      padding-bottom: 1rem;
 
       h3 {
         border-bottom: 2px solid $blue;
@@ -114,7 +113,7 @@
       }
     }
 
-    ul {
+    ul:not(.tags) {
       li {
         margin-left: 1rem;
         padding-bottom: 0.25rem;
@@ -128,6 +127,16 @@
           top: 0.625rem;
           width: 0.375rem;
         }
+      }
+    }
+
+    ul.tags li {
+      color: $green;
+      display: inline;
+
+      &:not(:last-of-type)::after {
+        content: ',';
+        padding-right: 0.25rem;
       }
     }
 

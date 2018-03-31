@@ -8,5 +8,11 @@
   "dates": {
     "start": "2013-04-01",
     "end": "2014-05-31"
-  }
+  },
+  "tags": [
+    "Objective-C",
+    "Java",
+    "C++",
+    "PHP"
+  ]
 }
