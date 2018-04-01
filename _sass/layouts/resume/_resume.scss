@@ -6,8 +6,8 @@
     position: relative;
 
     &::before {
-      border-bottom: 3px solid $blue;
-      border-right: 3px solid $blue;
+      border-bottom: 3px solid $green;
+      border-right: 3px solid $green;
       bottom: 2px;
       content: '';
       height: 2rem;
@@ -44,6 +44,10 @@
         bottom: 2rem;
       }
     }
+
+    &.block-experience > div:first-of-type::before {
+      top: -1rem;
+    }
   }
 
   .resume-job {
@@ -51,17 +55,6 @@
 
     padding-left: 2rem;
     padding-right: 2rem;
-
-    &:first-of-type .resume-job-header h3 {
-      &::before {
-        right: -0.5rem;
-        transform: rotate(-45deg);
-      }
-
-      &::after {
-        right: -3rem;
-      }
-    }
 
     &:nth-child(2) .resume-job-header h3 {
       padding-top: 3rem;
@@ -94,16 +87,19 @@
           content: '';
           height: 1rem;
           position: absolute;
+          right: -0.5rem;
+          transform: rotate(-45deg);
           width: 1rem;
         }
 
         &::after {
           background-color: $green;
           border-radius: 10rem;
-          bottom: 0.375rem;
+          bottom: 0.25rem;
           content: '';
           height: 0.75rem;
           position: absolute;
+          right: -3rem;
           width: 0.75rem;
         }
       }
