@@ -1,0 +1,11 @@
+company:
+  title: Hochschule für angewandte Wissenschaften München
+  link: http://cs.hm.edu
+  location: München
+job: Bachelorarbeit
+dates:
+  start: 2013-11-01
+  end: 2014-02-18
+tags:
+  - PHP
+  - JavaScript
