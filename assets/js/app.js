@@ -50,10 +50,23 @@ function checkLinks() {
   for (var i = 0; links.length > i; i++) {
     var link = links[i];
 
-    if (link.getAttribute('href').match(/:\/\//)) {
+    if (link.getAttribute('href') && link.getAttribute('href').match(/:\/\//)) {
       link.setAttribute('target', '_blank');
     }
   }
+}
+
+function sendmail(button) {
+  var domain = window.location.hostname;
+  domain = domain.split('.')
+    .splice(-2)
+    .join('.');
+
+  if (button.dataset) {
+    window.location.href = 'mailto:' + button.dataset.address + '\u0040' + domain;
+  }
+
+  return false;
 }
 
 window.onload = function() {

@@ -6,6 +6,10 @@
   &:hover {
     border-bottom-color: $blue;
     color: $blue;
+
+    &.mail-link {
+      cursor: pointer;
+    }
   }
 
   &:focus {

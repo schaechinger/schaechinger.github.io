@@ -72,6 +72,14 @@
 
     h3 {
       margin-bottom: 1.25rem;
+
+      a {
+        color: $white;
+
+        &:hover {
+          border-bottom-color: $white;
+        }
+      }
     }
   }
 

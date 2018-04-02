@@ -1,0 +1,102 @@
+ul.socials {
+  color: $gray;
+  display: none;
+  float: right;
+  position: absolute;
+  right: 1.25rem;
+  text-align: right;
+  top: 0;
+
+  li {
+    a {
+      display: inline-block;
+      margin: 0.5em;
+      position: relative;
+
+      &::before {
+        background-color: transparent;
+        border-radius: 50%;
+        content: '';
+        height: 1.75em;
+        left: calc(50% - 0.875em);
+        position: absolute;
+        top: calc(50% - 1.025em);
+        transition: background 0.333s ease-in-out;
+        width: 1.75em;
+      }
+
+      &.email {
+        color: $mail;
+      }
+      &.facebook {
+        color: $facebook;
+      }
+      &.github {
+        color: $github;
+      }
+      &.instagram {
+        color: $instagram;
+      }
+      &.linked-in {
+        color: $linked-in;
+      }
+      &.twitter {
+        color: $twitter;
+      }
+      &.xing {
+        color: $xing;
+      }
+      &.pocket {
+        color: $pocket;
+      }
+      &.google-plus {
+        color: $google-plus;
+      }
+      
+      &:hover {
+        border-bottom-color: transparent;
+        color: $white;
+
+        &.email::before {
+          background-color: $mail;
+        }
+        &.facebook::before {
+          background-color: $facebook;
+        }
+        &.github::before {
+          background-color: $github;
+        }
+        &.instagram::before {
+          background-color: $instagram;
+        }
+        &.linked-in::before {
+          background-color: $linked-in;
+        }
+        &.twitter::before {
+          background-color: $twitter;
+        }
+        &.xing::before {
+          background-color: $xing;
+        }
+        &.pocket::before {
+          background-color: $pocket;
+        }
+        &.google-plus::before {
+          background-color: $google-plus;
+        }
+      }
+    }
+  }
+
+  @include grid-media($tablet-large) {
+    display: inline-block;
+  }
+
+  li {
+    display: inline-block;
+
+    a {
+      
+    }
+  }
+}
