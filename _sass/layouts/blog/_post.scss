@@ -2,10 +2,12 @@
   .post-header {
     &.post-image {
       @include background-image;
-      padding-top: 20rem;
+
+      margin-top: -3rem;
+      padding-top: 25rem;
 
       @include grid-media($mobile-only) {
-        padding-top: 8rem;
+        padding-top: 11rem;
       }
     }
 

@@ -1,16 +1,18 @@
 .app header {
   @include clearfix;
 
-  background-color: $white;
+  background-color: rgba(255, 255, 255, 0.8);
   border-bottom: 1px solid $gray-middle;
   color: $white;
   font-family: 'ClearSans', 'ClearSans-Bk', $font-stack-helvetica;
+  height: 3rem;
+  position: relative;
   width: 100%;
+  z-index: 1000;
 
   nav {
     @include outer-container;
 
-    height: 3rem;
     overflow: hidden;
     position: relative;
 
