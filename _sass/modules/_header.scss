@@ -71,9 +71,18 @@
       }
     }
 
-
     ul.socials {
+      display: none;
+      float: right;
       font-size: 1.25em;
+      position: absolute;
+      right: 1.25rem;
+      text-align: right;
+      top: 0;
+      
+      @include grid-media($tablet-large) {
+        display: inline-block;
+      }
     }
   }
 }
