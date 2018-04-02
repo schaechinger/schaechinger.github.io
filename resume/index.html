@@ -74,3 +74,18 @@ class: resume
     </div>
   </div>
 </div>
+
+<h2>Fähigkeiten</h2>
+
+<div class="block block-skills">
+  {% for set in site.data.resume.skills %}
+    <div class="skill-set">
+      <h3>{{ set.title }}</h3>
+      <ul class="tags">
+        {% for skill in set.skills %}
+          <li class="tag">{{ skill }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endfor %}
+</div>

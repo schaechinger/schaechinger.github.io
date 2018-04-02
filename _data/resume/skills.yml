@@ -1,0 +1,56 @@
+- title: Ich biete
+  skills:
+  - Agile Softwareentwicklung
+  - Scrum
+  - Konzeption
+  - Software Architektur
+  - Teamwork
+  - Eigeninitiative
+  - Führungskompetenz
+  - Struktur
+  - Produktentwicklung
+- title: Programmiersprachen
+  skills:
+  - JavaScript
+  - PHP
+  - CSS
+  - Java
+  - C/C++
+  - TypeScript
+  - Objective-C
+  - SQL
+- title: Frameworks & Librarys
+  skills:
+  - Node.js
+  - React
+  - Express.js
+  - Angular
+  - Foundation
+  - Bootstrap
+  - Mocha
+  - Jasmine
+  - Webpack
+  - Redux
+  - Gulp
+  - Cordova
+  - Zend Framework
+  - Symfony
+- title: Datenbanken
+  skills:
+  - MySQL
+  - Oracle DB
+  - CouchDB
+  - MongoDB
+- title: Sonstiges
+  skills:
+  - Unix/Linux
+  - nginx
+  - git
+  - REST
+  - UI/UX
+  - Elasticsearch
+  - Authentifizierung
+  - Jira
+  - Confluence
+  - WebSockets
+  - UML 
