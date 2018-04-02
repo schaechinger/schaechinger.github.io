@@ -24,6 +24,15 @@
         text-align: center;
       }
 
+      @include grid-media($mobile-only) {
+        height: 20rem;
+
+        h1,
+        h3 {
+          color: $white;
+        }
+      }
+
       @for $i from 1 through 100 {
         div:nth-child(#{$i}) {
           background-color: rgba(0, 0, 0, random(100) * 0.002)
@@ -79,6 +88,12 @@
         &:hover {
           border-bottom-color: $white;
         }
+      }
+    }
+
+    @include grid-media($mobile-only) {
+      .highlight-container > div:not(:first-child) {
+        margin-top: 2rem;
       }
     }
   }
