@@ -15,6 +15,13 @@ plugins:
 
 markdown: kramdown
 
+defaults:
+  - scope:
+      path: "."
+      type: "drafts"
+    values:
+      sitemap: false
+
 ga: UA-70769809-1
 
 maps:

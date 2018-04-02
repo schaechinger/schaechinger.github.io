@@ -9,7 +9,6 @@ imagePosition: center 27.5%
 imageLocation: "Platz der Republik, Berlin"
 shortkey: jrlkx
 excerpt: "Der Tag war gekommen. Nach monatelanger Vorbereitung ging es endlich nach Berlin, um meinen ersten Marathon zu bestreiten. Ich hatte mir fünf Tage Zeit genommen, um Berlin und den Marathon auskosten zu können und war Feuer und Flamme auf den Lauf!"
-draft: true
 ---
 {% include post-map.html locations=site.data.posts.2017.berlinMarathon.track track=1 %}
 
@@ -32,13 +31,23 @@ Abends angekommen ging es erst einmal auf Futtersuche, eine Currywurst musste al
 Abends war ich hellwach und hab mir ein paar Pils an der Bar geordert. Es war Happy Hour für Beck's. Gut für Beck's, schlecht für mich ... Danach drehte ich noch eine Runde und erkundete die Umgebung. Also habe ich mir das Kanzleramt, das Holocaust-Mahnmal, das Brandenburger Tor natürlich und weiter in der Nähe liegende Touri-Highlights angesehen. Zum ersten Mal bei Nacht. Sehr interessant, weniger Menschen und für mich einfach das Höchste.
 
 
-DO
+**DO**
 * Flug
 * Hostel
 * Messegelände + Startunterlagen
 * Nächtliche Tour durch Berlin
 
-FR
+
+
+
+
+
+
+Der Samstag stand auch ganz im Zeichen [...]
+
+---
+
+**FR**
 * Touri Tour
   * Brandenburger Tor
   * Reichstag
@@ -47,14 +56,26 @@ FR
 * Currywurst-Marathon
 * Messe, Marathonshirt
 
-SA
+{% include post-image.html title="Touri-Feeling am Brandenburger Tor" image="brandenburgertor.jpg" fullsize=0 %}
+
+{% include post-image.html title="" image="reichstag.jpg" fullsize=0 %}
+
+---
+
+**SA**
 * Start
 * Skatermarathon
 * Adidas Flagship-Store / AdidasRunners-Store
   * Lange Hose, Shorts + Shirt
 * Nudel "Läufer-Special" im Restaurant um die Ecke
-f
-SO
+
+{% include post-image.html title="Die Anzeichen des Marathons auf den Straßen der Stadt" image="street.jpg" fullsize=0 %}
+
+{% include post-image.html title="Nach ewiger Suche endlich mich gefunden!" image="wall.jpg" fullsize=0 %}
+
+---
+
+**SO**
 * Startgelände
 * Warten auf den Start
   * Das ist Berlin Song :)
@@ -78,28 +99,21 @@ SO
 * Siegerpizza
 * "Ausklang" in der Hostel-Bar
 
-MO
+{% include post-image.html title="Ein paar Kilometer vor dem Ziel" image="run.jpg" fullsize=0 render="square" %}
+
+{% include post-image.html title="Auf der Zielgeraden" image="marathon-3.jpg" fullsize=0 render="square" %}
+
+{% include post-image.html title="Im Ziel angekommen, endlich Marathoni" image="finish.jpg" fullsize=0 %}
+
+{% include post-image.html title="Die wohlverdiente Siegerpizza" image="pizza.jpg" fullsize=0 render="square" %}
+
+{% include post-strava.html activity=1199376238 hash="2d842704012a7534f3c27a1b8adc986844137839" %}
+
+---
+
+**MO**
 * Ruhig, abends Flug
 * Morgenblatt mit allen Startern
 * Ewige Schlange für Gravur ...
 * Heimflug bis in die Nacht, letztes Mal AirBerlin
 * Resumé
-
-
-Der Samstag stand auch ganz im Zeichen [...]
-
-{% include post-image.html title="Touri-Feeling am Brandenburger Tor" image="brandenburgertor.jpg" fullsize=0 %}
-
-{% include post-image.html title="" image="reichstag.jpg" fullsize=0 %}
-
-{% include post-image.html title="Die Anzeichen des Marathons auf den Straßen der Stadt" image="street.jpg" fullsize=0 %}
-
-{% include post-image.html title="Nach ewiger Suche endlich mich gefunden!" image="wall.jpg" fullsize=0 %}
-
-{% include post-image.html title="Ein paar Kilometer vor dem Ziel" image="run.jpg" fullsize=0 render="square" %}
-
-{% include post-image.html title="Im Ziel angekommen, endlich Marathoni" image="finish.jpg" fullsize=0 %}
-
-{% include post-image.html title="Die wohlverdiente Siegerpizza" image="pizza.jpg" fullsize=0 %}
-
-{% include post-strava.html activity=1199376238 hash="2d842704012a7534f3c27a1b8adc986844137839" %}
