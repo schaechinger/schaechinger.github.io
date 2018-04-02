@@ -25,15 +25,25 @@ footer {
       top: -3rem;
     }
 
-    .footer__links {
+    &__links {
       @include media-columns(12, 4);
 
       ul {
         text-align: right;
+
+        @include grid-media($mobile-only) {
+          text-align: left;
+          padding-bottom: 1.25rem;
+          
+          li {
+            display: inline-block;
+            padding-right: 0.5rem;
+          }
+        }
       }
     }
 
-    .footer__text {
+    &__text {
       @include media-columns(12, 5);
 
       i.glyphicons {
