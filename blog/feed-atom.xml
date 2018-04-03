@@ -6,9 +6,10 @@ redirect_from: /blog/feed-atom
 
 	<title>schaechinger.com</title>
 	<link href="{{ page.url | absolute_url }}" rel="self" type="application/atom+xml"/>
-	<link href="{{ site.url }}/blog" rel="alternate" type="text/html" title="{{ page.title | xml_escape }}"/>
+	<link href="{{ site.url }}/blog" rel="alternate" type="text/html" title="{{ 'schaechinger.com' | xml_escape }}"/>
 	<updated>{{ site.time | date_to_xmlschema }}</updated>
-	<id>{{ site.url }}/blog</id>
+	<id>{{ site.url }}/blog/atom</id>
+	<icon>https://images.schaechinger.com/2/schaechinger.jpg</icon>
 	<author>
 		<name>{{ 'Manuel Schächinger' | xml_escape }}</name>
 	</author>
@@ -18,10 +19,10 @@ redirect_from: /blog/feed-atom
 		<entry{% if post.lang %}{{" "}}xml:lang="{{ post.lang }}"{% endif %}>
       <title type="html">{{ post.title | smartify | strip_html | normalize_whitespace | xml_escape }}</title>
 			<link href="https://schchn.gr/{{ post.shortkey }}"/>
-			<published>{{ post.date | date_to_xmlschema }}</published>
       <updated>{{ post.last_modified_at | default: post.date | date_to_xmlschema }}</updated>
+			<published>{{ post.date | date_to_xmlschema }}</published>
 			<id>{{ 'https://schchn.gr/' | append: post.shortkey | xml_escape }}</id>
-			<content type="html">{{ post.excerpt | strip | xml_escape }}</content>
+			<summary type="html">{{ post.excerpt | strip | xml_escape }}</summary>
       {% if post.category %}
         <category term="{{ post.category | xml_escape }}" />
       {% endif %}
