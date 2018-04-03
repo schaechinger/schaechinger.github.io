@@ -7,7 +7,8 @@ tags:
 imagePosition: center 60%
 imageLocation: "Olympiapark, München"
 shortkey: ka2i4
-excerpt: "Der B2RUN war für mich dieses Jahr etwas Besonderes: Ich war der Laufbeauftragte der Firma und somit für die Organisation des Events für uns zuständig."
+excerpt: "Der B2RUN war für mich dieses Jahr etwas Besonderes: Ich war der Laufbeauftragte der Firma und somit für die Organisation des Events für uns zuständig. Das Ziel war klar: So viele Kollegen wie möglich motivieren und auf die Strecke bringen!"
+last_modified_at: 2017-07-20
 ---
 Der B2RUN stand wieder auf dem Programm. Dieses Jahr war ich Laufbeauftragter in unserer Firma und versuchte so die letzten Wochen, den Lauf so gut es ging zu pushen. Wir brachten es auf 35 Anmeldungen aus vielen Abteilungen. Die letzten zwei Monate ging es darum, mit wöchentlichen Laufgruppen so viele Mitarbeiter wie möglich zu motivieren.
 
