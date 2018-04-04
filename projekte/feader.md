@@ -16,4 +16,4 @@ Die auf dem Zend Framework basierende Plattform setzte auf MySQL und einen in C+
 
 Nach dem Ende der Bachelorarbeit und dem Beginn als Vollzeitentwickler wurde das Projekt jedoch leider zu zeitintensiv, um es ohne die Einführung eines Abomodells weiter zu führen und wurde ab da auf GitHub veröffentlicht.
 
-<a href="https://github.com/schaechinger/feader" target="_blank">Zum GitHub Repository</a>
+<a href="https://github.com/schaechinger/feader">Zum GitHub Repository</a>
