@@ -51,11 +51,6 @@
       "title": "Edinburgh, Scotland"
     },
     {
-      "lat": 39.613162,
-      "lng": 2.95694,
-      "title": "Mallorca, España"
-    },
-    {
       "lat": 53.350478,
       "lng": -6.262876,
       "title": "Dublin, Ireland"
@@ -114,6 +109,16 @@
       "lat": -8.507401,
       "lng": 115.262606,
       "title": "Bali, Indonesia"
+    },
+    {
+      "lat": -12.046014,
+      "lng": -77.030482,
+      "title": "Lima, Perú"
+    },
+    {
+      "lat": 40.416949,
+      "lng": -3.703480,
+      "title": "Madrid, España"
     }
   ],
   "running": [
