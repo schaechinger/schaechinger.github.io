@@ -1,8 +1,14 @@
 company:
-  title: Hochschule für angewandte Wissenschaften München
+  title:
+    de: Hochschule für angewandte Wissenschaften München
+    en: Munich University of Applied Sciences
   link: http://cs.hm.edu
-  location: München
-job: B.Sc. Informatik
+  location:
+    de: München
+    en: Munich
+job:
+  de: B.Sc. Informatik
+  en: B.Sc. Computer Science
 dates:
   start: 2009-10-01
   end: 2014-02-18

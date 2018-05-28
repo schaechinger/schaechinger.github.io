@@ -1,56 +1,74 @@
-- title: Ich biete
+- title:
+    de: Ich biete
+    en: I Offer
   skills:
-  - Agile Softwareentwicklung
-  - Scrum
-  - Konzeption
-  - Software Architektur
-  - Teamwork
-  - Eigeninitiative
-  - Führungskompetenz
-  - Struktur
-  - Produktentwicklung
-- title: Programmiersprachen
+    - de: Agile Softwareentwicklung
+      en: Agile Software Development
+    - Scrum
+    - de: Konzeption
+      en: Conception
+    - de: Software Architektur
+      en: Software Architecture
+    - Teamwork
+    - de: Eigeninitiative
+      en: Self-Initiative
+    - de: Führungskompetenz
+      en: Leadership
+    - de: Struktur
+      en: Structure
+    - de: Produktentwicklung
+      en: Product Development
+- title:
+    de: Programmiersprachen
+    en: Programming Languages
   skills:
-  - JavaScript
-  - PHP
-  - CSS
-  - Java
-  - C/C++
-  - TypeScript
-  - Objective-C
-  - SQL
-- title: Frameworks & Librarys
+    - JavaScript
+    - PHP
+    - CSS
+    - Java
+    - C/C++
+    - TypeScript
+    - Objective-C
+    - SQL
+- title:
+    de: Frameworks & Librarys
+    en: Frameworks & Libraries
   skills:
-  - Node.js
-  - React
-  - Express.js
-  - Angular
-  - Foundation
-  - Bootstrap
-  - Mocha
-  - Jasmine
-  - Webpack
-  - Redux
-  - Gulp
-  - Cordova
-  - Zend Framework
-  - Symfony
-- title: Datenbanken
+    - Node.js
+    - React
+    - Express.js
+    - Angular
+    - Foundation
+    - Bootstrap
+    - Mocha
+    - Jasmine
+    - Webpack
+    - Redux
+    - Gulp
+    - Cordova
+    - Zend Framework
+    - Symfony
+- title:
+    de: Datenbanken
+    en: Databases
   skills:
-  - MySQL
-  - Oracle DB
-  - CouchDB
-  - MongoDB
-- title: Sonstiges
+    - MySQL
+    - Oracle DB
+    - CouchDB
+    - MongoDB
+- title:
+    de: Sonstiges
+    en: Others
   skills:
-  - Unix/Linux
-  - nginx
-  - git
-  - REST
-  - UI/UX
-  - Elasticsearch
-  - Authentifizierung
-  - Jira
-  - Confluence
-  - WebSockets
-  - UML 
+    - Unix/Linux
+    - nginx
+    - git
+    - REST
+    - UI/UX
+    - Elasticsearch
+    - de: Authentifizierung
+      en: Authentification
+    - Jira
+    - Confluence
+    - WebSockets
+    - UML

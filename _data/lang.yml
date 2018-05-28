@@ -23,6 +23,8 @@ de:
     dev:
       - Mit viel
       - in München entwickelt.
+  resume:
+    since: Seit
 en:
   name: English
   nav:
@@ -48,3 +50,5 @@ en:
     dev:
       - Crafted with much
       - in Munich.
+  resume:
+    since: Since

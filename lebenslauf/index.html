@@ -2,6 +2,7 @@
 layout: default
 title: Lebenslauf
 description: Hier erfährst du mehr über meine berufliche Laufbahn.
+lang: de
 class: resume
 ref: resume
 ---
@@ -89,10 +90,10 @@ ref: resume
 <div class="block block-skills">
   {% for set in site.data.resume.skills %}
     <div class="skill-set">
-      <h3>{{ set.title }}</h3>
+      <h3>{{ set.title[page.lang] | default: set.title }}</h3>
       <ul class="tags">
         {% for skill in set.skills %}
-          <li class="tag">{{ skill }}</li>
+          <li class="tag">{{ skill[page.lang] | default: skill }}</li>
         {% endfor %}
       </ul>
     </div>

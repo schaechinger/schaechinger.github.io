@@ -1,8 +1,14 @@
 company:
-  title: Hochschule für angewandte Wissenschaften München
+  title:
+    de: Hochschule für angewandte Wissenschaften München
+    en: Munich University of Applied Sciences
   link: http://cs.hm.edu
-  location: München
-job: Bachelorarbeit
+  location:
+    de: München
+    en: Munich
+job:
+  de: Bachelorarbeit
+  en: Bachelor Thesis
 dates:
   start: 2013-11-01
   end: 2014-02-18

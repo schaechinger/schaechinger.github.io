@@ -1,21 +1,25 @@
 <div class="resume-job-header">
-  <h3>{{ include.data.job }}</h3>
+  <h3>{{ include.data.job[page.lang] | default: include.data.job }}</h3>
 
   <p>
     <a href="{{ include.data.company.link }}">
-      {{ include.data.company.title }}
+      {{ include.data.company.title[page.lang] | default: include.data.company.title }}
     </a>
-    {% if include.data.company.location %} in {{ include.data.company.location }} {% endif %}
+    {% if include.data.company.location %} in {{ include.data.company.location[page.lang] | default: include.data.company.location }} {% endif %}
     <br>
-    {% unless include.data.dates.end %}Seit {% endunless %}
+    {% unless include.data.dates.end %}{{ site.data.lang[page.lang].resume.since }} {% endunless %}
     {% include post-date.html date=include.data.dates.start short=1 simple=1 noday=1 %}
     {% if include.data.dates.end %}
       - {% include post-date.html date=include.data.dates.end short=1 simple=1 noday=1 %}
     {% endif %}
   </p>
   {% if include.data.tags %}
+    {% assign tags = include.data.tags %}
+    {% if tags[page.lang] %}
+      {% assign tags = tags[page.lang] %}
+    {% endif %}
     <ul class="tags">
-      {% for tag in include.data.tags %}
+      {% for tag in tags %}
         <li class="tag">{{ tag }}</li>
       {% endfor %}
     </ul>
