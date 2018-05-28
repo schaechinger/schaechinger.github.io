@@ -1,14 +1,58 @@
 months:
-  - 
-  - Januar
-  - Februar
-  - März
-  - April
-  - Mai
-  - Juni
-  - Juli
-  - August
-  - September
-  - Oktober
-  - November
-  - Dezember
+  de:
+    long:
+      - 
+      - Januar
+      - Februar
+      - März
+      - April
+      - Mai
+      - Juni
+      - Juli
+      - August
+      - September
+      - Oktober
+      - November
+      - Dezember
+    short:
+      -
+      - Jan
+      - Feb
+      - Mär
+      - Apr
+      - Mai
+      - Jun
+      - Jul
+      - Sep
+      - Okt
+      - Nov
+      - Dez
+  en:
+    long:
+      - 
+      - January
+      - February
+      - March
+      - April
+      - May
+      - June
+      - July
+      - August
+      - September
+      - October
+      - November
+      - December
+    short:
+      -
+      - Jan
+      - Feb
+      - Mar
+      - Apr
+      - May
+      - June
+      - July
+      - Sept
+      - Oct
+      - Nov
+      - Dec
+

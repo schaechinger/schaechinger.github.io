@@ -57,7 +57,20 @@ footer {
     &__text {
       @include media-columns(12, 5);
 
-      i.glyphicons {
+      ul.lang-switch {
+        padding-bottom: 0.25rem;
+
+        li {
+          display: inline-block;
+          padding-right: 0.5rem;
+
+          i.glyphicons::before {
+            padding: 0;
+          }
+        }
+      }
+
+      i.glyphicons-heart-empty {
         color: #fb3958;
 
         &::before {

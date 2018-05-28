@@ -2,7 +2,9 @@ company:
   title: Mecomo Mobile Apps & Content GmbH
   link: http://www.mecomo.com
   location: Unterschleißheim
-job: Mobile App Entwickler
+job:
+  de: Mobile App Entwickler
+  en: Mobile App Developer
 dates:
   start: 2012-03-01
   end: 2013-03-31

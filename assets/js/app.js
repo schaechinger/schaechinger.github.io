@@ -69,10 +69,23 @@ function sendmail(button) {
   return false;
 }
 
+function calcDays(factor) {
+  factor = factor || 1;
+  let date = new Date();
+  let first = new Date(date.getFullYear(), 0, 0);
+  let diff = date - first;
+
+  return Math.floor((diff / 86400000) * factor);
+}
+
 window.onload = function() {
   if (window.google) {
     initMaps();
   }
 
   checkLinks();
+
+  if (window.calcCoffee) {
+    document.getElementsByClassName('calc-coffees')[0].innerHTML = calcDays(2.15);
+  }
 }

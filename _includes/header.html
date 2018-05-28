@@ -1,14 +1,20 @@
+{% assign base = pageLang %}
+{% if 'de' == pageLang %}
+  {% assign base = '' %}
+{% else %}
+  {% assign base = '/' | append: base %}
+{% endif %}
 <header>
   <nav>
     <ul class="main">
       <li class="logo">
-        <a href="/">
+        <a href="{{ base | default: '/' }}">
           M<span class="m">///</span>Schächinger
         </a>
       </li>
-      {% for element in site.data.nav %}
+      {% for element in site.data.nav[pageLang] %}
       <li{% if page.url contains element.url %} class="active" {% endif %}>
-        <a href="{{ element.url }}">{{ element.title }}</a>
+        <a href="{{ base | append: element.url }}">{{ element.title }}</a>
         </li>
         {% endfor %}
     </ul>

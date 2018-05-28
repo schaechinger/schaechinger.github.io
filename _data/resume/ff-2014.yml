@@ -1,8 +1,12 @@
 company:
   title: Fonds Finanz Maklerservice GmbH
   link: https://www.fondsfinanz.de
-  location: München
-job: Web- & Datenbankentwickler
+  location:
+    de: München
+    en: Munich
+job:
+  de: Web- & Datenbankentwickler
+  en: Web & Database Developer
 dates:
   start: 2014-06-01
   end: 2017-06-30
