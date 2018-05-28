@@ -1,0 +1,39 @@
+---
+nositemap: true
+blacklist:
+  - /robots.txt
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+{% for post in site.posts %}
+  <url>
+    <loc>{{ site.url }}{{ post.url }}</loc>
+    {% assign versions = site.posts | where: 'ref', post.ref %}
+    {% for version in versions %}
+    <xhtml:link rel="alternate" hreflang="{{ version.lang }}" href="{{site.base}}{{ version.url }}" />
+    {% endfor %}
+    {% if post.imagePosition %}
+    <image:image>
+      <image:loc>{{ site.imageBase | append: post.url }}/header.jpg</image:loc>
+      <image:caption>{{ post.imageLocation | xml_escape }}</image:caption>
+    </image:image>
+    {% endif %}
+    <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+{% endfor %}
+{% for p in site.pages %}
+{% unless p.nositemap or page.blacklist contains p.url %}
+  <url>
+    <loc>{{ site.url }}{{ p.url }}</loc>
+    {% assign versions = site.pages | where: 'ref', p.ref %}
+    {% for version in versions %}
+      {% unless version.nositemap %}
+        <xhtml:link rel="alternate" hreflang="{{ version.lang }}" href="{{ site.url }}{{ version.url }}" />
+      {% endunless %}
+    {% endfor %}
+    <changefreq>weekly</changefreq>
+  </url>
+{% endunless %}
+{% endfor %}
+</urlset>

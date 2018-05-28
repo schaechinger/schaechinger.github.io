@@ -8,10 +8,7 @@ permalink: /blog/:year-:title
 imageBase: https://images.schaechinger.com
 
 plugins:
-  - jekyll-feed
-  - jekyll-redirect-from
   - jekyll-seo-tag
-  - jekyll-sitemap
 
 markdown: kramdown
 
@@ -30,8 +27,10 @@ maps:
 
 twitter:
   username: theschaechinger
+  card: summary
 
 social:
+  name: Manuel Schächinger
   links:
     - https://twitter.com/theschaechinger
     - https://www.facebook.com/schaechinger
