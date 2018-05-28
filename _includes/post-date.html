@@ -1,10 +1,14 @@
 <span class="post-date">
+{% assign pageLang = page.lang | default: 'de' %}
 {% assign day = include.date | date: '%-d' %}
+{% assign months = site.data.date.months[pageLang] %}
 {% assign month = include.date | date: '%m' | minus: 0 %}
-{% assign month = site.data.date.months[month] %}
 {% if include.short %}
-  {% assign month = month | truncate: 3, '' %}
+  {% assign months = months.short %}
+{% else %}
+  {% assign months = months.long %}
 {% endif %}
+{% assign month = months[month] %}
 {% assign year = include.date | date: '%Y' %}
 {% if include.simple %}
   {% unless include.noday %}
