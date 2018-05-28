@@ -2,6 +2,7 @@
 layout: default
 title: Housemaid
 description: Ein auf Node.js aufbauendes System, das alle Informationen für das Digital Home zusammentragen und aufbereiten soll.
+lang: de
 class: projects
 ref: projects-housemaid
 ---
@@ -25,4 +26,5 @@ Folgende Module sind derzeit in der Entwicklung oder in der Ideenphase:
 * Einbinden von Kontaktdaten aus der Cloud zur Anzeige bei Anrufen
 * Anzeige von Kalenderevents des heutigen Tages
 
+\\
 <a href="https://github.com/schaechinger/housemaid" target="_blank">Zum GitHub Repository</a>
