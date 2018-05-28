@@ -1,0 +1,11 @@
+company:
+  title: Luxoft GmbH
+  link: https://www.luxoft.com
+  location: Garching b. München
+job: Senior JavaScript Engineer
+dates:
+  start: 2018-05-01
+tags:
+  - JavaScript
+  - TypeScript
+  - Node.js

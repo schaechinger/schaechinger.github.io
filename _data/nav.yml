@@ -1,8 +1,18 @@
-- title: Über mich
-  url: /ueber-mich
-- title: Projekte
-  url: /projekte
-- title: Blog
-  url: /blog
-- title: Lebenslauf
-  url: /lebenslauf
+de:
+  - title: Über mich
+    url: /ueber-mich
+  - title: Projekte
+    url: /projekte
+  - title: Blog
+    url: /blog
+  - title: Lebenslauf
+    url: /lebenslauf
+en:
+  - title: About
+    url: /about
+  - title: Projects
+    url: /projects
+  - title: Blog
+    url: /blog
+  - title: Resume
+    url: /resume

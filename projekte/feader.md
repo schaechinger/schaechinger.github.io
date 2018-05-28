@@ -3,6 +3,7 @@ layout: default
 title: feader
 description: Ein webbasierter responsive Feedreader, dessen Hauptaugenmerk auf Datenschutz und Benutzerfreundlichkeit liegt.
 class: projects
+ref: projects-feader
 ---
 # feader
 

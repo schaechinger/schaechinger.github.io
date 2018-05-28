@@ -3,6 +3,7 @@ layout: default
 title: Housemaid
 description: Ein auf Node.js aufbauendes System, das alle Informationen für das Digital Home zusammentragen und aufbereiten soll.
 class: projects
+ref: projects-housemaid
 ---
 # Housemaid
 

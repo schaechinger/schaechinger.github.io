@@ -1,0 +1,50 @@
+de:
+  name: Deutsch
+  nav:
+    - title: Über mich
+      url: /ueber-mich
+    - title: Projekte
+      url: /projekte
+    - title: Blog
+      url: /blog
+    - title: Lebenslauf
+      url: /lebenslauf
+  footer:
+    links:
+      - title: Impressum
+        url: /impressum
+      - title: Datenschutz
+        url: /datenschutz
+      - title: Kontakt
+    text: "Hi, ich bin Manuel. Auf meiner Website dreht sich alles um Laufen, Reisen um die Welt, um Webentwicklung mit JavaScript und
+        Node.js und natürlich auch um mich. Wenn du hier gelandet bist, solltest du lieber wieder weiter nach oben scrollen und
+        die vielen weiteren Seiten der Website ansehen. Hier geht's nicht weiter."
+    rights: Alle Rechte vorbehalten.
+    dev:
+      - Mit viel
+      - in München entwickelt.
+en:
+  name: English
+  nav:
+    - title: About
+      url: /en/about
+    - title: Projects
+      url: /en/projects
+    - title: Blog
+      url: /en/blog
+    - title: Resume
+      url: /en/resume
+  footer:
+    links:
+      - title: Imprint
+        url: /en/imprint
+      - title: Data Privacy
+        url: /en/privacy
+      - title: Contact
+    text: "Hi, I'm Manuel. My website is all about running, travelling around the world, web development with JavaScript and Node.js and
+        of course about me as well. If you landed here you should rather scroll back to the top or go on to the next page.
+        There is not more to see down here."
+    rights: All rights reserved.
+    dev:
+      - Crafted with much
+      - in Munich.

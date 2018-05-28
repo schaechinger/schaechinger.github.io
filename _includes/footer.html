@@ -6,26 +6,42 @@
 
     <div class="footer__links">
       <ul>
-        <li>
-          <a href="/impressum">Impressum</a>
-        </li>
-        <li>
-          <a href="/datenschutz">Datenschutz</a>
-        </li>
-        <li>
-          <a class="email mail-link" onclick="sendmail(this)"
-            data-address="manuel">
-            Kontakt
-          </a>
-        </li>
+        {% for element in site.data.lang[pageLang].footer.links %}
+          <li>
+            {% if forloop.last %}
+              <a class="email mail-link" onclick="sendmail(this)"
+                data-address="manuel">{{ element.title }}</a>    
+            {% else %}
+              <a href="{{ element.url }}">{{ element.title }}</a>
+            {% endif %}
+          </li>
+        {% endfor %}
       </ul>
     </div>
     <div class="footer__text">
-      <p>Hi, ich bin Manuel. Auf meiner Website dreht sich alles um Laufen, Reisen um die Welt, um Webentwicklung mit JavaScript und
-        Node.js und natürlich auch um mich. Wenn du hier gelandet bist, solltest du lieber wieder weiter nach oben scrollen und
-        die vielen weiteren Seiten der Website ansehen. Hier geht's nicht weiter.</p>
-      <p>&copy; {{ site.time | date: '%Y' }} Manuel Schächinger. Alle Rechte vorbehalten.</p>
-      <p>Mit viel <i class="glyphicons glyphicons-heart-empty"></i> in München entwickelt.</p>
+      <ul class="lang-switch">
+        <li>
+          <i class="glyphicons glyphicons-globe{% if 'de' == pageLang %}-af{% endif %}"></i>
+        </li>
+        {% assign pages = site.pages | where: "ref", page.ref | sort: 'lang' %}
+        {% for page in pages %}
+          {% assign lang = page.lang | default: 'de' %}
+          <li class="{{ lang }}">
+            <a href="{{ page.url }}" class="{{ lang }}">{{ site.data.lang[lang].name }}</a>
+          </li>
+        {% endfor %}
+        {% if 'post' == page.layout %}
+          <li class="de">
+            <a href="" class="de">Deutsch</a>
+          </li>
+          <li class="en">
+            <a href="/en/" class="en">English</a>
+          </li>
+        {% endif %}
+      </ul>
+      <p>{{ site.data.lang[pageLang].footer.text }}</p>
+      <p>&copy; {{ site.time | date: '%Y' }} Manuel Schächinger. {{ site.data.lang[pageLang].footer.rights }}</p>
+      <p>{{ site.data.lang[pageLang].footer.dev[0] }} <i class="glyphicons glyphicons-heart-empty"></i> {{ site.data.lang[pageLang].footer.dev[1] }}</p>
     </div>
   </div>
 </footer>

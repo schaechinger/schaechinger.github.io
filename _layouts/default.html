@@ -1,6 +1,7 @@
- <!DOCTYPE html>
+{% assign pageLang = page.lang | default: 'de' %}
+<!DOCTYPE html>
 <html>
-<head lang="{{ page.lang | default: 'de' }}">
+<head lang="{{ pageLang }}">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,12 +19,19 @@
   <link rel="alternate" type="application/atom+xml" title="Manuel Schächinger" href="/blog/feed-atom.xml">
   <!-- assets -->
   <link rel="stylesheet" href="/assets/css/style.css">
-
-  {% if 'post' == page.layout %}
+  <!-- language links -->
+  {% assign pages = site.pages | where: "ref", page.ref | sort: 'lang' %}
+  {% for page in pages %}
+    {% assign lang = page.lang | default: 'de' %}
+    <link rel="alternate" hreflang="{{ lang }}" href="{{ site.url | append: page.url }}">
+  {% endfor %}
+  {% if 'post' == page.layout and page.imagePosition %}
     <!-- post specials -->
-    <link rel="image_src" type="image/jpeg" href="{{ site.imageBase | append: page.url }}/header-thumb.jpg">
+    {% assign postImage = site.imageBase | append: page.url | append: "/header-thumb.jpg" %}
+    <link rel="image_src" type="image/jpeg" href="{{ postImage }}">
+    <meta property="og:image" content="{{ postImage }}">
   {% endif %}
-  {% seo %}
+  {% seo title=false %}
 </head>
 
 <body class="app">
