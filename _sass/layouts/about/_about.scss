@@ -5,15 +5,10 @@
     padding-right: map-get($neat-grid, gutter);
   }
 
-  .me {
-    background-repeat: no-repeat;
-    border: 0.25rem solid $gray-middle;
-    border-radius: 50%;
-    display: inline-block;
-    height: 10rem;
+  img.me {
+    font-size: 10rem;
     margin: 1.25rem 0 0 calc(50% - 5.125rem);
     padding: 0;
-    width: 10rem;
     z-index: 310;
   }
 

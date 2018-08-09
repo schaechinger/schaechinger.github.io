@@ -253,10 +253,8 @@ DEPENDENCIES
   github-pages
   jekyll-assets
   jekyll-coffeescript
-  jekyll-feed
   jekyll-gist
   jekyll-maps
-  jekyll-redirect-from
   jekyll-seo-tag
   jekyll-sitemap
 
