@@ -13,7 +13,7 @@ layout: default
 
 <div class="posts">
   <ul>
-    {% assign posts = site.posts | where_exp: "post", "post.draft != true" %}
+    {% assign posts = site.posts %}
     {% for post in posts %}
       {% if page.category %}
         {% unless page.category == post.category or post.tags contains page.category %}

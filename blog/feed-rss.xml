@@ -19,7 +19,7 @@ nositemap: true
 			<height>64</height>
 		</image>
 
-		{% assign posts = site.posts | where_exp: "post", "post.draft != true" %}
+		{% assign posts = site.posts %}
 		{% for post in posts limit: 25 %}
 			<item>
 				<title>{{ post.title | smartify | strip_html | normalize_whitespace | xml_escape }}</title>

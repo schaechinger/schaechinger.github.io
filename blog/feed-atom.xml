@@ -13,7 +13,7 @@ nositemap: true
 		<name>{{ 'Manuel Schächinger' | xml_escape }}</name>
 	</author>
 
-  {% assign posts = site.posts | where_exp: "post", "post.draft != true" %}
+  {% assign posts = site.posts %}
 	{% for post in posts limit: 25 %}
 		<entry{% if post.lang %}{{" "}}xml:lang="{{ post.lang }}"{% endif %}>
       <title type="html">{{ post.title | smartify | strip_html | normalize_whitespace | xml_escape }}</title>
