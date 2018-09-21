@@ -85,6 +85,22 @@ ref: resume
   </div>
 </div>
 
+<h2>Zertifizierungen</h2>
+
+<div class="block block-certifications">
+  <div>
+    <ul>
+      {% for cert in site.data.resume.certifications %}
+      <li>
+        <a href="{{ cert.url }}" target="_blank">
+          {{ cert.title }}{% if cert.year %} ({{ cert.year }}){% endif %}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
 <h2>Fähigkeiten</h2>
 
 <div class="block block-skills">

@@ -125,9 +125,7 @@
     {
       "lat": 48.076495,
       "lng": 11.472034,
-      "title": "München, Deutschland",
-      "color": "green",
-      "link": "/blog/2017-forstenrieder-volkslauf"
+      "title": "München, Deutschland"
     },
     {
       "lat": 21.529133,
@@ -146,7 +144,8 @@
     {
       "lat": 53.569879,
       "lng": 9.951251,
-      "title": "Hamburg, Deutschland"
+      "title": "Hamburg, Deutschland",
+      "color": "red"
     },
     {
       "lat": 53.287982,
@@ -161,7 +160,9 @@
     {
       "lat": 49.019168,
       "lng": 12.098173,
-      "title": "Regensburg, Deutschland"
+      "title": "Regensburg, Deutschland",
+      "color": "green",
+      "link": "/blog/2017-regensburg-marathon"
     },
     {
       "lat": 47.075353,
@@ -172,7 +173,8 @@
       "lat": 52.516245,
       "lng": 13.377738,
       "title": "Berlin, Deutschland",
-      "color": "red"
+      "color": "red",
+      "link": "/blog/2017-berlin-marathon"
     },
     {
       "lat": -8.674901,

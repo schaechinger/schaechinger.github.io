@@ -1,4 +1,4 @@
-ul.socials {
+.app ul.socials {
   color: $gray;
 
   li {
@@ -51,7 +51,7 @@ ul.socials {
       
       &:hover {
         border-bottom-color: transparent;
-        color: $white;
+        color: $white !important;
 
         &.email::before {
           background-color: $mail;

@@ -80,8 +80,24 @@ ref: resume
         <li>Topic: Development of the feed reader feader</li>
         <li>Web based Application for device independent consumption and management of feeds<br> <a
           href="/en/projects/feader">Visit project</a></li>
-        </ul>
+      </ul>
     </div>
+  </div>
+</div>
+
+<h2>Certifications</h2>
+
+<div class="block block-certifications">
+  <div>
+    <ul>
+      {% for cert in site.data.resume.certifications %}
+      <li>
+        <a href="{{ cert.url }}" target="_blank">
+          {{ cert.title }}{% if cert.year %} ({{ cert.year }}){% endif %}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
   </div>
 </div>
 

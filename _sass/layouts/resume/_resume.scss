@@ -104,27 +104,42 @@
           text-transform: none;
         }
       }
+    }
+  }
 
-      ul:not(.tags) {
-        li {
-          margin-left: 1rem;
-          padding-bottom: 0.25rem;
-          position: relative;
+  .block.block-experience,
+  .block.block-studies,
+  .block.block-certifications {
+    ul:not(.tags) {
+      li {
+        margin-left: 1rem;
+        padding-bottom: 0.25rem;
+        position: relative;
 
-          &::before {
-            border-top: 1px solid black;
-            content: '';
-            left: -1rem;
-            position: absolute;
-            top: 0.625rem;
-            width: 0.375rem;
-          }
+        &::before {
+          border-top: 1px solid black;
+          content: '';
+          left: -1rem;
+          position: absolute;
+          top: 0.625rem;
+          width: 0.375rem;
         }
       }
     }
   }
 
+  .block.block-certifications {
+    @include clearfix;
+
+    > div {
+      @include media-columns(12);
+      padding-bottom: 1.25rem;
+    }
+  }
+
   .block.block-skills {
+    @include clearfix;
+
     .skill-set {
       @include media-columns(12, 6);
 

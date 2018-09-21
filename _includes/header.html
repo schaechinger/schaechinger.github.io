@@ -13,12 +13,14 @@
         </a>
       </li>
       {% for element in site.data.nav[pageLang] %}
-      <li{% if page.url contains element.url %} class="active" {% endif %}>
+      <li {% if page.url contains element.url %}class="active" {% endif %}>
         <a href="{{ base | append: element.url }}">{{ element.title }}</a>
-        </li>
-        {% endfor %}
+      </li>
+      {% endfor %}
+      <li class="no-padding">
+        {% include socials.html %}
+      </li>
     </ul>
 
-    {% include socials.html %}
   </nav>
 </header>
