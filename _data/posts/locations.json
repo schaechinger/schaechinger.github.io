@@ -21,14 +21,19 @@
       "link": "/blog/2017-worldrun-stavanger"
     },
     {
-      "lat": 41.862547,
-      "lng": -87.611313,
+      "lat": 41.882368,
+      "lng": -87.621228,
       "title": "Chicago, IL, USA"
     },
     {
       "lat": 42.20083,
       "lng": -85.581754,
       "title": "Portage, MI, USA"
+    },
+    {
+      "lat": 40.705977,
+      lng": -73.996672,
+      "title": "New York City, NY, USA"
     },
     {
       "lat": 43.656835,
@@ -49,6 +54,11 @@
       "lat": 55.951812,
       "lng": -3.187532,
       "title": "Edinburgh, Scotland"
+    },
+    {
+      "lat": 55.859196,
+      "lng": -4.258077,
+      "title": "Glasgow, Scotland"
     },
     {
       "lat": 53.350478,
@@ -146,6 +156,7 @@
     {
       "lat": 53.569879,
       "lng": 9.951251,
+      "color": "red",
       "title": "Hamburg, Deutschland"
     },
     {
@@ -154,9 +165,15 @@
       "title": "Dublin, Ireland"
     },
     {
-      "lat": 42.201021,
-      "lng": -85.582955,
-      "title": "Portage, MI, USA"
+      "lat": 41.882368,
+      "lng": -87.621228,
+      "color": "red",
+      "title": "Chicago, IL, USA"
+    },
+    {
+      "lat": 40.786065,
+      "lng": -73.962372,
+      "title": "New York City, NY, USA"
     },
     {
       "lat": 49.019168,
@@ -172,7 +189,8 @@
       "lat": 52.516245,
       "lng": 13.377738,
       "title": "Berlin, Deutschland",
-      "color": "red"
+      "color": "red",
+      "link": "/blog/2017-berlin-marathon"
     },
     {
       "lat": -8.674901,
