@@ -1,6 +1,7 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga }}"></script>
 <script>
-  var disableStr = 'ga-disable-{{ site.ga }}';
+  window.gaId = '{{ site.ga }}';
+  var disableStr = 'ga-disable-' + window.gaId;
   if (0 <= document.cookie.indexOf(disableStr + '=true')) {
     window[disableStr] = true;
   }
