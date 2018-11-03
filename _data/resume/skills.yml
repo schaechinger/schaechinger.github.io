@@ -23,13 +23,16 @@
     en: Programming Languages
   skills:
     - JavaScript
+    - TypeScript
     - PHP
     - CSS
+    - SASS
     - Java
     - C/C++
-    - TypeScript
     - Objective-C
     - SQL
+    - C#
+    - Python
 - title:
     de: Frameworks & Librarys
     en: Frameworks & Libraries

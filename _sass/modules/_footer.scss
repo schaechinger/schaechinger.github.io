@@ -1,4 +1,5 @@
 footer {
+  margin-bottom: 2rem;
   margin-top: 2rem;
   padding: 2rem 0;
   position: relative;
@@ -17,12 +18,13 @@ footer {
     font-size: 0.875rem;
     position: relative;
   
-    > i.glyphicons {
+    > span.glyphicons {
       color: $gray-dark;
       font-size: 1.25rem;
       left: 1rem;
       position: absolute;
-      top: -3rem;
+      top: -2.75rem;
+      transform: rotate(90deg)
     }
 
     .socials {
@@ -64,18 +66,16 @@ footer {
           display: inline-block;
           padding-right: 0.5rem;
 
-          i.glyphicons::before {
-            padding: 0;
+          span.glyphicons {
+            font-size: 1.25rem;
+            margin-top: -0.5rem;
+            top: 0.25rem;
           }
         }
       }
 
-      i.glyphicons-heart-empty {
+      span.glyphicons-heart-empty {
         color: #fb3958;
-
-        &::before {
-          padding-top: 0;
-        }
       }
     }
   }
