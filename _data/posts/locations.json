@@ -158,6 +158,12 @@
       "color": "red"
     },
     {
+      "lat": 50.111871,
+      "lng": 8.650934,
+      "title": "Frankfurt, Deutschland",
+      "color": "red"
+    },
+    {
       "lat": 53.287982,
       "lng": -6.122732,
       "title": "Dublin, Ireland"
