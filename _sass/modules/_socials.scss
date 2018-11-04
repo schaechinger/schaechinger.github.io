@@ -10,13 +10,13 @@
       position: relative;
 
       &::before {
-        background-color: transparent;
+        background-color: $white-transparent;
         border-radius: 50%;
         content: '';
         height: 1.75em;
         left: calc(50% - 0.875em);
         position: absolute;
-        top: calc(50% - 1.025em);
+        top: calc(50% - 0.95em);
         transition: background 0.333s ease-in-out;
         width: 1.75em;
       }

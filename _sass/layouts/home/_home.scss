@@ -7,8 +7,8 @@
 
   .post-image {
     margin: 0;
-    padding: 0;
     max-width: 100%;
+    padding: 0;
 
     .image {
       background-position: center 30%;
@@ -16,6 +16,7 @@
       overflow-y: hidden;
       margin-top: -3rem;
       padding-top: 7.5rem;
+      position: relative;
 
       h1,
       h3 {
@@ -27,6 +28,8 @@
 
       @include grid-media($mobile-only) {
         height: 23rem;
+        padding-top: 8.5rem;
+
 
         h1,
         h3 {
@@ -34,30 +37,25 @@
         }
       }
 
-      @for $i from 1 through 100 {
-        div:nth-child(#{$i}) {
-          background-color: rgba(0, 0, 0, random(100) * 0.002)
-        }
+      @include grid-media($tablet) {
+        padding-top: 5rem;
       }
 
-      > div {
-        display: none;
+      ul.socials {
         @include grid-media($mobile-only) {
-          @include grid-column(1, ( columns: 6, gutter: 0 ));
+          bottom: 0.5rem;
         }
-        @include grid-media($tablet) {
-          @include grid-column(1, ( columns: 12, gutter: 0 ));
-        }
-        @include grid-media($desktop) {
-          @include grid-column(1, ( columns: 24, gutter: 0 ));
-        }
-        border-bottom: 1px solid $gray-dark;
-        border-right: 1px solid $gray-dark;
 
-        &::after {
-          content: '';
-          display: block;
-          padding-bottom: 100%;
+        bottom: 1rem;
+        color: $white;
+        font-size: 1.75rem;
+        left: 0;
+        position: absolute;
+        right: 0;
+        text-align: center;
+
+        @include grid-media($mobile-only) {
+          font-size: 1.25rem;
         }
       }
     }
@@ -65,6 +63,8 @@
 
   .highlight-block {
     margin-top: 0;
+    padding-left: 0;
+    padding-right: 0;
 
     .highlight-container > div {
       @include media-columns(12, 4);

@@ -16,7 +16,7 @@ Bereits am Donnerstag ging es los. Natürlich mit Air Berlin. Die Marathon-Woche
 
 Bereits im Mai hatte ich einen "Probemarathon" in Regensburg – meiner Heimatstadt – geplant, um mich für Berlin vorzubereiten. Daraus wurde jedoch nichts. Zu wenig Zeit, zu viel Ausreden. Kurz vor dem Marathon in Regensburg hatte ich meine Anmeldung auf den Halbmarathon umgebucht. Rückblickend war das auch gut so, es war viel zu heiß zum Eisessen, aus Läufersicht jedoch ziemlich ernüchternd.
 
-So oder so hüpfte ich gefühlt am Flughafen in München dem Flugzeug entgegen. Ich war noch nicht in New York, war verzeihbar ist, war aber bisher auch noch nie in der Hauptstadt und freute mich daher schon lange auf die Reise. Geplant war der Himflug am Donnerstag, dann Sightseeing Deluxe, um die Beine schön müde zu machen, Marathon am Sonntag und ein ruhiger Montag mit dem Rückflug.
+So oder so hüpfte ich gefühlt am Flughafen in München dem Flugzeug entgegen. Ich war noch nicht in New York, war verzeihbar ist, war aber bisher auch noch nie in der Hauptstadt und freute mich daher schon lange auf die Reise. Geplant war der Hinflug am Donnerstag, dann Sightseeing Deluxe, um die Beine schön müde zu machen, Marathon am Sonntag und ein ruhiger Montag mit dem Rückflug.
 
 ## Das ist Berlin
 
