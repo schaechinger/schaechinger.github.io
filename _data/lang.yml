@@ -9,6 +9,9 @@ de:
       url: /blog
     - title: Lebenslauf
       url: /lebenslauf
+  contact:
+    title: Kontakt
+    url: /kontakt
   footer:
     links:
       - title: Impressum
@@ -16,6 +19,7 @@ de:
       - title: Datenschutz
         url: /datenschutz
       - title: Kontakt
+        url: /kontakt
     text: "Hi, ich bin Manuel. Auf meiner Website dreht sich alles um Laufen, Reisen um die Welt, um Webentwicklung mit JavaScript und
         Node.js und natürlich auch um mich. Wenn du hier gelandet bist, solltest du lieber wieder weiter nach oben scrollen und
         die vielen weiteren Seiten der Website ansehen. Hier geht's nicht weiter."
@@ -25,17 +29,26 @@ de:
       - in München entwickelt.
   resume:
     since: Seit
+  consent:
+    text: Meine Website verwendet Cookies, um dein Erlebnis noch besser zu machen.
+    link: Mehr erfahren
+    url: /datenschutz
+    okay: OK
+  mail: E-Mail senden
 en:
   name: English
   nav:
     - title: About
-      url: /en/about
+      url: /about
     - title: Projects
-      url: /en/projects
+      url: /projects
     - title: Blog
-      url: /en/blog
+      url: /blog
     - title: Resume
-      url: /en/resume
+      url: /resume
+  contact:
+    title: Contact
+    url: /contact
   footer:
     links:
       - title: Imprint
@@ -43,6 +56,7 @@ en:
       - title: Data Privacy
         url: /en/privacy
       - title: Contact
+        url: /en/contact
     text: "Hi, I'm Manuel. My website is all about running, travelling around the world, web development with JavaScript and Node.js and
         of course about me as well. If you landed here you should rather scroll back to the top or go on to the next page.
         There is not more to see down here."
@@ -52,3 +66,9 @@ en:
       - in Munich.
   resume:
     since: Since
+  consent:
+    text: My website uses cookies to extend your experience even more.
+    link: Learn more
+    url: /privacy
+    okay: Okay
+  mail: Drop a mail
