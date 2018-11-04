@@ -17,12 +17,6 @@
         <a href="{{ base | append: element.url }}">{{ element.title }}</a>
       </li>
       {% endfor %}
-      <li>
-        <a class="button" href="{{ base | append: site.data.lang[pageLang].contact.url }}">
-          {% include glyphicons.html icon="365-tie" %}
-          {{ site.data.lang[pageLang].contact.title }}
-        </a>
-      </li>
     </ul>
 
   </nav>
