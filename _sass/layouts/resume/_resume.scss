@@ -1,13 +1,15 @@
 .page.page-resume {
   @include outer-container;
 
-  ul.tags li {
-    color: $green;
-    display: inline;
+  ul.tags {
+    li {
+      color: $green;
+      display: inline-block;
 
-    &:not(:last-of-type)::after {
-      content: ',';
-      padding-right: 0.25rem;
+      &:not(:last-of-type)::after {
+        content: ',';
+        padding-right: 0.25rem;
+      }
     }
   }
 

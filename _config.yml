@@ -21,6 +21,11 @@ defaults:
 
 ga: UA-70769809-1
 
+compress_html:
+  clippings: all
+  comments:  ["<!-- ", " -->"]
+  endings:   all
+
 maps:
   google:
     key: "AIzaSyA5M0ChH7z265Ypy6LLg8NIloj2ZHiADms"
