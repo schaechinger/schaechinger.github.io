@@ -21,7 +21,8 @@
         width: 1.75em;
       }
 
-      &.email {
+      &.email,
+      &.call {
         color: $mail;
       }
       &.facebook {
@@ -53,7 +54,8 @@
         border-bottom-color: transparent;
         color: $white !important;
 
-        &.email::before {
+        &.email::before,
+        &.call::before {
           background-color: $mail;
         }
         &.facebook::before {

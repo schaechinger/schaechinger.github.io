@@ -3,6 +3,29 @@
   color: $blue;
   text-decoration: none;
 
+  &.button {
+    border: 1px solid $blue;
+    border-radius: 0.25rem;
+    color: $blue;
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    white-space: nowrap;
+
+    &:hover {
+      background-color: $blue;
+      color: $white;
+    }
+  }
+
+  &.button + .button {
+    margin-left: 1rem;
+
+    @include grid-media($mobile-only) {
+      margin-left: 0;
+      margin-top: 1rem;
+    }
+  }
+
   &:hover {
     border-bottom-color: $blue;
     color: $blue;

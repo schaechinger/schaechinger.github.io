@@ -1,32 +1,60 @@
+{% assign set = include.set | default: "linked-in,xing,twitter,github,instagram,twitter,email" | split: "," %}
+
 <ul class="socials">
+  {% if set contains "linked-in" %}
   <li>
     <a href="https://schchn.gr/in" class="linked-in">
       {% include glyphicons.html type="social" icon="7-linkedin" %}
     </a>
   </li>
+  {% endif %}
+  {% if set contains "xing" %}
   <li>
     <a href="https://schchn.gr/x" class="xing">
       {% include glyphicons.html type="social" icon="0-xing" %}
     </a>
   </li>
+  {% endif %}
+  {% if set contains "github" %}
   <li>
     <a href="https://schchn.gr/gh" class="github">
       {% include glyphicons.html type="social" icon="29-github" %}
     </a>
   </li>
+  {% endif %}
+  {% if set contains "instagram" %}
   <li>
     <a href="https://schchn.gr/ig" class="instagram">
       {% include glyphicons.html type="social" icon="4-instagram" %}
     </a>
   </li>
+  {% endif %}
+  {% if set contains "twitter" %}
   <li>
     <a href="https://schchn.gr/t" class="twitter">
       {% include glyphicons.html type="social" icon="3-twitter" %}
     </a>
   </li>
+  {% endif %}
+  {% if set contains "facebook" %}
+  <li>
+    <a href="https://schchn.gr/f" class="facebook">
+      {% include glyphicons.html type="social" icon="1-facebook" %}
+    </a>
+  </li>
+  {% endif %}
+  {% if set contains "email" %}
   <li>
     <a class="email mail-link" onclick="sendmail(this)" data-address="manuel">
       {% include glyphicons.html icon="792-email" %}
     </a>
   </li>
+  {% endif %}
+  {% if set contains "call" %}
+  <li>
+    <a class="call" href="tel:&#x2b;4&#x39;16&#x30;97&#x35;065&#x39;3">
+      {% include glyphicons.html icon="465-call" %}
+    </a>
+  </li>
+  {% endif %}
 </ul>

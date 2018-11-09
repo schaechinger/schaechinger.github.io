@@ -8,15 +8,19 @@
   <nav>
     <ul class="main">
       <li class="logo">
-        <a href="{{ base | default: '/' }}">
-          Manuel Schächinger
-        </a>
+        <a href="{{ base | default: '/' }}">Manuel Schächinger</a>
       </li>
       {% for element in site.data.lang[pageLang].nav %}
       <li {% if page.url contains element.url %}class="active" {% endif %}>
         <a href="{{ base | append: element.url }}">{{ element.title }}</a>
       </li>
       {% endfor %}
+      <li>
+        <a class="button" href="{{ base | append: site.data.lang[pageLang].contact.url }}">
+          {% include glyphicons.html icon="365-tie" %}
+          {{ site.data.lang[pageLang].contact.title }}
+        </a>
+      </li>
     </ul>
 
   </nav>

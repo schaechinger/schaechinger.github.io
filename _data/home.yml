@@ -1,0 +1,28 @@
+blog:
+  de: 
+    title: Blog
+    text: "In meinem Blog dreht sich alles um Laufen, Reisen sowie Webentwicklung mit JavaScript und Node.js."
+    link: /blog
+  en: 
+    title: Blog
+    text: "My blog is all about running, traveling and web development with JavaScript and Node.js"
+    link: /en/blog
+projects:
+  de: 
+    title: Projekte
+    text: "Eine kurze Liste meiner bisherigen privaten Projekte sowie der Kooperationen in verschiedenen Teams, die in meiner Freizeit entstanden sind."
+    link: /projekte
+  en: 
+    title: Projects
+    text: "A short list of my previous private projects as well as cooperational work in several teams
+        that where created in my free time."
+    link: /en/projects
+resume:
+  de: 
+    title: Lebenslauf
+    text: "Hier erfährst du mehr über meine berufliche Laufbahn."
+    link: /lebenslauf
+  en: 
+    title: Resume
+    text: "Here you can get more information about my career."
+    link: /en/resume

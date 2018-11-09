@@ -34,7 +34,7 @@
           padding: 0;
         }
 
-        /*&:last-of-type {
+        &:last-of-type {
           padding: 0.125rem 0.65rem 0.125rem 0.125rem;
 
           a.button {
@@ -45,7 +45,7 @@
               color: $white;
             }
           }
-        }*/
+        }
 
         &.logo {
           float: left;

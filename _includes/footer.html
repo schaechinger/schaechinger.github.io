@@ -1,6 +1,6 @@
 <footer role="detailinfo">
   <div class="footer">
-          {% include glyphicons.html icon="612-scissors" %}
+    {% include glyphicons.html icon="612-scissors" %}
 
     {% include socials.html %}
 
@@ -8,12 +8,7 @@
       <ul>
         {% for element in site.data.lang[pageLang].footer.links %}
           <li>
-            {% if forloop.last %}
-              <a class="email mail-link" onclick="sendmail(this)"
-                data-address="manuel">{{ element.title }}</a>    
-            {% else %}
-              <a href="{{ element.url }}">{{ element.title }}</a>
-            {% endif %}
+            <a href="{{ element.url }}">{{ element.title }}</a>
           </li>
         {% endfor %}
       </ul>

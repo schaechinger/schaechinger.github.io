@@ -1,0 +1,43 @@
+---
+layout: default
+---
+{% assign pageLang = page.lang | default: 'de' %}
+<div class="portfolio-header">
+  <img src="{{ site.imageBase }}/2/portfolio-3.jpg">
+  <div class="overlay"></div>
+  <div class="content">
+    <ul class="list">
+      <li>
+        {% include glyphicons.html icon="365-tie" %}
+        <a href="#{{ site.data.contact.jobs[pageLang] | downcase }}">
+          {{ site.data.contact.jobs[pageLang] }}
+        </a>
+
+        {% include socials.html set="email,linked-in,xing" %}
+      </li>
+      <li>
+        {% include glyphicons.html icon="460-briefcase" %}
+        <a href="#{{ site.data.contact.projects[pageLang] | downcase }}">
+          {{ site.data.contact.projects[pageLang] }}
+        </a>
+
+        {% include socials.html set="email,linked-in,xing" %}
+      </li>
+      <li>
+        {% include glyphicons.html icon="554-handshake" %}
+        <a href="#{{ site.data.contact.general[pageLang] | downcase }}">
+          {{ site.data.contact.general[pageLang] }}
+        </a>
+        
+        {% include socials.html set="email,call,github" %}
+      </li>
+      <li>
+        {% include glyphicons.html icon="578-share" %}
+        <a href="#social">Social</a>
+
+        {% include socials.html set="instagram,twitter,facebook" %}
+      </li>
+    </ul>
+  </div>
+</div>
+{{ content }}
