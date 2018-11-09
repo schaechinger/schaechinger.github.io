@@ -1,6 +1,10 @@
 .page.page-contact {
   @include outer-container;
 
+  h1 {
+    @include media-columns(12);
+  }
+
   .portfolio-side {
     float: right;
     width: 50%;
