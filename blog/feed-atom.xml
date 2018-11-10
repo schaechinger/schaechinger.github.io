@@ -8,7 +8,7 @@ nositemap: true
 	<link href="{{ site.url }}/blog" rel="alternate" type="text/html" title="{{ 'schaechinger.com' | xml_escape }}"/>
 	<updated>{{ site.time | date_to_xmlschema }}</updated>
 	<id>{{ site.url }}/blog</id>
-	<icon>https://images.schaechinger.com/2/schaechinger.jpg</icon>
+	<icon>{{ site.imageBase }}/2/schaechinger.jpg</icon>
 	<author>
 		<name>{{ 'Manuel Schächinger' | xml_escape }}</name>
 	</author>

@@ -12,7 +12,7 @@ nositemap: true
 		<sy:updatePeriod>hourly</sy:updatePeriod>
 		<sy:updateFrequency>1</sy:updateFrequency>
 		<image>
-			<url>https://images.schaechinger.com/2/schaechinger.jpg</url>
+			<url>{{ site.imageBase }}/2/schaechinger.jpg</url>
 			<title>schaechinger.com</title>
 			<link>{{ site.url }}/blog</link>
 			<width>64</width>
