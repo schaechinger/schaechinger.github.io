@@ -56,7 +56,7 @@ footer {
     }
 
     &__text {
-      @include media-columns(12, 5);
+      @include media-columns(12, 6, 5);
 
       ul.lang-switch {
         padding-bottom: 0.25rem;
