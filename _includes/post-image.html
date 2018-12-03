@@ -5,6 +5,7 @@
     {% else %}
       <div class="image{% if include.render %} image--{{ include.render }}{% endif %}"
         style="background-image:url({{ src }})"></div>
+      <img src="{{ src }}" style="display:none" />
     {% endif %}
   <p>{{ include.title }}</p>
 </div>
