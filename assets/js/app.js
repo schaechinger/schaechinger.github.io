@@ -71,9 +71,9 @@ function sendmail(button) {
 
 function calcDays(factor) {
   factor = factor || 1;
-  let date = new Date();
-  let first = new Date(date.getFullYear(), 0, 0);
-  let diff = date - first;
+  var date = new Date();
+  var first = new Date(date.getFullYear(), 0, 0);
+  var diff = date - first;
 
   return Math.floor((diff / 86400000) * factor);
 }
