@@ -85,6 +85,8 @@ Und endlich kam sie: die wirklich letzte Kurve. Ich bog links ab und konnte nach
 
 ### Endlich war ich Marathoni!
 
+{% include post-race-result.html time="03:48:10" distance="42,195" %}
+
 Es gibt kein vergleichbares Gefühl. Ich war mega happy und vollkommen am Ende zugleich. Es hatte sich so sehr gelohnt! Im Zielbereich angekommen ging es nach dem obligatorischen Blick auf die Uhr und dem damit verbundenen Beenden der Aktivität zu den netten Damen, die uns verschwitzten Leuten die Medaillen umhängen durften. Apropos Zeit, die Uhr sagte am Ende 3:48:10. Ich war mehr als zufrieden, es geschafft zu haben und freute mich, nach den letzten Wochen Urlaub nicht zu viel vom Training verloren zu haben.
 
 {% include post-image.html title="Im Ziel angekommen, endlich Marathoni" image="finish.jpg" fullsize=0 %}
