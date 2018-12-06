@@ -263,6 +263,7 @@ DEPENDENCIES
   jekyll-assets
   jekyll-coffeescript
   jekyll-gist
+  jekyll-github-metadata
   jekyll-maps
   jekyll-seo-tag
   jekyll-sitemap
