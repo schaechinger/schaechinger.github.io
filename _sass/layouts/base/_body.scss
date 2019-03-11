@@ -25,4 +25,19 @@ body {
   > h6 {
     @include column-margin;
   }
+
+  .center {
+    text-align: center;
+  }
+
+  .space-block {
+    margin-bottom: 4.5rem;
+    margin-top: 4.5rem;
+
+    h1,
+    h2,
+    h3 {
+      margin-top: 0;
+    }
+  }
 }

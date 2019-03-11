@@ -4,40 +4,35 @@ layout: default
 {% assign pageLang = page.lang | default: 'de' %}
 <div class="post-image post-image--fullsize">
   <div class="image" style="background-image:url({{ site.imageBase }}/2/hero.jpg)">
-    <h1><span class="m">Manuel</span>Schächinger</h1>
-    <h3>JavaScript Engineer</h3>
-    {% include socials.html %}
-  </div>
-</div>
-
-<div class="highlight-block">
-  <div class="highlight-container">
-    <div>
+    <div class="logo logo--full">
+      <h1><span class="colored">Manuel</span>Schächinger</h1>
       <h3>
-        <a href="{{ site.data.home.blog[pageLang].link }}">
-          {% include glyphicons.html icon="72-book" %}
-          {{ site.data.home.blog[pageLang].title }}
-        </a>
+        <span class="freelancer">Freelancer</span>
+        <span class="colored">|</span>
+        <span class="js">JavaScript Engineer</span>
       </h3>
-      <p>{{ site.data.home.blog[pageLang].text }}</p>
     </div>
-    <div>
-      <h3>
-        <a href="{{ site.data.home.projects[pageLang].link }}">
-          {% include glyphicons.html icon="626-chemistry-alt" %}
-          {{ site.data.home.projects[pageLang].title }}
-        </a>
-      </h3>
-      <p>{{ site.data.home.projects[pageLang].text }}</p>
-    </div>
-    <div>
-      <h3>
-        <a href="{{ site.data.home.resume[pageLang].link }}">
-          {% include glyphicons.html icon="68-education" %}
-          {{ site.data.home.resume[pageLang].title }}
-        </a>
-      </h3>
-      <p>{{ site.data.home.resume[pageLang].text }}</p>
+    <div class="hero-customers">
+      <div>
+        <div>
+          &nbsp;
+        </div>
+        <div>
+          <img src="/assets/images/customers/bmw.png">
+        </div>
+        <div>
+          <img src="/assets/images/customers/luxoft-icon.png">
+        </div>
+        <div>
+          <img src="/assets/images/customers/fonds-finanz.png">
+        </div>
+        <div>
+          <img src="/assets/images/customers/keksfabrik-icon.png">
+        </div>
+        <div>
+          &nbsp;
+        </div>
+      </div>
     </div>
   </div>
 </div>

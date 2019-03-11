@@ -33,7 +33,7 @@ function initMaps() {
     if (drawTrack) {
       new google.maps.Polyline({
         path: path,
-        strokeColor: '#67b9c4',
+        strokeColor: '#00a5db',
         strokeOpacity: 1.0,
         strokeWeight: 4,
         map: map

@@ -1,10 +1,10 @@
-{% assign set = include.set | default: "linked-in,xing,twitter,github,instagram,twitter,email" | split: "," %}
+{% assign set = include.set | default: "linked-in,xing,twitter,github,instagram" | split: "," %}
 
 <ul class="socials">
-  {% if set contains "linked-in" %}
+  {% if set contains "twitter" %}
   <li>
-    <a href="https://schchn.gr/in" class="linked-in">
-      {% include glyphicons.html type="social" icon="7-linkedin" %}
+    <a href="https://schchn.gr/t" class="twitter">
+      {% include glyphicons.html type="social" icon="3-twitter" %}
     </a>
   </li>
   {% endif %}
@@ -12,6 +12,13 @@
   <li>
     <a href="https://schchn.gr/x" class="xing">
       {% include glyphicons.html type="social" icon="0-xing" %}
+    </a>
+  </li>
+  {% endif %}
+  {% if set contains "linked-in" %}
+  <li>
+    <a href="https://schchn.gr/in" class="linked-in">
+      {% include glyphicons.html type="social" icon="7-linkedin" %}
     </a>
   </li>
   {% endif %}
@@ -26,13 +33,6 @@
   <li>
     <a href="https://schchn.gr/ig" class="instagram">
       {% include glyphicons.html type="social" icon="4-instagram" %}
-    </a>
-  </li>
-  {% endif %}
-  {% if set contains "twitter" %}
-  <li>
-    <a href="https://schchn.gr/t" class="twitter">
-      {% include glyphicons.html type="social" icon="3-twitter" %}
     </a>
   </li>
   {% endif %}

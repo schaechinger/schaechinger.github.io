@@ -1,8 +1,36 @@
 .page.page-home {
-  > * {
+  .welcome {
     @include outer-container;
-    padding-left: map-get($neat-grid, gutter);
-    padding-right: map-get($neat-grid, gutter);
+
+    .welcome__container {
+      @include media-columns(12, 10);
+
+      @include grid-media($tablet) {
+        @include grid-push(1);
+      }
+    }
+  }
+
+  .services {
+    background-color: $blue;
+    margin-bottom: 5.5rem;
+    margin-top: 5.5rem;
+
+    .services__container {
+      @include outer-container;
+
+      > div {
+        @include media-columns(12, 4);
+
+        background-color: white;
+        border: 1px solid $gray-middle;
+        border-radius: 0.5rem;
+        margin-bottom: -4rem;
+        margin-top: -4rem;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+      }
+    }
   }
 
   .post-image {
@@ -12,38 +40,59 @@
 
     .image {
       background-position: center 30%;
-      height: 33rem;
+      height: 40rem;
       overflow-y: hidden;
       margin-top: -3rem;
-      padding-top: 7.5rem;
       position: relative;
 
-      h1,
-      h3 {
-        color: $gray-dark;
-        margin: 0;
-        text-align: center;
-      }
-      
-      h1 .m,
-      h3 {
-        font-family: 'ClearSans', $font-stack-helvetica;
+      .logo {
+        font-size: 2.5rem;
       }
 
-      h1 {
-        font-family: 'ClearSans-Bk', $font-stack-helvetica;
+      .hero-customers {
+        background-color: rgba(0, 0, 0, 0.25);
+        margin-top: 23.25rem;
+
+        > div {
+          @include outer-container;
+          padding-bottom: 1rem;
+          padding-top: 1rem;
+
+          > div {
+            @include media-columns(3, 2);
+
+            text-align: center;
+
+            img {
+              height: 2.5rem;
+              width: auto;
+              max-width: 80%;
+            }
+
+            span.more {
+              color: white;
+              font-size: 2rem;
+            }
+          }
+        }
       }
-
-      h3 {
-        font-size: 1.5rem
-      }
-
-
 
       @include grid-media($mobile-only) {
         height: 23rem;
         padding-top: 8.5rem;
 
+        .logo {
+          font-size: 2rem;
+
+          h1,
+          h3 {
+            color: $white;
+          }
+        }
+      }
+
+      @include grid-media($tablet) {
+        padding-top: 14.5rem;
 
         h1,
         h3 {
@@ -51,13 +100,12 @@
         }
       }
 
-      @include grid-media($tablet) {
-        padding-top: 5rem;
-      }
-
       @include grid-media($desktop) {
+        padding-top: 7.5rem;
+
+        h1,
         h3 {
-          letter-spacing: 0.375rem;
+          color: $black;
         }
       }
 

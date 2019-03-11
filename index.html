@@ -4,43 +4,42 @@ lang: de
 class: home
 ref: home
 ---
-<h2>Willkommen auf meiner Website</h2>
-
-<p>Hi, auf meiner Website findest du viele Informationen über mich, meine Interessen und Hobbys. Falls du dich mehr für meine
-berufliche Laufbahn interessierst, nimm meinen Lebenslauf und die Open Source Projekte genauer unter die Lupe. Sieh dich
-um und lies dir auch meinen Blog durch, der alle meiner mir wichtigen Interessen abdeckt und dich mit unterhaltsamen Artikeln
-zu einer Vielzahl verschiedener Themen versorgt. Falls noch Fragen offen bleiben oder du mich aus kontaktieren möchtest,
-kannst du dies jederzeit gerne über die aufgelisteten sozialen Netzwerke oder per E-Mail tun. Aber fang doch einfach am Anfang
-an:</p>
-
-<p>
-  <a href="/ueber-mich">Über mich</a>
-</p>
-
-<h3>Mehr von mir</h3>
-
-<div class="more">
-  <div>
-    <h4>Webprojekte</h4>
-
-    <p>Du möchtest ein Projekt realisieren oder eine Webseite für dich oder deine Firma? Kontaktiere
-      mich gerne und wir besprechen, was für dich passt und stellen ein Konzept speziell nach deinen
-      Vorstellungen zusammen.</p>
-
-      <p>
-        <a href="/kontakt">Kontakt aufnehmen</a>
-      </p>
-  </div>
-  <div>
-    <h4>jsguys</h4>
-
-    <p>Besuche auch die Website der von Maik Paulus und mir gegründeten jsguys. Hier kannst du unseren Blog nach den neuesten Technologien
-    und weiteren spannenden Themen im JavaScript-Universum durchstöbern. Mach dich mit unseren aktuellen Projekten vertraut,
-    Anfragen zu Aufträgen oder anderen Themen sind jederzeit willkommen!</p>
-
-    <p>
-      <a href="http://www.jsguys.net">Zu den jsguys</a>
-    </p>
+<div class="welcome space-block">
+  <div class="welcome__container">
+    <h2 class="center">Hi, ich bin Manuel.</h2>
+    
+    <p>Hi, auf meiner Website findest du viele Informationen über mich, meine Interessen und Hobbys.</p>
+    <p>Falls du dich mehr für meine berufliche Laufbahn interessierst, nimm meinen Lebenslauf und die Open Source Projekte genauer unter die Lupe.</p>
+    <p>Sieh dich um und lies dir auch meinen Blog durch, der alle meiner mir wichtigen Interessen abdeckt und dich mit unterhaltsamen Artikeln zu einer Vielzahl verschiedener Themen versorgt.</p>
+    <p>Falls noch Fragen offen bleiben oder du mich aus kontaktieren möchtest, kannst du dies jederzeit gerne über die aufgelisteten sozialen Netzwerke oder per E-Mail tun.</p>
+    <p>Aber fang doch einfach am Anfang an: <a href="/ueber-mich/">Über mich</a></p>
   </div>
 </div>
+
+<h2 class="center">Meine Leistungen</h2>
+
+<div class="services">
+  <div class="services__container">
+    <div>
+      <h3>Konzeption / Architektur</h3>
+      <p>Noch vor der ersten Zeile Code steht die Konzeption und die Planung der Architektur an.</p>
+      <p>...</p>
+    </div>
+    <div>
+      <h3>Umsetzung</h3>
+      <p>Ich unterstütze bei der Implementierung des Projekts.</p>
+      <p>Meist im JavaScript-Umfeld, sowohl im Backend mit Node.js und TypeScript als auch im Frontend mit React und SASS.</p>
+      <p>...</p>
+    </div>
+    <div>
+      <h3>Beratung</h3>
+      <p>Hier geht es um die Überwindung von aufgetretenen Problemen, der Migration von Systemen oder ...</p>
+      <p>...</p>
+    </div>
+  </div>
+</div>
+
+<p class="center">
+  {% include button.html href="/taetigkeit" label="Mehr erfahren" c2a=1 %}
+</p>
   

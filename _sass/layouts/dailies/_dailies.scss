@@ -1,0 +1,71 @@
+.page.page-dailies {
+  @include outer-container;
+
+  .follow {
+    margin-bottom: 2.5rem;
+  }
+
+  h1,
+  .follow {
+    @include grid-media($tablet) {
+      @include grid-push(2);
+    }
+    @include grid-media($desktop) {
+      @include grid-push(4);
+    }
+  }
+
+  .dailies {
+    @include clearfix;
+
+    &__wisdom {
+      @include clearfix;
+
+      padding-top: 2.5rem;
+      position: relative;
+
+      &:not(:last-child) {
+        padding-bottom: 2.5rem;
+      }
+
+      &::before {
+        border-bottom: 2px solid $gray-middle;
+        content: '';
+        height: 0;
+        left: calc(50% - 1.5rem);
+        max-width: 50%;
+        position: absolute;
+        top: 0;
+        width: 3rem;
+      }
+
+      &:first-child {
+        &::before {
+          left: calc(50% - 3.5rem);
+          width: 7rem;
+        }
+      }
+
+      .post-date {
+        @include media-columns(12, 2);
+
+        text-transform: none;
+
+        @include grid-media($mobile-only) {
+          font-weight: bold;
+          text-align: left;
+        }
+        @include grid-media($tablet) {
+          @include grid-push(1);
+        }
+        @include grid-media($desktop) {
+          @include grid-push(2);
+        }
+      }
+
+      p {
+        @include media-columns(12, 7, 5);
+      }
+    }
+  }
+}

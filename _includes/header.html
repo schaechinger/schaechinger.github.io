@@ -8,18 +8,36 @@
   <nav>
     <ul class="main">
       <li class="logo">
-        <a href="{{ base | default: '/' }}"><span class="m">Manuel</span>Schächinger</a>
+        <a href="{{ base | default: '/' }}"><span class="m">M<span class="large">anuel</span></span>S<span class="large">chächinger</span><span class="small">.</span></a>
       </li>
       {% for element in site.data.lang[pageLang].nav %}
-      <li {% if page.url contains element.url %}class="active" {% endif %}>
-        <a href="{{ base | append: element.url }}">{{ element.title }}</a>
-      </li>
+        {% include nav-element.html element=element %}
       {% endfor %}
-      <li>
-        <a class="button" href="{{ base | append: site.data.lang[pageLang].contact.url }}">
-          {% include glyphicons.html icon="365-tie" %}
-          {{ site.data.lang[pageLang].contact.title }}
-        </a>
+      <li class="lang-switch">
+        {% if "de" == pageLang %}
+          {% assign globeIcon = "419-world-east" %}
+        {% else %}
+          {% assign globeIcon = "418-world-west" %}
+        {% endif %}
+        {% include glyphicons.html icon=globeIcon %}
+        <span class="upper-case">{{ pageLang }}</span>
+        <ul style="display: none">
+          {% assign pages = site.pages | where: "ref", page.ref | sort: 'lang' %}
+          {% for page in pages %}
+          {% assign lang = page.lang | default: 'de' %}
+          <li class="{{ lang }}">
+            <a href="{{ page.url }}" class="{{ lang }}">{{ site.data.lang[lang].name }}</a>
+          </li>
+          {% endfor %}
+          {% if 'post' == page.layout %}
+          <li class="de">
+            <a href="" class="de">Deutsch</a>
+          </li>
+          <li class="en">
+            <a href="/en/" class="en">English</a>
+          </li>
+          {% endif %}
+        </ul>
       </li>
     </ul>
 

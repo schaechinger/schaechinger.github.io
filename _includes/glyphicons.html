@@ -1,7 +1,3 @@
-{% assign type = include.type | default: "basic" %}
-{% assign path = "glyphicons/glyphicons-" | append: type %}
-{% assign path = path | append: "-" | append: include.icon | append: ".svg" %}
-{% assign iconName = include.icon | split: "-" | shift | join: "-" %}
-<span class="glyphicons glyphicons-{{ iconName }}" data-path="{{ path }}">
+{% assign type = include.type | default: "basic" %}{% assign path = "glyphicons/glyphicons-" | append: type %}{% assign path = path | append: "-" | append: include.icon | append: ".svg" %}{% assign iconName = include.icon | split: "-" | shift | join: "-" %}<span class="glyphicons glyphicons-{{ iconName }}" data-path="{{ path }}">
   {% include {{ path }} %}
 </span>

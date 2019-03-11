@@ -3,23 +3,18 @@ de:
   nav:
     - title: Über mich
       url: /ueber-mich
-    - title: Projekte
-      url: /projekte
-    - title: Blog
-      url: /blog
-    - title: Lebenslauf
-      url: /lebenslauf
-  contact:
-    title: Kontakt
-    url: /kontakt
+    - title: Tätigkeit
+      url: /taetigkeit
+    - title: "#Dailies"
+      url: /dailies
+    - title: Kontakt
+      url: /kontakt
   footer:
     links:
       - title: Impressum
         url: /impressum
       - title: Datenschutz
         url: /datenschutz
-      - title: Kontakt
-        url: /kontakt
     text: "Hi, ich bin Manuel. Auf meiner Website dreht sich alles um Laufen, Reisen um die Welt, um Webentwicklung mit JavaScript und
         Node.js und natürlich auch um mich. Wenn du hier gelandet bist, solltest du lieber wieder weiter nach oben scrollen und
         die vielen weiteren Seiten der Website ansehen. Hier geht's nicht weiter."
@@ -38,25 +33,20 @@ de:
 en:
   name: English
   nav:
-    - title: About
-      url: /about
-    - title: Projects
-      url: /projects
-    - title: Blog
-      url: /blog
-    - title: Resume
-      url: /resume
-  contact:
-    title: Contact
-    url: /contact
+    - title: Profile
+      url: /profile
+    - title: Work
+      url: /work
+    - title: Dailies
+      url: /dailies
+    - title: Contact
+      url: /contact
   footer:
     links:
       - title: Imprint
         url: /en/imprint
       - title: Data Privacy
         url: /en/privacy
-      - title: Contact
-        url: /en/contact
     text: "Hi, I'm Manuel. My website is all about running, travelling around the world, web development with JavaScript and Node.js and
         of course about me as well. If you landed here you should rather scroll back to the top or go on to the next page.
         There is not more to see down here."

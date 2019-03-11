@@ -1,0 +1,39 @@
+.consent {
+  background-color: $blue;
+  border-top: 1px solid $white;
+  bottom: 0;
+  color: $white;
+  left: 0;
+  padding: 1rem 0;
+  position: fixed;
+  right: 0;
+
+  > div {
+    @include outer-container;
+    @include clearfix;
+
+    font-size: 0.875rem;
+    position: relative;
+
+    p {
+      @include media-columns(12);
+
+      margin-bottom: 0;
+    }
+
+    a {
+      &,
+      &:hover {
+        border-bottom-color: $white;
+        color: $white;
+        cursor: pointer;
+      }
+
+      &.accept-consent {
+        display: inline-block;
+        float: right;
+        margin-right: 1.25rem;
+      }
+    }
+  }
+}

@@ -3,11 +3,9 @@
 
   background-color: rgba(255, 255, 255, 0.8);
   border-bottom: 1px solid $gray-middle;
-  color: $white;
   font-family: 'ClearSans', 'ClearSans-Bk', $font-stack-helvetica;
   height: 3rem;
   position: relative;
-  width: 100%;
   z-index: 1000;
 
   nav {
@@ -58,11 +56,23 @@
             font-size: 1.125rem;
 
             .m {
-              font-family: 'ClearSans', 'ClearSans-Bk', $font-stack-helvetica;
+              font-family: 'ClearSans', $font-stack-helvetica;
+            }
+
+            .small {
+              color: $blue;
+            }
+
+            .large {
+              display: none;
             }
 
             &:hover {
               color: $blue;
+
+              .small {
+                color: $black;
+              }
             }
           }
         }
@@ -78,12 +88,14 @@
         }
 
         &.active {
-          /*border-left: 1px solid $green;
-          float: left;*/
-
+          /*border-left: 1px solid $blue;
+          float: left;
+          padding-right: 1rem;*/
+          
           a {
             color: $black;
             font-family: 'ClearSans-Bk', $font-stack-helvetica;
+            border-bottom: 2px solid $blue;
           }
         }
 

@@ -8,8 +8,26 @@
     border-radius: 0.25rem;
     color: $blue;
     display: inline-block;
+    margin-top: 1.25rem;
     padding: 0.25rem 0.5rem;
     white-space: nowrap;
+
+    &--twitter {
+      background-color: $twitter;
+      color: $white;
+      font-size: 0.875rem;
+      margin-left: 0.25rem;
+      padding: 0.125rem 0.5rem;
+
+      .glyphicons {
+        margin-right: 0.25rem;
+      }
+    }
+
+    @include grid-media($mobile-only) {
+      text-align: left;
+      width: 100%;
+    }
 
     &:hover {
       background-color: $blue;

@@ -8,6 +8,21 @@ ref: contact
 <div class="contact-types">
   <h1>Nimm Kontakt auf</h1>
   <div class="section">
+    <form action="https://formspree.io/manuel@schaechinger.com" method="POST">
+      <label for="name">Vollständiger Name</label>
+      <input type="text" name="name" id="name">
+      <label for="name">E-Mail-Adresse</label>
+      <input type="email" name="_replyto" id="email">
+      <label for="name">Nachricht</label>
+      <textarea name="message" id="message"></textarea>
+      <input type="hidden" name="_language" value="de">
+      <input type="text" name="_gotcha" style="display:none">
+      <input type="hidden" name="_next" value="https://www.schaechinger.com/danke/">
+      <input type="submit" value="Senden">
+    </form>
+  </div>
+
+  <div class="section">
     <h3 id="jobs">
       {% include glyphicons.html icon="365-tie" %}
       Job-Angebote
