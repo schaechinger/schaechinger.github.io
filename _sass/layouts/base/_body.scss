@@ -4,18 +4,29 @@ html {
 }
 
 body {
-  font: 1rem 'ClearSans-Bk', $font-stack-helvetica;
+  background-color: $white;
+  color: $black;
+  font-size: 1rem;
   margin: 0;
   padding: 0;
 }
 
-.app {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'ClearSans-Bk', $font-stack-helvetica;
+}
+
+.app,
+.page {
   @include clearfix;
 }
 
 .page {
-  @include clearfix;
-
   > p,
   > h1,
   > h2,

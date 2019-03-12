@@ -40,8 +40,8 @@
         {% endif %}
       </ul>
       <p>{{ site.data.lang[pageLang].footer.text }}</p>
-      <p>&copy; {{ site.time | date: '%Y' }} Manuel Schächinger. {{ site.data.lang[pageLang].footer.rights }}</p>
-      <p>{{ site.data.lang[pageLang].footer.dev[0] }} {% include glyphicons.html icon="20-heart-empty" %} {{ site.data.lang[pageLang].footer.dev[1] }}</p>
+      <p class="copyright">&copy; {{ site.time | date: '%Y' }} Manuel Schächinger. {{ site.data.lang[pageLang].footer.rights }}</p>
+      <p class="love">{{ site.data.lang[pageLang].footer.dev[0] }} {% include glyphicons.html icon="20-heart-empty" %} {{ site.data.lang[pageLang].footer.dev[1] }}</p>
     </div>
   </div>
 </footer>

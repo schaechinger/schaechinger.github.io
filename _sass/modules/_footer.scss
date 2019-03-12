@@ -1,4 +1,5 @@
 footer {
+  background-color: $white;
   margin-top: 4rem;
   padding: 4rem 0;
   position: relative;
@@ -70,8 +71,36 @@ footer {
         }
       }
 
-      span.glyphicons-heart-empty {
-        color: #fb3958;
+      .love {
+        &:after {
+          animation: cursor 1s infinite;
+          color: $blue;
+          content:" |";
+          font-weight: bold;
+          opacity: 0;
+          right: 0;
+        }
+
+        @keyframes cursor {
+          0% {
+            opacity: 0;
+          }
+          40% {
+            opacity: 0;
+          }
+          50% {
+            opacity: 1;
+          }
+          90% {
+            opacity: 1;
+          }
+          100% {
+            opacity: 0;
+          }
+        }
+        span.glyphicons-heart-empty {
+          color: #fb3958;
+        }
       }
     }
   }

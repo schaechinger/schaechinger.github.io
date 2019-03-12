@@ -4,6 +4,7 @@
   text-decoration: none;
 
   &.button {
+    background-color: $white;
     border: 1px solid $blue;
     border-radius: 0.25rem;
     color: $blue;
@@ -56,4 +57,9 @@
   &:focus {
     outline: 0;
   }
+}
+
+.block--inverted a.button:hover {
+  background-color: $white;
+  color: $blue;
 }
