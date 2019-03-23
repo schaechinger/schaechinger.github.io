@@ -19,7 +19,7 @@ layout: compress
   <!-- feeds -->
   <link rel="alternate" type="application/atom+xml" title="Manuel Schächinger" href="/blog/feed-atom.xml">
   <!-- assets -->
-  <link rel="stylesheet" href="/assets/css/style.css?gc=b{{ site.github.build_revision }}">
+  <link rel="stylesheet" href="/assets/css/style.css?gc={{ site.github.build_revision }}">
   <!-- language links -->
   {% assign pages = site.pages | where: "ref", page.ref | sort: 'lang' %}
   {% for page in pages %}
