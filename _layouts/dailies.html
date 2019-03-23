@@ -2,20 +2,22 @@
 layout: default
 ---
 {% assign pageLang = page.lang | default: 'de' %}
-<h1>{{ page.title }}</h1>
+<div class="space-block">
+  <h1>{{ page.title }}.</h1>
 
-<p class="follow">
-  For more mindblowing content
-  <a href="https://schchn.gr/t" class="button button--twitter">{% include glyphicons.html type="social" icon="3-twitter" %} Follow @theschaechinger</a>
-</p>
+  <p class="follow">
+    Für mehr atemberabende Weisheiten
+    <a href="https://schchn.gr/t" class="button button--twitter">{% include glyphicons.html type="social" icon="3-twitter" %} Follow @theschaechinger</a>
+  </p>
 
-<div class="dailies">
-{% assign dailies = site.data.dailies | reverse %}
-{% for daily in dailies %}
-  <div class="dailies__wisdom">
-    {% include post-date.html date=daily.date short=1 simple=1 %}
+  <div class="dailies">
+  {% assign dailies = site.data.dailies | reverse %}
+  {% for daily in dailies %}
+    <div class="dailies__wisdom">
+      {% include date.html date=daily.date short=1 simple=1 %}
 
-    <p>{{ daily.wisdom }}</p>
+      <p>{{ daily.wisdom }}</p>
+    </div>
+  {% endfor %}
   </div>
-{% endfor %}
 </div>

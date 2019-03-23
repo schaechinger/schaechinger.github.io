@@ -11,61 +11,62 @@ ref: about
 {% if 2 > month or 2 == month and 14 > day %}
   {% assign age = age | minus: 1 %}
 {% endif %}
-<img class="me" src="{{ site.imageBase }}/2/schaechinger.jpg">
+<div class="text space-block">
+  <div class="text__container">
+    <h1>Hi, ich bin Manuel.</h1>
 
-<h1>Hi, ich bin Manuel.</h1>
+    <p>Ich bin {{ age }} Jahre alt und lebe in München. Schon während meines Informatik Studiums an der
+      Hochschule für angewandte Wissenschaften München habe ich mich auf die Webentwicklung spezialisiert.
+      Neben den gängigen Technologien wie HTML, CSS und PHP habe ich mich JavaScript verschrieben.
+      Hier wird einfach alles vereint. Das schlanke Design der Sprache sowie die asynchrone Verarbeitung
+      lassen sich auf alle Geräte und Anwendungsgebiete ausweiten. Nicht nur für das Frontent, was
+      seit Angular und React die Stärken von JavaScript endlich nutzt, sondern dank Node.js auch für das
+      Backend, mittels Frameworks sind sogar Desktop- und Mobile-Apps möglich.
+      Mir gefällt die klare Struktur in allen Bereichen und die Flexibilität, die man bei der Lösung der
+      unterschiedlichsten Anforderungen genießen kann.</p>
 
-<p>Ich bin {{ age }} Jahre alt und lebe in München. Schon während meines Informatik Studiums an der
-  Hochschule für angewandte Wissenschaften München habe ich mich auf die Webentwicklung spezialisiert.
-  Neben den gängigen Technologien wie HTML, CSS und PHP habe ich mich JavaScript verschrieben.
-  Hier wird einfach alles vereint. Das schlanke Design der Sprache sowie die asynchrone Verarbeitung
-  lassen sich auf alle Geräte und Anwendungsgebiete ausweiten. Nicht nur für das Frontent, was
-  seit Angular und React die Stärken von JavaScript endlich nutzt, sondern dank Node.js auch für das
-  Backend, mittels Frameworks sind sogar Desktop- und Mobile-Apps möglich.
-  Mir gefällt die klare Struktur in allen Bereichen und die Flexibilität, die man bei der Lösung der
-  unterschiedlichsten Anforderungen genießen kann.</p>
+    <p>Neben der Programmierung suche ich nach Herausforderungen abseits des Rechners: Meine Leidenschaft
+      ist das Laufen, ich trainiere fast immer für den nächsten Wettkampf und versuche mich stetig zu
+      verbessern und weitere Strecken zu absolvieren. Nach dem Berlin Marathon 2017 und dem Chicago Marathon im letzten Jahr ist mein Highlight
+      dieses Jahr der New York City Marathon im November.<br>
+      Wenn die Beine einmal nicht mehr wollen, geht es auf dem Mountainbike weiter und an die Isar oder
+      in den nächsten Biergarten.</p>
+  </div>
+</div>
 
-<p>Neben der Programmierung suche ich nach Herausforderungen abseits des Rechners: Meine Leidenschaft
-  ist das Laufen, ich trainiere fast immer für den nächsten Wettkampf und versuche mich stetig zu
-  verbessern und weitere Strecken zu absolvieren. Nach dem Berlin Marathon 2017 ist mein Highlight
-  dieses Jahr der Chicago Marathon im Oktober.<br>
-  Wenn die Beine einmal nicht mehr wollen, geht es auf dem Mountainbike weiter und an die Isar oder
-  in den nächsten Biergarten.</p>
-
-<div class="highlight-block">
-  <div class="highlight-container">
+<div class="year block--inverted">
+  <div class="year__container">
     <h2>Mein Jahr in Zahlen</h2>
     <div>
       {% include glyphicons.html icon="393-medal" %}
-      <h3>
-        Marathons
-      </h3>
       <p>{{ site.data.about.year.marathons }}</p>
+      <h3>Marathons</h3>
     </div>
     <div>
-      {% include glyphicons.html icon="685-backpack" %}
-      <h3>
-        Trips
-      </h3>
-      <p>{{ site.data.about.year.travels }}</p>
+      {% include glyphicons.html icon="554-handshake" %}
+      <p>{{ site.data.about.year.projects }}</p>
+      <h3>Projekte</h3>
     </div>
     <div>
       {% include glyphicons.html icon="281-coffee-to-go" %}
-      <h3>
-        Kaffees
-      </h3>
       <p class="calc-coffees">318</p>
-      <script>window.calcCoffee = 1;</script>
+      <h3>Kaffees</h3>
+      <script>window.procStorage.push('calc-coffees');</script>
     </div>
   </div>
 </div>
 
-<p>Ich interessiere mich für städtische Architektur jeder Art und habe ein Faible für Clean Design
-  und die damit verbundene Schönheit der Einfachheit moderner UI, die für die optimale Fertigstellung
-  eines jeden Projekts unerlässlich ist.</p>
+<div class="text space-block">
+  <div class="text__container">
+    <p>Ich interessiere mich für städtische Architektur jeder Art und habe ein Faible für Clean Design
+      und die damit verbundene Schönheit der Einfachheit moderner UI, die für die optimale Fertigstellung
+      eines jeden Projekts unerlässlich ist.</p>
 
-<p>Sehr wichtig ist mir das Reisen um die Welt, um verschiedene Länder und deren Kulturen kennen
-  zu lernen. Der Blog auf meiner Website spiegelt diesen bunten Mix aus Reisen, Sportevents und
-  Coding-Themen wider und gibt dir ein paar Einblicke in meine Welt! Wenn du also mehr zu den
-  Themen wissen möchtest und tiefer einsteigen willst, stöber einfach in meinem <a
-    href="/en/blog">Blog</a> oder besuche mich auf <a href="https://schchn.gr/ig">Instagram</a>.</p>
+    <p>Sehr wichtig ist mir das Reisen um die Welt, um verschiedene Länder und deren Kulturen kennen
+      zu lernen. Der Blog spiegelt diesen bunten Mix aus Reisen, Sportevents und
+      Coding-Themen wider und gibt Ihnen ein paar Einblicke in meine Welt! Wenn Sie also mehr zu meinen
+      Hobbys wissen möchtest, stöbern Sie einfach in meinem <a
+        href="https://medium.com/@schaechinger">Blog</a> oder besuchen Sie meinen <a href="https://schchn.gr/ig">Instagram</a> Account.</p>
+  </div>
+</div>
+

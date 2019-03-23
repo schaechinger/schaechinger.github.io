@@ -14,6 +14,7 @@
       </ul>
     </div>
     <div class="footer__text">
+      {% comment %}
       <ul class="lang-switch">
         <li>
           {% if "de" == pageLang %}
@@ -39,8 +40,9 @@
           </li>
         {% endif %}
       </ul>
+      {% endcomment %}
       <p>{{ site.data.lang[pageLang].footer.text }}</p>
-      <p class="copyright">&copy; {{ site.time | date: '%Y' }} Manuel Schächinger. {{ site.data.lang[pageLang].footer.rights }}</p>
+      <p class="copyright">&copy; <span class="copyright-year">{{ site.time | date: '%Y' }}</span> Manuel Schächinger. {{ site.data.lang[pageLang].footer.rights }}</p>
       <p class="love">{{ site.data.lang[pageLang].footer.dev[0] }} {% include glyphicons.html icon="20-heart-empty" %} {{ site.data.lang[pageLang].footer.dev[1] }}</p>
     </div>
   </div>

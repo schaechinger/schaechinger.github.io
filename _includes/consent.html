@@ -1,13 +1,14 @@
-<div class="consent">
-  <div>
+<div id="consent" class="consent block--inverted">
+  <div class="consent__container">
     <p>
+      {% include glyphicons.html icon="636-circle-info" %}
       {{ site.data.lang[pageLang].consent.text }}
       <a href="{{ site.data.lang[pageLang].consent.url }}">
         {{ site.data.lang[pageLang].consent.link }}
       </a>
-      <a class="accept-consent">
-        {{ site.data.lang[pageLang].consent.okay }}
-      </a>
     </p>
+    <a class="accept-consent button" onclick="javascript:window.schchngr.consent.accept()">
+      {{ site.data.lang[pageLang].consent.okay }}
+    </a>
   </div>
 </div>

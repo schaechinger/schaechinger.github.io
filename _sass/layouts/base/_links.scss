@@ -1,65 +1,75 @@
-.app a {
-  border-bottom: 0.125rem solid transparent;
-  color: $blue;
-  text-decoration: none;
-
-  &.button {
-    background-color: $white;
-    border: 1px solid $blue;
-    border-radius: 0.25rem;
+.app {
+  a {
+    border-bottom: 0.125rem solid transparent;
     color: $blue;
-    display: inline-block;
-    margin-top: 1.25rem;
-    padding: 0.25rem 0.5rem;
-    white-space: nowrap;
+    text-decoration: none;
 
-    &--twitter {
-      background-color: $twitter;
-      color: $white;
-      font-size: 0.875rem;
-      margin-left: 0.25rem;
-      padding: 0.125rem 0.5rem;
+    &.button {
+      background-color: $white;
+      border: 1px solid $blue;
+      border-radius: 0.25rem;
+      color: $blue;
+      display: inline-block;
+      margin-top: 1.25rem;
+      padding: 0.25rem 0.5rem;
+      white-space: nowrap;
 
-      .glyphicons {
-        margin-right: 0.25rem;
+      &--twitter {
+        background-color: $twitter;
+        color: $white;
+        font-size: 0.875rem;
+        margin-left: 0.25rem;
+        padding: 0.125rem 0.5rem;
+
+        .glyphicons {
+          margin-right: 0.25rem;
+        }
+      }
+
+      &:hover {
+        background-color: $blue;
+        color: $white;
       }
     }
 
-    @include grid-media($mobile-only) {
-      text-align: left;
-      width: 100%;
+    &.button + .button {
+      margin-left: 1rem;
+
+      @include grid-media($mobile-only) {
+        margin-left: 0;
+        margin-top: 1rem;
+      }
     }
 
     &:hover {
-      background-color: $blue;
+      border-bottom-color: $blue;
+      color: $blue;
+
+      &.mail-link {
+        cursor: pointer;
+      }
+    }
+
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  .block--inverted a.button {
+    border-width: 2px;
+
+    &:hover {
+      border-color: $white;
       color: $white;
     }
   }
 
-  &.button + .button {
-    margin-left: 1rem;
-
-    @include grid-media($mobile-only) {
-      margin-left: 0;
-      margin-top: 1rem;
-    }
+  .anchor::before {
+    content: '';
+    display: block;
+    position: relative;
+    height: 2em;
+    margin-top: -2em;
+    width: 0;
   }
-
-  &:hover {
-    border-bottom-color: $blue;
-    color: $blue;
-
-    &.mail-link {
-      cursor: pointer;
-    }
-  }
-
-  &:focus {
-    outline: 0;
-  }
-}
-
-.block--inverted a.button:hover {
-  background-color: $white;
-  color: $blue;
 }

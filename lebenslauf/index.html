@@ -6,112 +6,132 @@ lang: de
 class: resume
 ref: resume
 ---
-<h1>{{ page.title }}</h1>
+<div class="space-block">
+  <h1>{{ page.title }}</h1>
 
-<h2>Berufserfahrung</h2>
+  <h2 id="berufserfahrung" class="anchor">Berufserfahrung</h2>
 
-<div class="arrow"></div>
-<div class="block block-experience">
-  <div>
-    <div class="resume-job">
-      {% include resume-job.html data=site.data.resume.lux-2018 %}
-      <ul>
-        <li>Implementierung eines intelligenten Assistenzsystems für einen deutschen Premium-Automobilhersteller</li>
-      </ul>
+  <div class="arrow"></div>
+  <div class="block block-experience">
+    <div>
+      <div class="resume-job">
+        {% include resume-job.html data=site.data.resume.freelance-2019 %}
+        <p>Falls Sie es noch nicht getan haben können Sie alle Informationen über meine derzeitige <a
+            href="/taetigkeit/">Tätigkeit</a> in Erfahrung bringen.</p>
+      </div>
+      <div class="resume-job">
+        {% include resume-job.html data=site.data.resume.lux-2018 %}
+        <ul>
+          <li>Implementierung eines intelligenten Assistenzsystems für einen deutschen Premium-Automobilhersteller</li>
+          <li>Entwicklung von Anwendungen auf der Headunit für die Fahrzeugflotte</li>
+          <li>Arbeiten in internationalen Teams</li>
+        </ul>
+      </div>
     </div>
-    <div class="resume-job">
-      {% include resume-job.html data=site.data.resume.ff-2017 %}
-      <ul>
-        <li>Disziplinarische und fachliche Führung von Softwareentwicklern</li>
-        <li>Ausüben der Rolle des Lead Entwicklers für unternehmensweite Produktvorhaben</li>
-        <li>Sparringspartner des Product Owners bei technischer Machbarkeit fachlicher Anforderungen</li>
-      </ul>
+    <div>
+      <div class="resume-job">
+        {% include resume-job.html data=site.data.resume.ff-2017 %}
+        <ul>
+          <li>Disziplinarische und fachliche Führung von Softwareentwicklern</li>
+          <li>Ausüben der Rolle des Lead Entwicklers für unternehmensweite Produktvorhaben</li>
+          <li>Sparringspartner des Product Owners bei technischer Machbarkeit fachlicher Anforderungen</li>
+        </ul>
+      </div>
+      <div class="resume-job">
+        {% include resume-job.html data=site.data.resume.ff-2014 %}
+        <ul>
+          <li>Ausüben der Rolle des Lead Entwicklers in den Vorhaben</li>
+          <li>Arbeiten in selbstorganisierten cross-funktionalen Produktteams</li>
+          <li>Mitarbeit beim IT-internen Wandel zu Agilität und Einführung von Scrum (Mitglied des Pilotprojekts)</li>
+        </ul>
+      </div>
     </div>
-  </div>
-  <div>
-    <div class="resume-job">
-      {% include resume-job.html data=site.data.resume.ff-2014 %}
-      <ul>
-        <li>Ausüben der Rolle des Lead Entwicklers in den Vorhaben</li>
-        <li>Arbeiten in selbstorganisierten cross-funktionalen Produktteams</li>
-        <li>Mitarbeit beim IT-internen Wandel zu Agilität und Einführung von Scrum (Mitglied des Pilotprojekts)</li>
-      </ul>
+    <div>
+      <div class="resume-job">
+        {% include resume-job.html data=site.data.resume.keks-2013 %}
+        <ul>
+          <li>Continuity Filmproduktions-App zur Unterstützung von professionellen Filmproduktions-Teams beim Dreh und
+            der Postbearbeitung</li>
+          <li>Metadatenbox: Netzwerk-Tool für Raspberry π zur Datenanalyse von Kameras, Soundsystemen und
+            Zeitsynchronisierung</li>
+        </ul>
+      </div>
+      <div class="resume-job">
+        {% include resume-job.html data=site.data.resume.mec-2012 %}
+        <ul>
+          <li>Entwicklung ortungsbasierter Apps</li>
+          <li>REST Backends</li>
+        </ul>
+      </div>
     </div>
-    <div class="resume-job">
-      {% include resume-job.html data=site.data.resume.keks-2013 %}
-      <ul>
-        <li>Continuity Filmproduktions-App zur Unterstützung von professionellen Filmproduktions-Teams beim Dreh und der Postbearbeitung</li>
-        <li>Metadatenbox: Netzwerk-Tool für Raspberry π zur Datenanalyse von Kameras, Soundsystemen und Zeitsynchronisierung</li>
-      </ul>
-    </div>
-  </div>
-  <div>
-    <div class="resume-job">
-      {% include resume-job.html data=site.data.resume.mec-2012 %}
-      <ul>
-        <li>Entwicklung ortungsbasierter Apps</li>
-        <li>REST Backends</li>
-      </ul>
-    </div>
-    <div class="resume-job">
-      {% include resume-job.html data=site.data.resume.parker-2007 %}
-      <ul>
-        <li>Gestaltung von Teambuilding-Maßnahmen</li>
-        <li>Anleitung und Begleitung der Teams bei den Übungen</li>
-        <li>Steuerung der Teams durch ungewohnte und extreme Situationen</li>
-      </ul>
-    </div>
-  </div>
-</div>
-    
-<h2>Studium</h2>
-
-<div class="block block-studies">
-  <div>
-    <div class="resume-job">
-      {% include resume-job.html data=site.data.resume.hm-2009 %}
-      <ul>
-        <li>Vertiefungsfächer: Algorithmen und Datenstrukturen, Software Engineering, Artificial Intelligence, Datenschutz und IT-Sicherheit</li>
-      </ul>
-    </div>
-    <div class="resume-job">
-      {% include resume-job.html data=site.data.resume.hm-ba %}
-      <ul>
-        <li>Thema: Entwicklung des Feedreaders feader</li>
-        <li>Webbasierte Anwendung zum geräteübergreifenden Konsumieren und Verwalten von Feeds<br> <a
-          href="/projekte/feader">Zum Projekt</a></li>
-      </ul>
+    <div>
+      <div class="resume-job">
+        {% include resume-job.html data=site.data.resume.parker-2007 %}
+        <ul>
+          <li>Gestaltung von Teambuilding-Maßnahmen</li>
+          <li>Anleitung und Begleitung der Teams bei den Übungen</li>
+          <li>Steuerung der Teams durch ungewohnte und extreme Situationen</li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>
 
-<h2>Zertifizierungen</h2>
+<div class="space-block">
+  <h2 id="studium" class="anchor">Studium</h2>
 
-<div class="block block-certifications">
-  <div>
-    <ul>
-      {% for cert in site.data.resume.certifications %}
-      <li>
-        <a href="{{ cert.url }}" target="_blank">
-          {{ cert.title }}{% if cert.year %} ({{ cert.year }}){% endif %}
-        </a>
-      </li>
-      {% endfor %}
-    </ul>
+  <div class="block block-studies">
+    <div>
+      <div class="resume-job">
+        {% include resume-job.html data=site.data.resume.hm-2009 %}
+        <ul>
+          <li>Vertiefungsfächer: Algorithmen und Datenstrukturen, Software Engineering, Artificial Intelligence,
+            Datenschutz und IT-Sicherheit</li>
+        </ul>
+      </div>
+      <div class="resume-job">
+        {% include resume-job.html data=site.data.resume.hm-ba %}
+        <ul>
+          <li>Thema: Entwicklung des Feedreaders feader</li>
+          <li>Webbasierte Anwendung zum geräteübergreifenden Konsumieren und Verwalten von Feeds<br> <a
+              href="/projekte/feader">Zum Projekt</a></li>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
 
-<h2>Fähigkeiten</h2>
+<div class="space-block">
+  <h2 id="zertifizierungen" class="anchor">Zertifizierungen</h2>
 
-<div class="block block-skills">
-  {% for set in site.data.resume.skills %}
+  <div class="block block-certifications">
+    <div>
+      <ul>
+        {% for cert in site.data.resume.certifications %}
+        <li>
+          <a href="{{ cert.url }}" target="_blank">
+            {{ cert.title }}{% if cert.year %} ({{ cert.year }}){% endif %}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="space-block">
+  <h2 id="faehigkeiten" class="anchor">Fähigkeiten</h2>
+
+  <div class="block block-skills">
+    {% for set in site.data.resume.skills %}
     <div class="skill-set">
       <h3>{{ set.title[page.lang] | default: set.title }}</h3>
       <ul class="tags">
         {% for skill in set.skills %}
-          <li class="tag">{{ skill[page.lang] | default: skill }}</li>
+        <li class="tag">{{ skill[page.lang] | default: skill }}</li>
         {% endfor %}
       </ul>
     </div>
-  {% endfor %}
+    {% endfor %}
+  </div>
 </div>

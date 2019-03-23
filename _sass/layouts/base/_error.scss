@@ -1,3 +1,47 @@
-.page.page-error {
-  @include outer-container;
+.page.page__error {
+  position: relative;
+
+  h1 {
+    @include outer-container;
+
+    padding-left: 1.25rem;
+  }
+
+  .sorry {
+    @include outer-container;
+
+    &__container {
+      @include media-columns(12, 10, 8);
+      @include media-push(0, 1, 2);
+
+      p.link {
+        text-align: center;
+      }
+    }
+  }
+
+  .error__404 {
+    left: calc(50% - 80rem);
+    overflow-x: hidden;
+    position: relative;
+    text-align: center;
+    text-overflow: ellipsis;
+    width: 160rem;
+    word-wrap: none;
+
+    span.line {
+      color: $gray-middle;
+      display: block;
+      font-family: $font-stack-courier-new;
+
+      @include grid-media($mobile-only) {
+        font-size: 0.75rem;
+      }
+
+      > span {
+        color: $blue;
+        font-weight: bold;
+      }
+    }
+  }
 }

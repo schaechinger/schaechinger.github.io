@@ -16,12 +16,10 @@ layout: compress
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
   <meta name="apple-mobile-web-app-title" content="Schächinger">
   <meta name="apple-touch-fullscreen" content="yes">
-  <!-- ga -->
-  {% include ga.html %}
   <!-- feeds -->
   <link rel="alternate" type="application/atom+xml" title="Manuel Schächinger" href="/blog/feed-atom.xml">
   <!-- assets -->
-  <link rel="stylesheet" href="/assets/css/style.css?gc={{ site.github.build_revision }}">
+  <link rel="stylesheet" href="/assets/css/style.css?gc=b{{ site.github.build_revision }}">
   <!-- language links -->
   {% assign pages = site.pages | where: "ref", page.ref | sort: 'lang' %}
   {% for page in pages %}
@@ -38,12 +36,16 @@ layout: compress
 </head>
 
 <body class="app">
+  <script>window.procStorage = [];</script>
   {% include header.html %}
-  <main class="page{% if page.class %} page-{{ page.class }}{% endif %}">
+  <main class="page{% if page.class %} page__{{ page.class }}{% endif %}">
     {{ content }}
   </main>
   {% include footer.html %}
   {% include consent.html %}
-  <script async defer src="/assets/js/app.js?gc={{ site.github.build_revision }}"></script>
+  <!-- ga -->
+  {% include ga.html %}
+  <!-- app code -->
+  {% include js.html %}
 </body>
 </html>

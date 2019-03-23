@@ -27,6 +27,18 @@ h6 {
 }
 
 .page {
+  > div:first-child {
+    margin-top: 1.25rem;
+
+    @include grid-media($desktop) {
+      margin-top: 2.5rem;
+    }
+  }
+
+  &:not(&__home) {
+    padding-top: 3rem;
+  }
+
   > p,
   > h1,
   > h2,
@@ -45,10 +57,36 @@ h6 {
     margin-bottom: 4.5rem;
     margin-top: 4.5rem;
 
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
     h1,
     h2,
     h3 {
       margin-top: 0;
+    }
+  }
+
+  .text {
+    @include outer-container;
+
+    &__container {
+      @include grid-column(12);
+    }
+
+    &__container + .text__container {
+      margin-top: 1.25rem;
+    }
+  }
+
+
+  .contact {
+    @include outer-container;
+
+    &__container {
+      @include media-columns(12, 8, 6);
+      @include media-push(0, 2, 3);
     }
   }
 }

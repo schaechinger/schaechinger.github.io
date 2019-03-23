@@ -3,14 +3,33 @@
   border-top: 1px solid $white;
   bottom: 0;
   color: $white;
+  display: none;
   left: 0;
   padding: 1rem 0;
   position: fixed;
   right: 0;
+  transition: bottom 1s ease-out;
 
-  > div {
-    @include outer-container;
+  &--accepted {
+    display: block;
+  }
+  &--fade-out {
+    bottom: -10rem;
+  }
+
+  &::before {
+    background: linear-gradient(0, rgba(255, 255, 255, 0.25), transparent);
+    content: '';
+    height: 0.75rem;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: -0.75rem;
+  }
+
+  &__container {
     @include clearfix;
+    @include outer-container;
 
     font-size: 0.875rem;
     position: relative;
@@ -19,20 +38,42 @@
       @include media-columns(12);
 
       margin-bottom: 0;
+
+      @include grid-media($mobile-only) {
+        padding-right: 3rem;
+
+        a {
+          display: block;
+        }
+      }
+
+      a {
+        display: inline-block;
+
+        &,
+        &:hover {
+          border-bottom-color: $white !important;
+          color: $white !important;
+          cursor: pointer;
+        }
+      }
     }
 
-    a {
-      &,
+    a.button.accept-consent {
+      display: block;
+      margin-left: 1.25rem;
+      margin-right: 1.25rem;
+      margin-top: 0;
+      position: absolute;
+      right: 0;
+      top: -0.25rem;
+
       &:hover {
-        border-bottom-color: $white;
-        color: $white;
         cursor: pointer;
       }
 
-      &.accept-consent {
-        display: inline-block;
-        float: right;
-        margin-right: 1.25rem;
+      @include grid-media($mobile-only) {
+        top: 0;
       }
     }
   }

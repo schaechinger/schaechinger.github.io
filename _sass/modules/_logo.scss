@@ -1,5 +1,4 @@
 .logo {
-
   h1,
   h3 {
     color: $black;
@@ -24,16 +23,16 @@
     }
   }
 
-  h1 .colored,
+  h1 .logo--colored,
   h3 {
     font-family: 'ClearSans', $font-stack-helvetica;
   }
 
-  .colored {
+  &--colored {
     color: $blue;
-  }
 
-  &.logo--white .colored {
-    color: $white;
+    &.logo--white {
+      color: $white;
+    }
   }
 }

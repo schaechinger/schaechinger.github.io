@@ -2,36 +2,39 @@
 layout: default
 ---
 {% assign pageLang = page.lang | default: 'de' %}
-<div class="post-image post-image--fullsize">
-  <div class="image" style="background-image:url({{ site.imageBase }}/2/hero.jpg)">
-    <div class="logo logo--full">
-      <h1><span class="colored">Manuel</span>Schächinger</h1>
+<div class="hero">
+  <div class="hero__container" style="background-image: url({{ site.imageBase }}/3/hero.jpg?d=201903)">
+    <div class="logo">
+      <h1><span class="logo--colored logo-white">Manuel</span>Schächinger</h1>
       <h3>
         <span class="freelancer">Freelancer</span>
         <span class="colored">|</span>
         <span class="js">JavaScript Engineer</span>
       </h3>
     </div>
-    <div class="hero-customers">
-      <div>
-        <div>
-          &nbsp;
-        </div>
-        <div>
-          <img src="/assets/images/customers/bmw.png">
-        </div>
-        <div>
-          <img src="/assets/images/customers/luxoft-icon.png">
-        </div>
-        <div>
-          <img src="/assets/images/customers/fonds-finanz.png">
-        </div>
-        <div>
-          <img src="/assets/images/customers/keksfabrik-icon.png">
-        </div>
-        <div>
-          &nbsp;
-        </div>
+
+    <div class="customers">
+      <div class="customers__container">
+        <ul>
+          <li>
+            &nbsp;
+          </li>
+          <li>
+            <img src="{{ site.imageBase }}/customers/luxoft.png" alt="Luxoft GmbH">
+          </li>
+          <li>
+            <img src="{{ site.imageBase }}/customers/bmw.png" alt="BMW AG">
+          </li>
+          <li>
+            <img src="{{ site.imageBase }}/customers/fonds-finanz.png" alt="Fonds Finanz Maklerservice GmbH">
+          </li>
+          <li>
+            <img src="{{ site.imageBase }}/customers/keksfabrik.png" alt="Keksfabrik Produktion GbR">
+          </li>
+          <li>
+            &nbsp;
+          </li>
+        </ul>
       </div>
     </div>
   </div>
