@@ -17,11 +17,11 @@
       position: relative;
 
       .logo {
-        font-size: 2.5rem;
+        text-align: center;
 
-        h1,
-        h3 {
-          color: $white;
+        img {
+          max-width: 80%;
+          width: 25rem;
         }
       }
 
@@ -29,8 +29,8 @@
         height: 23rem;
         padding-top: 4.5rem;
 
-        .logo {
-          font-size: 1.75rem;
+        .logo img {
+          width: 15rem;
         }
       }
 
