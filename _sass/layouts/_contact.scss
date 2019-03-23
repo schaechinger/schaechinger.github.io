@@ -54,11 +54,12 @@
             border:none;
             background-image:none;
             background-color:transparent;
-            -webkit-box-shadow: none;
-            -moz-box-shadow: none;
             box-shadow: none;
             margin: 0;
             padding: 0.6875rem 1rem;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            -webkit-appearance: none;
           }
 
           &--button {
@@ -70,6 +71,11 @@
               padding: 0.75rem 1rem;
               width: 100%;
             }
+          }
+
+          &__email,
+          &__submit {
+            height: 2.5rem;
           }
 
           &__message {
@@ -92,6 +98,14 @@
           }
           &__submit {
             @include media-columns(12, 3, 2);
+
+            background: none;
+            color: inherit;
+            border: none;
+            padding: 0;
+            font: inherit;
+            cursor: pointer;
+            outline: inherit;
 
             background-color: $blue;
             border-bottom: 1px solid $blue;

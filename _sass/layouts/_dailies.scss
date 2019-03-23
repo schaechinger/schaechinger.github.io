@@ -1,16 +1,20 @@
 .page.page__dailies {
   @include outer-container;
 
-  .follow {
-    margin-bottom: 2.5rem;
-  }
+  .intro {
+    @include clearfix;
 
-  h1,
-  .follow {
-    @include media-push(0, 2, 4);
+    &__container {
+      @include media-columns(12, 7, 5);
+      @include media-push(0, 2, 4);
+      
+      .follow {
+        margin-bottom: 2.5rem;
 
-    a.button {
-      margin-top: 0;
+        a.button {
+          margin-top: 0;
+        }
+      }
     }
   }
 
@@ -38,11 +42,8 @@
         width: 3rem;
       }
 
-      &:first-child {
-        &::before {
-          left: calc(50% - 3.5rem);
-          width: 7rem;
-        }
+      &:first-child::before {
+        border-bottom-color: $white;
       }
 
       .post-date {
