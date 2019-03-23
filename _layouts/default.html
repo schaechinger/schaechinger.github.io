@@ -16,8 +16,6 @@ layout: compress
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
   <meta name="apple-mobile-web-app-title" content="Schächinger">
   <meta name="apple-touch-fullscreen" content="yes">
-  <!-- ga -->
-  {% include ga.html %}
   <!-- feeds -->
   <link rel="alternate" type="application/atom+xml" title="Manuel Schächinger" href="/blog/feed-atom.xml">
   <!-- assets -->
@@ -38,11 +36,16 @@ layout: compress
 </head>
 
 <body class="app">
+  <script>window.procStorage = [];</script>
   {% include header.html %}
-  <main class="page{% if page.class %} page-{{ page.class }}{% endif %}">
+  <main class="page{% if page.class %} page__{{ page.class }}{% endif %}">
     {{ content }}
   </main>
   {% include footer.html %}
-  <script async defer src="/assets/js/app.js?gc={{ site.github.build_revision }}"></script>
+  {% include consent.html %}
+  <!-- ga -->
+  {% include ga.html %}
+  <!-- app code -->
+  {% include js.html %}
 </body>
 </html>

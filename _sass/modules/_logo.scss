@@ -1,0 +1,38 @@
+.logo {
+  h1,
+  h3 {
+    color: $black;
+    margin: 0;
+    text-align: center;
+  }
+
+  h1 {
+    font-family: 'ClearSans-Bk', $font-stack-helvetica;
+    font-size: 1em;
+  }
+  
+  h3 {
+    font-size: 0.45em;
+    
+    .freelancer {
+      letter-spacing: 0.2em;
+    }
+    
+    .js {
+      letter-spacing: 0.18em;
+    }
+  }
+
+  h1 .logo--colored,
+  h3 {
+    font-family: 'ClearSans', $font-stack-helvetica;
+  }
+
+  &--colored {
+    color: $blue;
+
+    &.logo--white {
+      color: $white;
+    }
+  }
+}

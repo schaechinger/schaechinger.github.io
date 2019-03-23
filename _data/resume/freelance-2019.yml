@@ -1,0 +1,11 @@
+company:
+  title: Selbstständig
+  location: München & Remote
+job: "Freelancer | JavaScript Engineer"
+dates:
+  start: 2019-05-03
+tags:
+  - JavaScript
+  - TypeScript
+  - Node.js
+  - React

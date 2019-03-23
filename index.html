@@ -4,43 +4,51 @@ lang: de
 class: home
 ref: home
 ---
-<h2>Willkommen auf meiner Website</h2>
-
-<p>Hi, auf meiner Website findest du viele Informationen über mich, meine Interessen und Hobbys. Falls du dich mehr für meine
-berufliche Laufbahn interessierst, nimm meinen Lebenslauf und die Open Source Projekte genauer unter die Lupe. Sieh dich
-um und lies dir auch meinen Blog durch, der alle meiner mir wichtigen Interessen abdeckt und dich mit unterhaltsamen Artikeln
-zu einer Vielzahl verschiedener Themen versorgt. Falls noch Fragen offen bleiben oder du mich aus kontaktieren möchtest,
-kannst du dies jederzeit gerne über die aufgelisteten sozialen Netzwerke oder per E-Mail tun. Aber fang doch einfach am Anfang
-an:</p>
-
-<p>
-  <a href="/ueber-mich">Über mich</a>
-</p>
-
-<h3>Mehr von mir</h3>
-
-<div class="more">
-  <div>
-    <h4>Webprojekte</h4>
-
-    <p>Du möchtest ein Projekt realisieren oder eine Webseite für dich oder deine Firma? Kontaktiere
-      mich gerne und wir besprechen, was für dich passt und stellen ein Konzept speziell nach deinen
-      Vorstellungen zusammen.</p>
-
-      <p>
-        <a href="/kontakt">Kontakt aufnehmen</a>
-      </p>
+<div class="welcome space-block">
+  <div class="welcome__container">
+    <h2>Hi, ich bin Manuel.</h2>
+    
+    <p>Hier sind Sie richtig, ich helfe Ihnen gerne bei der erfolgreichen Umsetzung Ihres nächsten Projekts.</p>
+    <p>Sie suchen Verstärkung bei der Implementierung Ihrer Idee in einem vorhandenen Team oder möchten sich ganz auf mich verlassen, benötigen einen Spezialisten in JavaScript, möchten Ihre Architektur validieren oder eine neue konzipieren beziehungsweise wissen nicht wie Sie Ihr Vorhaben performant und zukunftssicher umsetzen sollen?</p>
+    <p>Ich stehe Ihnen gerne mit Rat und Tat zur Seite und unterstütze Sie in jeder beliebigen Phase des Projekts von der Konzeption bis zur Fertigstellung.</p>
+    <p>Meine Kompetenzen liegen im JavaScript-Umfeld, im Backend sowie im Frontend, embedded als auch auf mobilen Plattformen. Alle daran grenzenden Technologien wie CSS, Datenbanken, die Umsetzung von Designs sowie Testing und Deployment gehören auch zu meinem Reportoire und werden bei Bedarf miteinbezogen.</p>
+    <p>Zögern Sie nicht, mich zu <a href="/kontakt/">kontaktieren</a> und erfahren Sie mehr <a href="/ueber-mich/">über mich</a>.</p>
   </div>
-  <div>
-    <h4>jsguys</h4>
+</div>
 
-    <p>Besuche auch die Website der von Maik Paulus und mir gegründeten jsguys. Hier kannst du unseren Blog nach den neuesten Technologien
-    und weiteren spannenden Themen im JavaScript-Universum durchstöbern. Mach dich mit unseren aktuellen Projekten vertraut,
-    Anfragen zu Aufträgen oder anderen Themen sind jederzeit willkommen!</p>
+<h2>Meine Leistungen</h2>
 
-    <p>
-      <a href="http://www.jsguys.net">Zu den jsguys</a>
+<div class="services block--inverted">
+  <div class="services__container">
+    <div class="services__implementation">
+      <h3>Umsetzung</h3>
+      <p>Ich unterstütze aktiv die Implementierung des Projekts und nutze meine Fähigkeiten, um das bestmögliche Produkt zu erhalten.</p>
+      <p>Meist im JavaScript-Umfeld, sowohl im Backend mit Node.js und TypeScript als auch im Frontend mit React und SASS.</p>
+    </div>
+    <div class="services__concept">
+      <h3>Konzeption &amp; Architektur</h3>
+      <p>Noch vor der ersten Zeile Code steht die durchdachte Konzeption der Projektbasis und die Planung der Architektur an.</p>
+      <p>Hier helfe ich beim Entwurf einer leistungsfähigen und langlebigen Software Architektur und einem stimmigen Gesamtkonzept.</p>
+    </div>
+    <div class="services__consulting">
+      <h3>Beratung</h3>
+      <p>Hier geht es um die Überwindung von aufgetretenen Problemen, der Migration von Systemen oder einer beliebigen anderen Herausforderung.</p>
+      <p>Kontaktieren Sie mich gere mit Ihrem speziellen Anliegen, um gemeinsam eine Lösung zu finden.</p>
+    </div>
+
+    <p class="center">
+      {% include button.html href="/taetigkeit/" label="Mehr erfahren" c2a=1 %}
     </p>
   </div>
 </div>
-  
+
+<div class="contact space-block">
+  <div class="contact__container">
+    <h2>Kontakt</h2>
+    
+    <p>Bitte kontaktieren Sie mich, um gemeinsam Ihr Vorhaben zu verwirklichen und Ihre Herausforderung zu meistern</p>
+    <p class="center">
+      {% include button.html href="/kontakt/" label="Jetzt kontaktieren" c2a=1 %}
+    </p>
+  </div>
+</div>

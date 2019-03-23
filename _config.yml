@@ -20,6 +20,7 @@ defaults:
       sitemap: false
 
 ga: UA-70769809-1
+gc: 6LeKUpkUAAAAAN_-USqhkSfW4KGK1e71HKGfQuNG
 
 compress_html:
   clippings: all
@@ -38,10 +39,12 @@ social:
   name: Manuel Schächinger
   links:
     - https://twitter.com/theschaechinger
-    - https://www.facebook.com/schaechinger
-    - https://www.linkedin.com/in/schaechinger
+    - https://linkedin.com/in/schaechinger
     - https://github.com/schaechinger
     - https://keybase.io/schaechinger
+
+contact:
+  phone: +49 160 97506593
 
 sass:
   style: compressed

@@ -1,0 +1,9 @@
+.page.page__thanks {
+  .thanks {
+    @include outer-container;
+
+    &__container {
+      @include media-columns(12);
+    }
+  }
+}

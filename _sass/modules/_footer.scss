@@ -1,15 +1,16 @@
 footer {
-  margin-top: 2rem;
-  padding: 2rem 0;
+  background-color: $white;
+  margin-top: 4rem;
+  padding: 4rem 0;
   position: relative;
 
   &::before {
     border-top: 1px dashed $gray;
     content: '';
-    position: absolute;
-    top: 0;
     left: 0;
+    position: absolute;
     right: 0;
+    top: 0;
   }
 
   .footer {
@@ -22,7 +23,7 @@ footer {
       font-size: 1.25rem;
       left: 1rem;
       position: absolute;
-      top: -2.75rem;
+      top: -4.75rem;
       transform: rotate(90deg)
     }
 
@@ -30,11 +31,8 @@ footer {
       @include media-columns(12);
 
       font-size: 1.5rem;
+      margin-bottom: 2rem;
       text-align: center;
-
-      @include grid-media($tablet-large) {
-        display: none;
-      }
     }
 
     &__links {
@@ -42,6 +40,12 @@ footer {
 
       ul {
         text-align: right;
+
+        li a::after {
+          color: $black;
+          content: '.';
+          font-weight: bold;
+        }
 
         @include grid-media($mobile-only) {
           text-align: left;
@@ -73,8 +77,36 @@ footer {
         }
       }
 
-      span.glyphicons-heart-empty {
-        color: #fb3958;
+      .love {
+        &:after {
+          animation: cursor 1s infinite;
+          color: $blue;
+          content:" |";
+          font-weight: bold;
+          opacity: 0;
+          right: 0;
+        }
+
+        @keyframes cursor {
+          0% {
+            opacity: 0;
+          }
+          40% {
+            opacity: 0;
+          }
+          50% {
+            opacity: 1;
+          }
+          90% {
+            opacity: 1;
+          }
+          100% {
+            opacity: 0;
+          }
+        }
+        span.glyphicons-heart-empty {
+          color: #fb3958;
+        }
       }
     }
   }

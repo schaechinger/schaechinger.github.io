@@ -1,12 +1,10 @@
 .page {
   @include clearfix;
 
-  &.page-imprint,
-  &.page-privacy {
-    @include outer-container;
-  }
+  overflow-x: hidden;
 
   > p,
+  > a,
   > h1,
   > h2,
   > h3,

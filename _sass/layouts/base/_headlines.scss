@@ -6,14 +6,27 @@ h4 {
   font-weight: normal;
 }
 
+
+
 h2,
 h3,
 h4 {
-  font-family: 'ClearSans', 'ClearSans-Bk', $font-stack-helvetica;
+  font-family: $font-clearsans;
 }
 
 h1 {
   font-size: 2.25rem;
+  position: relative;
+
+  /*&::before {
+    background-color: $gray;
+    bottom: 0;
+    content: '';
+    height: 0.25rem;
+    left: 0;
+    position: absolute;
+    width: 4rem;
+  }*/
 }
 
 h2 {

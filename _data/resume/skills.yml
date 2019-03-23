@@ -24,9 +24,8 @@
   skills:
     - JavaScript
     - TypeScript
+    - CSS / SASS
     - PHP
-    - CSS
-    - SASS
     - Java
     - C/C++
     - Objective-C
@@ -40,10 +39,11 @@
     - Node.js
     - React
     - Express.js
-    - Angular
+    - Neat
     - Foundation
     - Bootstrap
     - Mocha
+    - Angular
     - Jasmine
     - Webpack
     - Redux
@@ -63,7 +63,7 @@
     de: Sonstiges
     en: Others
   skills:
-    - Unix/Linux
+    - Linux
     - nginx
     - git
     - REST

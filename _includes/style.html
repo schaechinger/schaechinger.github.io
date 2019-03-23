@@ -1,0 +1,9 @@
+// TODO: include vendors
+
+{% capture styles %}
+  {% include layouts/_{{ include.file }}.scss %}
+{% endcapture %}
+
+<style>
+  {{ styles | scssify }}
+</style>

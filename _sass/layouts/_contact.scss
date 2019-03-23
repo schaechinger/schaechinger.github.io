@@ -1,0 +1,321 @@
+.page.page__contact {
+  .intro {
+    @include outer-container;
+    @include clearfix;
+
+    h1,
+    > p {
+      @include media-columns(12);
+    }
+  }
+  .hero {
+    @include outer-container;
+    @include clearfix;
+
+    &__container {
+      @include media-columns(12, 6);
+      @include clearfix;
+
+      .personal {
+        .personal-way {
+          margin-bottom: 2.5rem;
+          margin-top: 2.5rem;
+          padding-left: 3.75rem;
+          position: relative;
+
+          span.glyphicons {
+            color: $gray-middle;
+            font-size: 2.5rem;
+            position: absolute;
+            left: 0;
+            top: 0;
+          }
+
+          p {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      .form {
+        @include grid-collapse;
+        @include clearfix;
+
+        &-element {
+          @include media-columns(12);
+
+          textarea {
+            height: 20rem;
+            resize: none;
+          }
+
+          input,
+          textarea {
+            border:none;
+            background-image:none;
+            background-color:transparent;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+            margin: 0;
+            padding: 0.6875rem 1rem;
+          }
+
+          &--button {
+            text-align: right;
+
+            input {
+              background-color: $blue;
+              font-family: $font-clearsans-bk;
+              padding: 0.75rem 1rem;
+              width: 100%;
+            }
+          }
+
+          &__message {
+            border: 1px solid $gray-middle;
+            border-radius: 0.5rem 0.5rem 0 0;
+          }
+          &__email {
+            @include media-columns(12, 9, 10);
+
+            border-bottom: 1px solid $gray-middle;
+            border-left: 1px solid $gray-middle;
+            
+            @include grid-media($mobile-only) {
+              border-right: 1px solid $gray-middle;
+              border-bottom: none;
+            }
+            @include grid-media($tablet) {
+              border-bottom-left-radius: 0.5rem;
+            }
+          }
+          &__submit {
+            @include media-columns(12, 3, 2);
+
+            background-color: $blue;
+            border-bottom: 1px solid $blue;
+            border-right: 1px solid $blue;
+
+            @include grid-media($tablet) {
+              margin-left: 0 !important;
+              width: calc(25% - 0.3125rem) !important;
+            }
+
+            @include grid-media($desktop) {
+              width: calc(100% / 6 - 0.3125rem) !important;
+            }
+
+            &,
+            input {
+              border-radius: 0 0 0.5rem 0;
+              text-align: right;
+
+              @include grid-media($mobile-only) {
+                border-bottom-left-radius: 0.5rem;
+                text-align: left;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .availability {
+    &__container {
+      @include outer-container;
+
+      h2,
+      > p {
+        @include media-columns(12);
+      }
+
+      > p {
+        color: $gray;
+        font-size: 0.875rem;
+      }
+
+      .timeline {
+        @include clearfix;
+        @include media-columns(6, 12);
+
+        margin-bottom: 1.25rem;
+        margin-top: 1.25rem;
+        position: relative;
+
+        li {
+          border-right: 2px solid $gray-middle;
+          position: relative;
+
+          &::before {
+            content: '';
+            height: 2px;
+            position: absolute;
+            top: 0;
+            width: 0.25rem;
+
+            @include grid-media($mobile-only) {
+              right: 0;
+            }
+          }
+
+          &.arrow {
+            position: absolute;
+            right: -0.5625rem;
+            width: 0;
+
+            @include grid-media($mobile-only) {
+              bottom: -0.125rem;
+            }
+
+            &::before {
+              border-bottom: 3px solid $gray-middle;
+              border-right: 3px solid $gray-middle;
+              bottom: 2px;
+              content: '';
+              height: 1rem;
+              right: 0;
+              position: absolute;
+              top: -0.5rem;
+              transform: rotate(45deg);
+              width: 1rem;
+            }
+          }
+
+          span {
+            border-radius: 0.5rem 0 0 0.5rem;
+            display: block;
+            margin-left: calc(100% - 6rem);
+            padding: 0.5rem;
+            text-align: right;
+            width: 6rem;
+            
+            &.days-available {
+              bottom: 0;
+              font-size: 1.25rem;
+              font-weight: bold;
+              left: 0;
+              padding: 0.375rem 0.5rem;
+              position: absolute;
+              right: 0;
+              text-align: left;
+              top: 0;
+            }
+
+            &.year {
+              color: $gray;
+              padding: 0.5rem;
+              position: absolute;
+              top: 0;
+              
+              @include grid-media($mobile-only) {
+                right: -6rem;
+                text-align: left;
+                width: 6rem;
+              }
+            }
+          }
+
+          &.timeline {
+            &--available {
+              border-color: $blue-available;
+
+              &.timeline--highlighted span.month,
+              &::before {
+                background-color: $blue-available-transparent;
+              }
+            }
+            &--tentative {
+              border-color: $blue;
+
+              &.timeline--highlighted span.month,
+              &::before {
+                background-color: $blue-tentative-transparent;
+              }
+            }
+            &--booked {
+              border-color: $blue-booked;
+
+              &.timeline--highlighted span.month,
+              &::before {
+                background-color: $blue-booked-transparent;
+                color: $white;
+              }
+            }
+          }
+        }
+
+        @include grid-media($tablet) {
+          &::before {
+            background: linear-gradient(-90deg, $gray-middle, $white);
+            content: '';
+            height: 2px;
+            position: absolute;
+            top: 0;
+            left: -15rem;
+            width: 15rem;
+          }
+
+          li {
+            border-right: none;
+            border-top: 2px solid $gray-middle;
+            float: left;
+            text-align: left;
+            width: calc(100% / 12);
+
+            &::before {
+              height: 0.25rem;
+              left: 0;
+              width: 2px;
+            }
+
+            &.arrow {
+              right: 0;
+              top: -0.0625rem;
+
+              &::before {
+                transform: rotate(-45deg);
+              }
+            }
+
+            span {
+              border-radius: 0 0 0.5rem 0.5rem;
+              margin-left: 0;
+              text-align: left;
+              width: 100%;
+
+              &.year {
+                left: 0;
+                top: -2.5rem;
+              }
+            }
+          }
+        }
+
+        @include grid-media($tablet-only) {
+          li {
+            span {
+              &.days-available {
+                padding: 0;
+                position: relative;
+              }
+            }
+          }
+        }
+
+        @include grid-media($desktop) {
+          li {
+            span {
+              &.days-available {
+                left: 0;
+                padding-right: 1rem;
+                text-align: right;
+              }
+            }
+          }
+        } 
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{% assign classes = 'button' %}
+{% if include.c2a %}
+  {% assign classes = classes | append: ' button--c2a' %}
+{% endif %}
+<a href="{{ include.href }}" class="{{ classes }}">
+  {% if include.c2a %}
+    {% include glyphicons.html icon="224-chevron-right" %}
+  {% endif %}
+  {{ include.label }}
+</a>

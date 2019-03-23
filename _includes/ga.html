@@ -1,20 +1,2 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga }}"></script>
-<script>
-  window.gaId = '{{ site.ga }}';
-  var disableStr = 'ga-disable-' + window.gaId;
-  if (0 <= document.cookie.indexOf(disableStr + '=true')) {
-    window[disableStr] = true;
-  }
-  window.gaOptOut = function() {
-    document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
-    window[disableStr] = true;
-  };
-  
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
 
-  if ('localhost' !== window.location.hostname) {
-    gtag('js', new Date());
-    gtag('config', window.gaId, { 'anonymize_ip': true });
-  }
-</script>

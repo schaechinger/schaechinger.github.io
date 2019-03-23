@@ -1,71 +1,89 @@
 ---
-layout: contact
+layout: default
 title: Kontakt
 lang: de
 class: contact
 ref: contact
 ---
-<div class="contact-types">
-  <h1>Nimm Kontakt auf</h1>
-  <div class="section">
-    <h3 id="jobs">
-      {% include glyphicons.html icon="365-tie" %}
-      Job-Angebote
-    </h3>
+<div class="intro space-block">
+  <h1>Packen wir es an!</h1>
+  <p>Der erste Schritt lieg bei Ihnen.</p>
+</div>
 
-    <p>Bitte sende mir nur Anfragen für Jobs, die zu mir passen. Ich freue mich generell über
-      unverbindliche und interessante Angebote für JavaScript, Node oder TypeScript Entwickler mit
-      optionaler Führungsverantwortung im agilen Umfeld.</p>
-    <p>Genaue Informationen über meine Fähigkeiten findest du in meinem
-      <a href="/lebenslauf">Lebenslauf</a>.<br>Aufgrund der aktuellen Marktlage bitte ich darum,
-      den <strong>Erstkontakt per Mail</strong> herzustellen! Ich beantworte keine Standard- oder
-      Massennachrichten.</p>
-    <p>Besonders wichtig ist es mir, in einer Firma zu arbeiten, hinter deren Idee und
-      Geschäftsmodell ich stehen kann. Nur so laufe ich auf Höchstleistung.</p>
-
-    <p>
-      <a class="button mail-link" onclick="sendmail(this)" data-address="manuel">
+<div class="hero space-block">
+  <div class="hero__container">
+    <div class="personal">
+      <p>Sie möchten direkt mit mir in Kontakt treten? Melden Sie sich einfach und wir setzen Ihr Vorhaben so um, wie Sie es sich vorstellen!</p>
+      <div class="personal-way personal-way__email">
         {% include glyphicons.html icon="461-send" %}
-        Angebot zusenden
-      </a>
-    </p>
-  </div>
+        <p><strong>Senden Sie mir eine E-Mail</strong></p>
+        <a class="mail-link" onclick="sendmail(this)" data-address="manuel">E-Mail senden</a>
+      </div>
 
-  <div class="section">
-    <h3 id="projekte">
-      {% include glyphicons.html icon="460-briefcase" %}
-      Projekt-Anfragen
-    </h3>
-
-    <p>Ich bin offen für eine Vielzahl von Projekten, von Webseiten über Webanwendungen bis hin zu
-      komplexen Software Systemen. Ich unterstütze dich gerne bei der Umsetzung deiner Ideen oder
-      erweitere bestehende Projekte. Schreib mir gerne eine E-Mail und wir besprechen die
-      Einzelheiten zum Projekt persönlich.</p>
-
-    <p>
-      <a class="button mail-link" onclick="sendmail(this)" data-address="manuel">
-        {% include glyphicons.html icon="461-send" %}
-        Informationen mailen
-      </a>
-    </p>
-  </div>
-
-  <div class="section">
-    <h3 id="allgemein">
-      {% include glyphicons.html icon="554-handshake" %}
-      Allgemeine Anfragen
-    </h3>
-
-    <p>Falls du aus einem anderen Grund Kontakt aufnehmen willst, kannst du das gerne per Mail oder telefonisch tun.</p>
-    <p>
-      <a class="button" href="tel:+4916097506593">
+      <div class="personal-way personal__mobile">
         {% include glyphicons.html icon="465-call" %}
-        Direkt anrufen
-      </a>
-      <a class="button mail-link" onclick="sendmail(this)" data-address="manuel">
-        {% include glyphicons.html icon="461-send" %}
-        Schriftlich anfangen
-      </a>
-    </p>
+        <p><strong>Rufen Sie mich direkt an</strong></p>
+        <a href="tel:{{ site.contact.phone | replace: ' ', '' }}">Einfach anrufen</a>
+      </div>
+
+      <div class="personal-way personal__meet">
+        {% include glyphicons.html icon="554-handshake" %}
+        <p><strong>Sie regeln geschäftliches lieber persönlich?</strong></p>
+        <p>
+          Gerne nach Absprache im <a href="https://www.werk1.com/join-us/#anfahrt">Werk1</a><br>
+          Atelierstr. 29, 81671 München
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero__container">
+    <div class="form form__contact">
+      <form action="https://api.schaechinger.com/contact" method="POST">
+        <div class="form-element form-element__message form-element--required">
+          <textarea name="message" id="message" placeholder="Ihre Nachricht" required></textarea>
+        </div>
+        <div class="form-element form-element__email form-element--required">
+          <input type="email" name="_replyto" id="email" placeholder="E-Mail-Adresse" required>
+        </div>
+        <div class="form-element form-element__submit form-element--button">
+          <input type="submit" value="Senden">
+        </div>
+
+        <div class="form-element form-element--hidden">
+          <input type="hidden" name="_language" value="{{ page.lang }}">
+        </div>
+        <div class="form-element form-element--hidden">
+          <input type="hidden" name="_next" value="/danke/">
+        </div>
+        <div class="form-element form-element--hidden">
+          <input type="hidden" name="_gc" id="gc">
+        </div>
+        <div class="form-element form-element--hidden">
+          <input type="text" name="_bojack" style="display:none">
+        </div>
+      </form>
+      <script src="https://www.google.com/recaptcha/api.js?render={{ site.gc }}"></script>
+      <script>
+        grecaptcha.ready(function () {
+          grecaptcha.execute('{{ site.gc }}', { action: 'contact' }).then(function (token) {
+            document.getElementById("gc").value = token;
+          });
+        });
+      </script>
+    </div>
+  </div>
+</div>
+
+<div id="verfuegbarkeit" class="availability space-block">
+  <div class="availability__container">
+    <h2>Meine Verfügbarkeit</h2>
+
+    <ul id="availability" class="timeline">
+      <li class="arrow"></li>
+    </ul>
+
+    <p>Die Angaben beziehen sich auf verfügbare Arbeitstage pro Woche.</p>
+    <script>window.procStorage.push('availability');</script>
   </div>
 </div>

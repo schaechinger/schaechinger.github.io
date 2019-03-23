@@ -3,11 +3,12 @@
 
   background-color: rgba(255, 255, 255, 0.8);
   border-bottom: 1px solid $gray-middle;
-  color: $white;
   font-family: 'ClearSans', 'ClearSans-Bk', $font-stack-helvetica;
   height: 3rem;
-  position: relative;
-  width: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
   z-index: 1000;
 
   nav {
@@ -34,7 +35,7 @@
           padding: 0;
         }
 
-        &:last-of-type {
+        /*&:last-of-type {
           padding: 0.125rem 0.65rem 0.125rem 0.125rem;
 
           a.button {
@@ -45,7 +46,7 @@
               color: $white;
             }
           }
-        }
+        }*/
 
         &.logo {
           float: left;
@@ -54,22 +55,34 @@
 
           a {
             color: $black;
-            font-family: 'ClearSans-Bk', $font-stack-helvetica;
+            font-family: $font-clearsans-bk;
             font-size: 1.125rem;
 
             .m {
-              font-family: 'ClearSans', 'ClearSans-Bk', $font-stack-helvetica;
+              font-family: $font-clearsans;
+            }
+
+            .small {
+              color: $blue;
+            }
+
+            .large {
+              display: none;
             }
 
             &:hover {
               color: $blue;
+
+              .small {
+                color: $black;
+              }
             }
           }
         }
 
         a {
           border-bottom: none;
-          color: $gray-nav;
+          color: $black;
           font-size: 0.875rem;
 
           &:hover {
@@ -77,13 +90,27 @@
           }
         }
 
-        &.active {
-          /*border-left: 1px solid $green;
-          float: left;*/
+        &:not(.logo) a {
+          &::after {
+            color: $blue;
+            content: '.';
+            font-weight: bold;
+          }
 
+          &:hover::after {
+            color: $black;
+          }
+        }
+
+        &.active {
+          /*border-left: 2px solid $blue;
+          float: left;
+          padding-right: 1rem;*/
+          
           a {
             color: $black;
-            font-family: 'ClearSans-Bk', $font-stack-helvetica;
+            font-family: $font-clearsans-bk;
+            border-bottom: 2px solid $blue;
           }
         }
 
@@ -111,3 +138,5 @@
     }
   }
 }
+
+

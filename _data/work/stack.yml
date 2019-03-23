@@ -1,0 +1,46 @@
+- type: frontend
+  label: Frontend
+  tech:
+  - - React
+    - CSS / SASS
+    - Redux
+    - Neat
+    - Foundation
+- type: backend
+  label: Backend
+  tech:
+  - - Node.js
+    - TypeScript
+    - Express.js
+  - - PHP
+    - WordPress
+    - Symphony
+- type: db
+  label: Datenbank
+  tech:
+  - - MySQL
+    - PostgreSQL
+    - MongoDB
+    - CouchDB
+    - Oracle DB
+- type: cicd
+  label: CI & CD
+  tech:
+  - - Docker
+    - Travis CI
+    - Mocha
+    - Webpack
+    - Gulp
+- type: foundation
+  label: Basis
+  tech:
+  - - Linux
+    - nginx
+    - git
+    - Elasticsearch
+    - Cordova
+    - Authentifizierung
+    - Jira
+    - Confluence
+    - UML
+ 

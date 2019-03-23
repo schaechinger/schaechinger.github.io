@@ -1,0 +1,147 @@
+.page.page__about {
+  .hero {
+    @include outer-container;
+
+    margin-top: 0;
+
+    &__container {
+      @include clearfix;
+
+      background-color: $blue;
+      overflow: hidden;
+      position: relative;
+
+      .overlay {
+        background-color: $blue;
+        border-bottom-left-radius: 10rem;
+        display: none;
+        left: 50%;
+        padding-bottom: 20%;
+        position: absolute;
+        top: 0;
+        transform-origin:0 0;
+        transform: rotate(70deg);
+        width: 50%;
+        z-index: 0;
+
+        @include grid-media($tablet) {
+          display: block;
+        }
+      }
+      
+      .content {
+        h1 {
+          color: $white;
+          padding-left: 2.5rem;
+
+          @include grid-media($tablet) {
+            font-size: 3rem;
+            margin-top: 5rem;
+          }
+
+          @include grid-media($desktop) {
+            font-size: 4rem;
+            margin-top: 10rem;
+          }
+        }
+      }
+
+      img {
+        display: block;
+        float: right;
+        height: auto;
+        width: 100%;
+        z-index: -2;
+
+        @include grid-media($tablet) {
+          height: auto;
+          width: 50%;
+        }
+      }
+    }
+  }
+
+  .year {
+    @include clearfix;
+
+    background-color: $blue;
+
+    &__container {
+      @include outer-container;
+
+      padding-bottom: 2.5rem;
+      padding-top: 2.5rem;
+
+      h2 {
+        @include grid-column(12);
+
+         margin-bottom: 1.75rem;
+         margin-top: 0;
+      }
+
+      h2,
+      p {
+        color: $white;
+      }
+
+      > div {
+        @include media-columns(12, 4);
+
+        margin-top: 1.25rem;
+        position: relative;
+
+        span.glyphicons,
+        p {
+          position: absolute;
+        }
+
+        span.glyphicons {
+          font-size: 1.75rem;
+          left: 0;
+          top: -1.5rem;
+
+          &.glyphicons-medal {
+            color: #ffd700;
+          }
+          &.glyphicons-handshake {
+            color: $blue-available;
+          }
+          &.glyphicons-coffee-to-go {
+            color: #6f4e37;
+          }
+        }
+
+        p {
+          font-size: 2rem;
+          left: 3.25rem;
+          top: -2rem;
+        }
+
+        h3 {
+          color: #034249;
+          margin-bottom: 0;
+        }
+
+        @include grid-media($mobile-only) {
+          margin-bottom: 1.75rem;
+          margin-top: 1.75rem;
+
+          span.glyphicons { 
+            font-size: 2rem;
+            top: -1rem;
+          }
+
+          p {
+            font-size: 1.5rem;
+            left: 4.5rem;
+          }
+
+          h3 {
+            font-size: 1.25rem;
+            margin: 0 0 0 4.5rem;
+          }
+        }
+      }
+    }
+  }
+}

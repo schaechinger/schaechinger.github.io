@@ -25,9 +25,6 @@
       &.call {
         color: $mail;
       }
-      &.facebook {
-        color: $facebook;
-      }
       &.github {
         color: $github;
       }
@@ -42,12 +39,7 @@
       }
       &.xing {
         color: $xing;
-      }
-      &.pocket {
-        color: $pocket;
-      }
-      &.google-plus {
-        color: $google-plus;
+        top: -0.0625em;
       }
       
       &:hover {
@@ -57,9 +49,6 @@
         &.email::before,
         &.call::before {
           background-color: $mail;
-        }
-        &.facebook::before {
-          background-color: $facebook;
         }
         &.github::before {
           background-color: $github;
@@ -75,12 +64,6 @@
         }
         &.xing::before {
           background-color: $xing;
-        }
-        &.pocket::before {
-          background-color: $pocket;
-        }
-        &.google-plus::before {
-          background-color: $google-plus;
         }
       }
     }

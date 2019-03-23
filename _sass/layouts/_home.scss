@@ -1,0 +1,161 @@
+.page.page__home {
+  h2 {
+    text-align: center;
+  }
+
+  .hero {
+    margin: 0;
+    max-width: 100%;
+    padding: 0;
+
+    &__container {
+      @include background-image;
+
+      background-position: center 30%;
+      height: 40rem;
+      overflow-y: hidden;
+      position: relative;
+
+      .logo {
+        font-size: 2.5rem;
+
+        h1,
+        h3 {
+          color: $white;
+        }
+      }
+
+      @include grid-media($mobile-only) {
+        height: 23rem;
+        padding-top: 4.5rem;
+
+        .logo {
+          font-size: 1.75rem;
+        }
+      }
+
+      @include grid-media($tablet) {
+        padding-top: 5rem;
+      }
+
+      @include grid-media($desktop) {
+        padding-top: 7.5rem;
+      }
+    }
+  }
+
+  .welcome {
+    @include outer-container;
+
+    &__container {
+      @include media-columns(12, 10);
+      @include media-push(0, 1);
+    }
+  }
+
+  .customers {
+    background-color: $black-transparent;
+    bottom: 0;
+    left: 0;
+    padding-bottom: 1.25rem;
+    padding-top: 1.25rem;
+    position: absolute;
+    right: 0;
+
+    @include grid-media($mobile-only) {
+      display: none;
+    }
+
+    &__container {
+      @include outer-container;
+
+      ul {
+        li {
+          @include media-columns(3, 2);
+
+          text-align: center;
+
+          img {
+            height: 1.75rem;
+            width: auto;
+            max-width: 80%;
+          }
+        }
+      }
+    }
+  }
+
+  .services {
+    background-color: $blue;
+    margin-top: 5.5rem;
+    padding-bottom: 1.5rem;
+
+    &__container {
+      @include outer-container;
+
+      > div {
+        @include media-columns(12, 4);
+
+        background-color: $white;
+        border: 1px solid $gray-middle;
+        border-radius: 0.5rem;
+        margin-top: -3.75rem;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+        position: relative;
+
+        &::before {
+          background-color: transparent;
+          border-radius: 0.5rem 0.5rem 0 0;
+          border-top: 1px solid $gray-middle;
+          box-shadow: 0 -0.5rem 0.5rem 0 $gray-border;
+          content: '';
+          display: none;
+          height: 3.75rem;
+          left: 0;
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+
+        h3 {
+          margin-top: 1.25rem;
+        }
+
+        p:last-child {
+          margin-bottom: 1.25rem;
+        }
+
+        @include grid-media($mobile-only) {
+          &:not(:first-child) {
+            margin-top: 1.5rem;
+          }
+
+          &:first-child::before {
+            display: block;
+          }
+        }
+
+        @include grid-media($tablet) {
+          &::before {
+            display: block;
+          }
+
+          &.services__implementation {
+            @include grid-shift(4);
+          }
+
+          &.services__concept {
+            @include grid-shift(-4);
+          }
+        }
+      }
+
+      > p {
+        @include media-columns(12);
+
+        margin-bottom: 0;
+      }
+    }
+  }
+}
