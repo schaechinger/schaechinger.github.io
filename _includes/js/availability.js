@@ -1,8 +1,7 @@
 schchngr.availability = {
   forecast: {
     current: 0,
-    '20198': 1,
-    '201911': 4
+    '20195': 4
   },
   months: [
     'Jan',
@@ -29,11 +28,15 @@ schchngr.availability = {
 
     for (var i = 0; 12 > i; i++) {
       date.setMonth(date.getMonth() + 1);
-      var forecastMonth = 0 === i ? 'current' : '' + date.getFullYear() + (date.getMonth() + 1);
+      var forecastMonth = '' + date.getFullYear() + (date.getMonth() + 1);
       var isChange = this.forecast.hasOwnProperty(forecastMonth);
 
       if (isChange) {
         days = this.forecast[forecastMonth];
+      }
+      else if (0 === i) {
+        days = this.forecast.current;
+        isChange = true;
       }
 
       var status = 'booked';

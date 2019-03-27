@@ -112,10 +112,14 @@
             padding-right: 0;
           }
 
-          &:not(:last-child)::after {
+          &::after {
             content: ',';
             right: 0;
             top: 0;
+          }
+
+          &:last-child::after {
+            content: ', ...';
           }
         }
       }
