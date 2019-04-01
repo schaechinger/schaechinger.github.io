@@ -1,7 +1,8 @@
 schchngr.availability = {
   forecast: {
-    current: 0,
-    '20195': 4
+    current: 4,
+    '20198': 2,
+    '20199': 5
   },
   months: [
     'Jan',
@@ -67,13 +68,11 @@ schchngr.availability = {
       month.innerText = this.months[date.getMonth()];
       li.appendChild(month);
 
-      if (isChange) {
-        /* days available */
-        var availableDays = document.createElement('span');
-        availableDays.setAttribute('class', 'days-available');
-        availableDays.innerText = days + 'd';
-        month.appendChild(availableDays);
-      }
+      /* days available */
+      var availableDays = document.createElement('span');
+      availableDays.setAttribute('class', 'days-available');
+      availableDays.innerText = days + 'd';
+      month.appendChild(availableDays);
     }
   }
 };

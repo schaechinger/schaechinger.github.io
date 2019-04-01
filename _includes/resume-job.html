@@ -2,9 +2,9 @@
   <h3>{{ include.data.job[page.lang] | default: include.data.job }}</h3>
 
   <p>
-    <a href="{{ include.data.company.link }}">
+    {% if include.data.company.link %}<a href="{{ include.data.company.link }}">{% endif %}
       {{ include.data.company.title[page.lang] | default: include.data.company.title }}
-    </a>
+    {% if include.data.company.link %}</a>{% endif %}
     {% if include.data.company.location %} in {{ include.data.company.location[page.lang] | default: include.data.company.location }} {% endif %}
     <br>
     {% unless include.data.dates.end %}{{ site.data.lang[page.lang].resume.since }} {% endunless %}
