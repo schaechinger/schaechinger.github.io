@@ -5,8 +5,8 @@ de:
       url: /ueber-mich/
     - title: Tätigkeit
       url: /taetigkeit/
-    - title: "#Dailies"
-      url: /dailies/
+    - title: Lebenslauf
+      url: /lebenslauf/
     - title: Kontakt
       url: /kontakt/
   footer:
@@ -37,8 +37,8 @@ en:
       url: /profile/
     - title: Work
       url: /work/
-    - title: Dailies
-      url: /dailies/
+    - title: Resume
+      url: /resume/
     - title: Contact
       url: /contact/
   footer:
