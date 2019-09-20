@@ -1,5 +1,7 @@
 company:
-  title: Selbstständig
+  title:
+    de: Selbstständig
+    en: Freelancer
   location: München & Remote
 job: "Freelancer | JavaScript Engineer"
 dates:

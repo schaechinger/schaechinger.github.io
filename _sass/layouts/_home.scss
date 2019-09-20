@@ -71,7 +71,8 @@
 
       ul {
         li {
-          @include media-columns(3, 2);
+          @include media-columns(2);
+          width: calc(20% - 1.4583333333rem) !important;
 
           text-align: center;
 

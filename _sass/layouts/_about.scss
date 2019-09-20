@@ -1,4 +1,13 @@
 .page.page__about {
+  .me {
+    border: 0.25rem solid #d6d6d6;
+    border-radius: 50%;
+    display: inline-block;
+    height: 10em;
+    width: 10em;
+    z-index: 310;
+  }
+
   .hero {
     @include outer-container;
 
