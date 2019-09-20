@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Über mich
-description: Erfahren Sie mehr zu meiner Person, meinen Hobbys und Fähigkeiten. So wissen Sie bereits im Voraus ein bisschen besser, auf wen Sie sich einlassen.
+description: "Erfahren Sie mehr zu meiner Person, meinen Hobbys und Fähigkeiten. So wissen Sie bereits im Voraus ein
+bisschen besser, auf wen Sie sich einlassen."
 class: about
 ref: about
 ---
@@ -9,9 +10,12 @@ ref: about
 {% assign month = site.time | date: '%m' | minus: 0 %}
 {% assign day = site.time | date: '%d' | minus: 0 %}
 {% if 2 > month or 2 == month and 14 > day %}
-  {% assign age = age | minus: 1 %}
+{% assign age = age | minus: 1 %}
 {% endif %}
 <div class="text space-block">
+  <div class="center">
+    <img src="{{ site.imageBase }}/2/schaechinger.jpg" class="me">
+  </div>
   <div class="text__container">
     <h1>Hi, ich bin Manuel.</h1>
 
@@ -27,7 +31,8 @@ ref: about
 
     <p>Neben der Programmierung suche ich nach Herausforderungen abseits des Rechners: Meine Leidenschaft
       ist das Laufen, ich trainiere fast immer für den nächsten Wettkampf und versuche mich stetig zu
-      verbessern und weitere Strecken zu absolvieren. Nach dem Berlin Marathon 2017 und dem Chicago Marathon im letzten Jahr ist mein Highlight
+      verbessern und weitere Strecken zu absolvieren. Nach dem Berlin Marathon 2017 und dem Chicago Marathon im letzten
+      Jahr ist mein Highlight
       dieses Jahr der New York City Marathon im November.<br>
       Wenn die Beine einmal nicht mehr wollen, geht es auf dem Mountainbike weiter und an die Isar oder
       in den nächsten Biergarten.</p>
@@ -40,12 +45,12 @@ ref: about
     <div>
       {% include glyphicons.html icon="393-medal" %}
       <p>{{ site.data.about.year.marathons }}</p>
-      <h3>Marathons</h3>
+      <h3>Marathon{% if 1 != site.data.about.year.marathons %}s{% endif %}</h3>
     </div>
     <div>
       {% include glyphicons.html icon="554-handshake" %}
       <p>{{ site.data.about.year.projects }}</p>
-      <h3>Projekte</h3>
+      <h3>Projekt{% if 1 != site.data.about.year.projects %}e{% endif %}</h3>
     </div>
     <div>
       {% include glyphicons.html icon="281-coffee-to-go" %}
@@ -65,8 +70,7 @@ ref: about
     <p>Sehr wichtig ist mir das Reisen um die Welt, um verschiedene Länder und deren Kulturen kennen
       zu lernen. Der Blog spiegelt diesen bunten Mix aus Reisen, Sportevents und
       Coding-Themen wider und gibt Ihnen ein paar Einblicke in meine Welt! Wenn Sie also mehr zu meinen
-      Hobbys wissen möchtest, stöbern Sie einfach in meinem <a
-        href="https://medium.com/@schaechinger">Blog</a> oder besuchen Sie meinen <a href="https://schchn.gr/ig">Instagram</a> Account.</p>
+      Hobbys wissen möchtest, stöbern Sie einfach in meinem <a href="https://medium.com/@schaechinger">Blog</a> oder
+      besuchen Sie meinen <a href="https://schchn.gr/ig">Instagram</a> Account.</p>
   </div>
 </div>
-
