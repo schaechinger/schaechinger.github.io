@@ -19,6 +19,15 @@ h4,
 h5,
 h6 {
   font-family: 'ClearSans-Bk', $font-stack-helvetica;
+  word-wrap: break-word;
+
+  span.brm {
+    display: none;
+
+    @include grid-media($mobile-only) {
+      display: inline;
+    }
+  }
 }
 
 .app,
@@ -47,6 +56,8 @@ h6 {
   > h5,
   > h6 {
     @include column-margin;
+
+    max-width: 100%;
   }
 
   .center {
@@ -79,7 +90,6 @@ h6 {
       margin-top: 1.25rem;
     }
   }
-
 
   .contact {
     @include outer-container;

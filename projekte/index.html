@@ -1,0 +1,82 @@
+---
+layout: default
+title: Projekte
+description: Erhalten Sie hier einen kleinen Überblick über meine bisherigen Projekte.
+lang: de
+class: projects
+ref: projects
+---
+
+<div class="intro space-block">
+  <div class="intro__container">
+    <h1>{{ page.title }}.</h1>
+
+    <p>Hier können Sie sich kurz mit einer Auswahl meiner bisherigen Projekte vertraut machen. Sehen Sie sich dazu auch
+      gerne meinen <a href="/lebenslauf/">Lebenslauf</a> an. Natürlich ist das nur eine schriftliche Kostprobe. Gehen
+      Sie auch mich zu und nehmen Sie <a href="/kontakt/">Kontakt</a> auf, um über Ihre Anliegen zu sprechen und ein
+      Vorgespräch auszumachen. Ich freue mich auf Sie!</p>
+  </div>
+</div>
+
+<div class="filters">
+  <div class="filters__container">
+    {% assign types = 'all,freelance,private,employee' | split: ',' %}
+    <ul class="types">
+      {% for filterType in types %}
+      <li class="type{% if true == forloop.first %} type--active{% endif %}">
+        {% assign typeData = site.data.projects[page.lang].filters.types[filterType] %}
+        {% if typeData.icon %}
+        {% include glyphicons.html icon=typeData.icon %}
+        {% endif %}
+        <a data-filter="{{ filterType }}">{{ typeData.label }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+
+    {% comment %}
+    {% assign roles = 'all,consulting,dev,concept,proto,lead' | split: ',' %}
+    <ul class="roles">
+      {% for role in roles %}
+      <li class="role{% if true == forloop.first %} role--active{% endif %}">
+        <a data-filter="{{ role }}">{{ site.data.projects[page.lang].filters.roles[role] }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+    {% endcomment %}
+  </div>
+</div>
+
+<div class="projects">
+  <div class="projects__container">
+    {% for project in site.data.projects[page.lang].projects %}
+    <div class="project project__{{ project.type }}">
+      <a id="{{ project.key }}" class="anchor"></a>
+      <h3>{{ project.title }}</h3>
+
+      <ul class="project__tags">
+        {% for tag in project.tags %}
+        <li class="tag">{{ tag }}</li>
+        {% endfor %}
+      </ul>
+
+      <p class="description">{{ project.description }}</p>
+
+      <div class="project__more">
+        <p class="year"><strong>Jahr</strong>{{ project.year }}</p>
+        <p class="customer">
+          {% assign customer = site.data.projects[page.lang].filters.types[project.type] %}
+          <span title="{{ customer.label }}">
+            {% include glyphicons.html icon=customer.icon %}
+          </span>
+          <strong>{{ customer.headline }}</strong><a href="{{ project.customer.link }}">{{ project.customer.title }}</a>
+        </p>
+        <p class="roles"><strong>Aufgabenbereiche</strong>
+          {% for role in project.roles %}
+          <span>{{ site.data.projects[page.lang].filters.roles[role] }}</span>
+          {% endfor %}
+        </p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

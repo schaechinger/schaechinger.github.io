@@ -74,3 +74,51 @@ ref: about
       besuchen Sie meinen <a href="https://schchn.gr/ig">Instagram</a> Account.</p>
   </div>
 </div>
+
+<div class="stack space-block">
+  <a id="stack" class="anchor"></a>
+  <h2>Mein Basisstack</h2>
+
+  <div class="stack__text">
+    <p>Grundlegend baut mein Stack auf <strong>JavaScript</strong> auf. Nach Bedarf können jedoch auch andere
+      Technologien zum Einsatz kommen, um technische Einschränkungen z.B. im Webhosting-Bereich zu berücksichtigen.
+    </p>
+  </div>
+
+  <div class="stack__trace">
+    {% for stack in site.data.work.stack %}
+    <div class="stack__{{ stack.type }}">
+      <h3>{{ stack.label }}</h3>
+      {% for sub in stack.tech %}
+      <ul>
+        {% for tech in sub %}
+        <li>{{ tech }}</li>
+        {% endfor %}
+      </ul>
+      {% endfor %}
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="stack__text">
+    {% comment %}
+    <p>Für die erfolgreiche Umsetzung eines Projekts bedarf es natürlich mehr. So setze ich soweit möglich auf agile
+      Arbeitsmethoden und kundenorientiere Ansätze, um das Maximum aus den Anforderungen zu holen.</p>
+    <p>Der Stack bildet die Basis meiner Tätigkeit, kann jedoch nach Belieben erweitert werden. So können Projekte aus
+      dem Webumfeld gleichermaßen abgebildet werden wie jede aus dem Embedded- oder Mobile-Bereich.</p>
+    {% endcomment %}
+    <p>Eine ausführlichere Liste meiner Fähigkeiten finden Sie <a href="/lebenslauf/#faehigkeiten">hier</a>.</p>
+  </div>
+</div>
+
+<div class="contact space-block">
+  <h2>Ihr nächster Schritt</h2>
+
+  <div class="contact__container">
+    <p>Sie haben gefunden, wonach Sie suchen? Dann melden Sie sich gerne bei mir und erzählen Sie mir von Ihrem
+      Vorhaben. Wir finden die richtige Lösung für Sie!</p>
+    <p class="center">
+      {% include button.html href="/kontakt/" label="In Kontakt treten" c2a=1 %}
+    </p>
+  </div>
+</div>

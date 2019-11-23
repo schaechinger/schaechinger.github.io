@@ -1,0 +1,170 @@
+filters:
+  types:
+    all:
+      label: Alle Projekte
+    volunteer:
+      label: Ehrenamtlich
+      headline: Organisation
+      icon: 553-hand-heart
+    employee:
+      label: Angestellter
+      headline: Arbeitgeber
+      icon: 942-buildings-city
+    freelance:
+      label: Freiberuflich
+      headline: Auftraggeber
+      icon: 220-banknotes
+    private:
+      label: Privat
+      headline: GitHub
+      icon: 655-knight
+  roles:
+    all: Alle Bereiche
+    concept: Konzeption
+    consulting: Consulting
+    dev: Softwareentwicklung
+    lead: Lead Entwickler
+    proto: Prototyping
+projects:
+  - title: Fahrerassistenzsystem
+    key: betalabs
+    description: "Implementierung einer sprachgesteuerten Oberfläche zur Abwicklung produktiver Aufgaben während der Fahrt."
+    tags:
+      - JavaScript
+      - Node.js
+      - TypeScript
+      - Azure
+    year: 2019
+    type: freelance
+    customer:
+      title: Motius GmbH
+      link: https://www.motius.de
+    roles:
+      - dev
+      - proto
+  - title: Automatisierung Kundenanbindung
+    key: mak-anbindung
+    description: "Evaluierung geeigneter Softwarekomponenten und Implementierung eines Proof of Concepts zur automatisierten Anbindung mit einem Workflow-System unter Berücksichtigung gesetzlicher Grundlagen."
+    tags:
+      - Consulting
+      - JavaScript
+      - Node.js
+      - Deployment
+    year: 2019
+    type: freelance
+    customer:
+      title: Fonds Finanz Maklerservice GmbH
+      link: https://www.fondsfinanz.de
+    roles:
+      - consulting
+      - dev
+      - proto
+  - title: Internetmarke
+    key: internetmarke
+    description: "Ein Wrapper für die Internetmarke API der Deutschen Post zum Erzeugen von digitalen Briefmarken mit Node.js"
+    tags:
+      - JavaScript
+      - Node.js
+      - Deployment
+      - API
+    year: 2018
+    type: private
+    customer:
+      title: internetmarke
+      link: https://github.com/schaechinger/internetmarke
+    roles:
+      - dev
+  - title: schaechinger.com
+    key: dotcom
+    description: "Auch diese Webseite musste schließlich entwickelt werden. Seit 2013 über arbeite ich sie regelmäßig und passe sie den Trends und meinem Geschmack an. Seit 2018 basiert sie auf GitHub Pages und damit Jekyll."
+    tags:
+      - Jekyll
+      - SASS
+      - JavaScript
+    year: 2018
+    type: private
+    customer:
+      title: schaechinger.github.io
+      link: https://github.com/schaechinger/schaechinger.github.io
+    roles:
+      - consulting
+      - dev
+      - proto
+  - title: "Kundenverwaltungs<span class=\"brm\">-</span>programm"
+    key: bc
+    description: "Konzeption und PoC für ein Kundenverwaltungsprogramm für den gesamten Innendienst unter Berücksichtigung bestehender Strukturen und Daten."
+    tags:
+      - PHP
+      - JavaScript
+      - Node.js
+      - React
+    year: 2017
+    type: employee
+    customer:
+      title: Fonds Finanz Maklerservice GmbH
+      link: https://www.fondsfinanz.de
+    roles:
+      - lead
+      - dev
+      - concept
+  - title: Three Circles
+    key: three-circles
+    description: "Einführung eines Kunden-Loyalitäts-Programms zur Steigerung der Kundenbindung (<a href=\"https://www.three-circles.de\">www.three-circles.de</a>). Das Projekt fokussierte sich auf die Anbindung des externen Systems und die Integration in die Systemlandschaft sowie der Verwaltung der Mitglieder durch Mitarbeiter."
+    tags:
+      - PHP
+      - JavaScript
+      - React
+      - Redux
+    year: 2017
+    type: employee
+    customer:
+      title: Fonds Finanz Maklerservice GmbH
+      link: https://www.fondsfinanz.de
+    roles:
+      - lead
+      - dev
+      - concept
+  - title: Dokumentenzuordnung
+    key: auto-tool
+    description: "Automatisierte Zuweisung eingehender Dokumente an interne Verträge sowie Neuanlage von Verträgen sowie Optimierung des Suchalgorithmus zur Erhöhung der Trefferquote."
+    tags:
+      - JavaScript
+      - Ext JS
+      - PHP
+    year: 2015
+    type: employee
+    customer:
+      title: Fonds Finanz Maklerservice GmbH
+      link: https://www.fondsfinanz.de
+    roles:
+      - dev
+      - concept
+  - title: Marken-Relaunch
+    key: ff-relaunch
+    description: "Neuimplementierung der Webseite fondsfinanz.de im Zuge des Marken-Relaunchs."
+    tags:
+      - PHP
+      - SASS
+      - JavaScript
+      - HTML
+    year: 2015
+    type: employee
+    customer:
+      title: Fonds Finanz Maklerservice GmbH
+      link: https://www.fondsfinanz.de
+    roles:
+      - dev
+  - title: feader – read your feads
+    key: feader
+    description: "Ein webbasierter responsive Feedreader, dessen Hauptaugenmerk auf Datenschutz und Benutzerfreundlichkeit liegt."
+    tags:
+      - PHP
+      - JavaScript
+      - C++
+    year: 2013
+    type: private
+    customer:
+      title: feader
+      link: https://github.com/schaechinger/feader
+    roles:
+      - dev

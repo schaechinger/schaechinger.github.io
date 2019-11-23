@@ -3,10 +3,8 @@ de:
   nav:
     - title: Über mich
       url: /ueber-mich/
-    - title: Tätigkeit
-      url: /taetigkeit/
-    - title: Lebenslauf
-      url: /lebenslauf/
+    - title: Projekte
+      url: /projekte/
     - title: Kontakt
       url: /kontakt/
   footer:
@@ -15,6 +13,8 @@ de:
         url: /impressum/
       - title: Datenschutz
         url: /datenschutz/
+      - title: Lebenslauf
+        url: /lebenslauf/
       - title: Blog
         url: https://medium.com/@schaechinger
     text: "Ich freue mich, dass Sie meine Website bis zum Schluss lesen, hier geht es jedoch nicht weiter. Scrollen Sie wieder weiter nach oben und sehen Sie sich die vielen weiteren Seiten der Website an."
@@ -35,10 +35,8 @@ en:
   nav:
     - title: Profile
       url: /profile/
-    - title: Work
-      url: /work/
-    - title: Resume
-      url: /resume/
+    - title: Projects
+      url: /projects/
     - title: Contact
       url: /contact/
   footer:
@@ -47,6 +45,8 @@ en:
         url: /en/imprint/
       - title: Data Privacy
         url: /en/privacy/
+      - title: Resume
+        url: /en/resume/
     text: "Hi, I'm Manuel. My website is all about running, travelling around the world, web development with JavaScript and Node.js and
         of course about me as well. If you landed here you should rather scroll back to the top or go on to the next page.
         There is not more to see down here."

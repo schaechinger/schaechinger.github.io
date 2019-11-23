@@ -9,7 +9,8 @@ ref: resume
 <div class="space-block">
   <h1>{{ page.title }}</h1>
 
-  <h2 id="berufserfahrung" class="anchor">Berufserfahrung</h2>
+  <a id="berufserfahrung" class="anchor"></a>
+  <h2>Berufserfahrung</h2>
 
   <div class="arrow"></div>
   <div class="block block-experience">
@@ -17,7 +18,8 @@ ref: resume
       <div class="resume-job">
         {% include resume-job.html data=site.data.resume.freelance-2019 %}
         <p>Falls Sie es noch nicht getan haben können Sie alle Informationen über meine <a
-            href="/taetigkeit/">Tätigkeit</a> in Erfahrung bringen.</p>
+            href="/ueber-mich/#mein-stack">Tätigkeit</a> in Erfahrung bringen und sich eine Auswahl bisheriger <a
+            href="/projekte/">Projekte</a> ansehen.</p>
       </div>
       <div class="resume-job">
         {% include resume-job.html data=site.data.resume.lux-2018 %}
@@ -78,7 +80,8 @@ ref: resume
 </div>
 
 <div class="space-block">
-  <h2 id="studium" class="anchor">Studium</h2>
+  <a id="studium" class="anchor"></a>
+  <h2>Studium</h2>
 
   <div class="block block-studies">
     <div>
@@ -101,7 +104,8 @@ ref: resume
 </div>
 
 <div class="space-block">
-  <h2 id="zertifizierungen" class="anchor">Zertifizierungen</h2>
+  <a id="zertifizierungen" class="anchor"></a>
+  <h2>Zertifizierungen</h2>
 
   <div class="block block-certifications">
     <div>
@@ -119,7 +123,8 @@ ref: resume
 </div>
 
 <div class="space-block">
-  <h2 id="faehigkeiten" class="anchor">Fähigkeiten</h2>
+  <a id="faehigkeiten" class="anchor"></a>
+  <h2>Fähigkeiten</h2>
 
   <div class="block block-skills">
     {% for set in site.data.resume.skills %}

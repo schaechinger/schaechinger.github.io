@@ -3,7 +3,6 @@
 
   background-color: rgba(255, 255, 255, 0.8);
   border-bottom: 1px solid $gray-middle;
-  font-family: 'ClearSans', 'ClearSans-Bk', $font-stack-helvetica;
   height: 3rem;
   left: 0;
   position: fixed;
@@ -84,33 +83,36 @@
           border-bottom: none;
           color: $black;
           font-size: 0.875rem;
-
-          &:hover {
-            color: $blue;
-          }
         }
 
         &:not(.logo) a {
+          position: relative;
+
+          &::before {
+            border-bottom: 2px solid $blue;
+            bottom: -0.25rem;
+            content: '';
+            height: 0;
+            left: 0;
+            position: absolute;
+            transition: width 0.125s ease-in-out;
+            width: 0;
+          }
+
           &::after {
             color: $blue;
             content: '.';
             font-weight: bold;
           }
 
-          &:hover::after {
-            color: $black;
+          &:hover::before {
+            width: 2rem;
           }
         }
 
         &.active {
-          /*border-left: 2px solid $blue;
-          float: left;
-          padding-right: 1rem;*/
-          
-          a {
-            color: $black;
-            font-family: $font-clearsans-bk;
-            border-bottom: 2px solid $blue;
+          a::before {
+            width: 2rem;
           }
         }
 
