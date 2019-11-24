@@ -1,5 +1,5 @@
 schchngr.consent = {
-  cookieString: 'CONSENT',
+  cookieString: 'SCHCHNGR-CONSENT',
   check: function () {
     var accepted = window.schchngr.cookie.check(this.cookieString);
 
