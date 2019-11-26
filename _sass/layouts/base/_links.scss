@@ -55,7 +55,8 @@
     }
   }
 
-  .block--inverted a.button {
+  .block--inverted a.button,
+  a.button.button--inverted {
     border-color: $white;
     border-width: 2px;
 

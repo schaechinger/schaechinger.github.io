@@ -1,0 +1,89 @@
+---
+layout: default
+title: TransportKit
+description: Ein SASS Projekt zur einfachen Nutzung von MVV Linien Styles im Web.
+lang: de
+class: transport-kit
+ref: transport-kit
+---
+<link rel="stylesheet"
+  href="https://static.schaechinger.com/projects/transportkit/latest/transportkit.min.css?gc={{ site.github.build_revision }}">
+
+<div class="project__transport-kit">
+  <h1>{{ page.title }}</h1>
+  {% assign nycSubway = '1,2,3,4,5,6,6d,7,7d,a,c,e,b,d,f,m,g,l,s,n,q,r,w' | split: ',' %}
+  {% assign sbahn = 's,s1,s2,s3,s4,s6,s7,s8' | split: ',' %}
+  {% assign ubahn = 'u,u1,u2,u3,u4,u5,u6,u7,u8' | split: ',' %}
+  {% assign bus = '53,132,X30,X910,SEV 17' | split: ',' %}
+  {% assign tram = '17,N41' | split: ',' %}
+  {% assign styles = 'dark,light' | split: ',' %}
+
+  {% for style in styles %}
+  <div class="transport-kit__{{ style }}">
+    <div class="transport-kit-text">
+      <p>TransportKit ist ein SASS Projekt, das die Styles für die Linienanzeigen des öffentlichen Nahverkehrs in
+        München und NYC abbildet. So kann man auf einfache Weise die Linien im jeweiligen Formfaktor mit passender Farbe
+        darstellen.</p>
+    </div>
+    <div class="transport-kit-text">
+      <p>Die Linien sind für helle und dunklere Hintergründe angepasst und können so überall eingesetzt werden.</p>
+    </div>
+    <div class="transport-kit-text">
+      <p>Das Projekt ist Open Source und kann auf <a href="https://github.com/schaechinger/transportkit">GitHub</a>
+        heruntergeladen werden. Viel Spaß bei der Nutzung. Bitte beachten Sie vorab mögliche Beschränkungen oder
+        benötigte Lizenzen durch die Rechteinhaber.</p>
+    </div>
+
+    <div class="transport-kit-headline">
+      <h2>München</h2>
+    </div>
+    <div class="transport-kit-sbahn">
+      <h3>S-Bahnen</h3>
+      {% for line in sbahn %}
+      <span
+        class="transportkit-munich{% if 'dark' == style %} transportkit-munich--contrast{% endif %} transportkit-munich--{{ line }}">{{ line }}</span>
+      {% endfor %}
+    </div>
+
+    <div class="transport-kit-ubahn">
+      <h3>U-Bahnen</h3>
+      {% for line in ubahn %}
+      <span
+        class="transportkit-munich{% if 'dark' == style %} transportkit-munich--contrast{% endif %} transportkit-munich--{{ line }}">{{ line }}</span>
+      {% endfor %}
+    </div>
+
+    <div class="transport-kit-bus">
+      <h3>Busse</h3>
+      {% for line in bus %}
+      <span
+        class="transportkit-munich{% if 'dark' == style %} transportkit-munich--contrast{% endif %} transportkit-munich--bus">{{ line }}</span>
+      {% endfor %}
+    </div>
+
+    <div class="transport-kit-tram">
+      <h3>Trams</h3>
+      {% for line in tram %}
+      <span
+        class="transportkit-munich{% if 'dark' == style %} transportkit-munich--contrast{% endif %} transportkit-munich--tram">{{ line }}</span>
+      {% endfor %}
+    </div>
+
+    <div class="transport-kit-headline">
+      <h2>New York City</h2>
+    </div>
+
+    <div class="transport-kit-subway">
+      <h3>Subway</h3>
+      {% for line in nycSubway %}
+      <span
+        class="transportkit-nyc{% if 'dark' == style %} transportkit-nyc--contrast{% endif %} transportkit-nyc--{{ line }}">{{ line | slice: 0 }}</span>
+      {% endfor %}
+    </div>
+
+    <div class="transport-kit-link">
+      <p><a href="https://github.com/schaechinger/transportkit" class="button">Zur GitHub Page</a></p>
+    </div>
+  </div>
+  {% endfor %}
+</div>

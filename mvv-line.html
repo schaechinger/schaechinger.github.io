@@ -1,67 +1,87 @@
 ---
 layout: default
-title: MVV Line
-description: Ein SASS Projekt zur einfachen Nutzung von MVV Linien Styles im Web.
+title: Transportkit
+description: Ein SASS Projekt zur einfachen Nutzung von Styles für den öffentlichen Nahverkehr in München im Web.
 lang: de
-class: mvvline
-ref: mvvline
+class: transportkit
+ref: transportkit
 nositemap: true
 ---
-<link rel="stylesheet"
-  href="https://static.schaechinger.com/projects/mvv-line/latest/mvv-line.min.css?gc={{ site.github.build_revision }}">
 
-<div class="project__mvvline">
+<link
+  rel="stylesheet"
+  href="https://static.schaechinger.com/projects/transportkit/latest/transportkit.min.css?gc={{ site.github.build_revision }}"
+/>
+
+<div class="project__transportkit">
   <h1>{{ page.title }}</h1>
-  {% assign sbahn = 's,s1,s2,s3,s4,s6,s7,s8' | split: ',' %}
-  {% assign ubahn = 'u,u1,u2,u3,u4,u5,u6,u7,u8' | split: ',' %}
-  {% assign bus = '53,132,X30,X910,SEV 17' | split: ',' %}
-  {% assign tram = '17,N41' | split: ',' %}
-  {% assign styles = 'light,dark' | split: ',' %}
-
-  {% for style in styles %}
-  <div class="mvvline__{{ style }}">
-    <div class="mvvline-text space-block">
-      <p>MVV Line ist ein SASS Projekt, das die Styles für die Linienanzeigen des Münchner MVV abbildet. So kann man auf
-        einfache Weise die Linien im jeweiligen Formfaktor mit passender Farbe darstellen.</p>
+  {% assign sbahn = 's,s1,s2,s3,s4,s6,s7,s8' | split: ',' %} {% assign ubahn =
+  'u,u1,u2,u3,u4,u5,u6,u7,u8' | split: ',' %} {% assign bus =
+  '53,132,X30,X910,SEV 17' | split: ',' %} {% assign tram = '17,N41' | split:
+  ',' %} {% assign styles = 'light,dark' | split: ',' %} {% for style in styles
+  %}
+  <div class="transportkit__{{ style }}">
+    <div class="transportkit-text space-block">
+      <p>
+        MVV Line ist ein SASS Projekt, das die Styles für die Linienanzeigen des
+        Münchner MVV abbildet. So kann man auf einfache Weise die Linien im
+        jeweiligen Formfaktor mit passender Farbe darstellen.
+      </p>
     </div>
-    <div class="mvvline-text space-block">
-      <p>Die Linien sind für helle und dunklere Hintergründe angepasst und können so überall eingesetzt werden.</p>
+    <div class="transportkit-text space-block">
+      <p>
+        Die Linien sind für helle und dunklere Hintergründe angepasst und können
+        so überall eingesetzt werden.
+      </p>
     </div>
-    <div class="mvvline-text space-block">
-      <p>Das Projekt ist Open Source und kann auf <a href="https://github.com/schaechinger/mvv-line">GitHub</a>
-        heruntergeladen werden. Viel Spaß bei der Nutzung.</p>
+    <div class="transportkit-text space-block">
+      <p>
+        Das Projekt ist Open Source und kann auf
+        <a href="https://github.com/schaechinger/transportkit">GitHub</a>
+        heruntergeladen werden. Viel Spaß bei der Nutzung.
+      </p>
     </div>
-    <div class="mvvline-sbahn space-block">
+    <div class="transportkit-sbahn space-block">
       <h3>S-Bahnen</h3>
       {% for line in sbahn %}
       <span
-        class="mvv-line{% if 'dark' == style %} mvv-line--contrast{% endif %} mvv-line--{{ line }}">{{ line }}</span>
+        class="transportkit transportkit--munich{% if 'dark' == style %} transportkit--contrast{% endif %} transportkit--{{ line }}"
+        >{{ line }}</span
+      >
       {% endfor %}
     </div>
 
-    <div class="mvvline-ubahn space-block">
+    <div class="transportkit-ubahn space-block">
       <h3>U-Bahnen</h3>
       {% for line in ubahn %}
       <span
-        class="mvv-line{% if 'dark' == style %} mvv-line--contrast{% endif %} mvv-line--{{ line }}">{{ line }}</span>
+        class="transportkit transportkit--munich{% if 'dark' == style %} transportkit--contrast{% endif %} transportkit--{{ line }}"
+        >{{ line }}</span
+      >
       {% endfor %}
     </div>
 
-    <div class="mvvline-bus space-block">
+    <div class="transportkit-bus space-block">
       <h3>Busse</h3>
       {% for line in bus %}
-      <span class="mvv-line{% if 'dark' == style %} mvv-line--contrast{% endif %} mvv-line--bus">{{ line }}</span>
+      <span
+        class="transportkit transportkit--munich{% if 'dark' == style %} transportkit--contrast{% endif %} transportkit--bus"
+        >{{ line }}</span
+      >
       {% endfor %}
     </div>
 
-    <div class="mvvline-tram space-block">
+    <div class="transportkit-tram space-block">
       <h3>Trams</h3>
       {% for line in tram %}
-      <span class="mvv-line{% if 'dark' == style %} mvv-line--contrast{% endif %} mvv-line--tram">{{ line }}</span>
+      <span
+        class="transportkit transportkit--munich{% if 'dark' == style %} transportkit--contrast{% endif %} transportkit--tram"
+        >{{ line }}</span
+      >
       {% endfor %}
     </div>
 
-    <div class="mvvline-text space-block">
+    <div class="transportkit-text space-block">
       <p>Die neuen farbigen Tramlinien sind bald optional verfügbar.</p>
     </div>
   </div>

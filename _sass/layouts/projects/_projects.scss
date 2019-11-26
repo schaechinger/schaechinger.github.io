@@ -1,9 +1,9 @@
-@import 'mvvline';
+@import "transportkit";
 
 .page.page__projects {
   .intro {
     @include outer-container;
-    
+
     &__container {
       @include media-columns(12);
     }
@@ -40,7 +40,7 @@
           color: $gray;
           margin-right: 0.125rem;
         }
-        
+
         a {
           border-bottom-width: 0;
           color: $gray;
@@ -52,7 +52,7 @@
           &::before {
             border-bottom: 2px solid $blue;
             bottom: -0.25rem;
-            content: '';
+            content: "";
             height: 0;
             left: 0;
             position: absolute;
@@ -62,7 +62,7 @@
         }
 
         &--active a {
-        // a:hover {
+          // a:hover {
           color: $black;
 
           &::before {
@@ -93,7 +93,7 @@
         &::before {
           border-bottom: 3px solid $blue;
           bottom: -0.25rem;
-          content: '';
+          content: "";
           height: 0;
           left: -1rem;
           position: absolute;
@@ -112,7 +112,7 @@
           font-weight: bold;
 
           &:not(:last-of-type)::after {
-            content: ',';
+            content: ",";
             padding-right: 0.25rem;
           }
         }
@@ -125,7 +125,7 @@
 
         p {
           color: $gray;
-          
+
           &.year {
             @include media-columns(12, 3);
           }
@@ -134,7 +134,7 @@
             @include media-columns(12, 4);
 
             span:not(:last-of-type)::after {
-              content: ',';
+              content: ",";
               padding-right: 0.125rem;
             }
           }
@@ -170,7 +170,7 @@
         margin-top: 2.5rem;
 
         &:not(:first-of-type)::before {
-          content: '';
+          content: "";
           width: 10rem;
           height: 0;
           border-bottom: 1px solid $gray-middle;
