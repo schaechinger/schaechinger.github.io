@@ -1,0 +1,94 @@
+.page.page__mvvline {
+  padding-top: 0;
+  position: relative;
+
+  h1 {
+    display: inline-block;
+    left: calc(50% - 20rem);
+    position: absolute;
+    text-align: center;
+    top: 3rem;
+    width: 40rem;
+    z-index: 400;
+  }
+
+  .mvvline {
+    &__light,
+    &__dark {
+      @include clearfix;
+      padding: 4.5rem 1.25rem;
+      z-index: 100;
+
+      @include grid-media($tablet) {
+        display: inline-block;
+        overflow-x: hidden;
+        padding-top: 4.5rem;
+        width: 50%;
+
+        > div {
+          @include clearfix;
+
+          padding: 2.5rem 0;
+          position: relative;
+
+          h3,
+          p {
+            display: inline-block;
+            position: absolute;
+            text-align: center;
+            top: 0;
+            width: 40rem;
+            z-index: 0;
+          }
+        }
+      }
+    }
+
+    &__light {
+      @include grid-media($tablet) {
+        left: 0;
+
+        span {
+          float: right;
+          margin-left: 0.46875em;
+          margin-right: 0;
+        }
+
+        h3,
+        p {
+          right: -21.25rem;
+        }
+      }
+    }
+
+    &__dark {
+      background-color: $black;
+      color: $white;
+
+      @include grid-media($tablet) {
+        right: 0;
+
+        span {
+          float: left;
+        }
+
+        h3,
+        p {
+          left: -21.25rem;
+        }
+      }
+
+      @include grid-media($mobile-only) {
+        .mvvline-text {
+          display: none;
+          margin: 0;
+          visibility: hidden;
+        }
+
+        .mvvline-sbahn {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
