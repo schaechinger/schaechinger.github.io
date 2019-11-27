@@ -1,7 +1,8 @@
 ---
 layout: default
 title: TransportKit
-description: Ein SASS Projekt zur einfachen Nutzung von MVV Linien Styles im Web.
+description: "Ein SASS Projekt zur einfachen Nutzung von Styles des öffentlichen Nahverkehrs in München, NYC und London
+im Web."
 lang: de
 class: transport-kit
 ref: transport-kit
@@ -11,6 +12,8 @@ ref: transport-kit
 
 <div class="project__transport-kit">
   <h1>{{ page.title }}</h1>
+  {% assign tube = 'Bakerloo,Central,Circle,District,Hammersmith & City,Jubilee,Metropolitan,Northern,Piccadilly,Victoria,Waterloo & City' | split: ',' %}
+  {% assign overground = 'Overground,TfL Rail,DLR,Tram' | split: ',' %}
   {% assign nycSubway = '1,2,3,4,5,6,6d,7,7d,a,c,e,b,d,f,m,g,l,s,n,q,r,w' | split: ',' %}
   {% assign sbahn = 's,s1,s2,s3,s4,s6,s7,s8' | split: ',' %}
   {% assign ubahn = 'u,u1,u2,u3,u4,u5,u6,u7,u8' | split: ',' %}
@@ -78,6 +81,26 @@ ref: transport-kit
       {% for line in nycSubway %}
       <span
         class="transportkit-nyc{% if 'dark' == style %} transportkit-nyc--contrast{% endif %} transportkit-nyc--{{ line }}">{{ line | slice: 0 }}</span>
+      {% endfor %}
+    </div>
+
+    <div class="transport-kit-headline">
+      <h2>London</h2>
+    </div>
+
+    <div class="transport-kit-tube">
+      <h3>Tube</h3>
+      {% for line in tube %}
+      <span
+        class="transportkit-london{% if 'dark' == style %} transportkit-london--contrast{% endif %} transportkit-london--{{ line | truncateWords: 1 | downcase }}">{{ line }}</span>
+      {% endfor %}
+    </div>
+
+    <div class="transport-kit-overground">
+      <h3>Overground</h3>
+      {% for line in overground %}
+      <span
+        class="transportkit-london{% if 'dark' == style %} transportkit-london--contrast{% endif %} transportkit-london--{{ line | downcase | remove: ' ' }}">{{ line }}</span>
       {% endfor %}
     </div>
 
