@@ -5,10 +5,12 @@ schchngr.error = {
     }
   },
   report: function () {
-    schchngr.api.post('/error/report', {
-      domain: window.location.hostname,
-      pathname: window.location.pathname,
-      referrer: document.referrer
-    });
+    if ('localhost' !== window.location.hostname) {
+      schchngr.api.post('/error/report', {
+        domain: window.location.hostname,
+        pathname: window.location.pathname,
+        referrer: document.referrer
+      });
+    }
   }
 };

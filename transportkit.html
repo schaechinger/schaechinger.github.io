@@ -1,86 +1,120 @@
 ---
 layout: default
 title: TransportKit
-description: "Ein SASS Projekt zur einfachen Nutzung von Styles des öffentlichen Nahverkehrs in München, NYC und London
-im Web."
+description: "Ein SASS Projekt zur einfachen Nutzung von Styles des öffentlichen Nahverkehrs in München, NYC, London und
+weiteren Großstädten im Web."
 lang: de
 class: transport-kit
 ref: transport-kit
 ---
+
 <link rel="stylesheet"
-  href="https://static.schaechinger.com/projects/transportkit/latest/transportkit.min.css?gc={{ site.github.build_revision }}">
+  href="https://static.schaechinger.com/projects/transportkit/latest/transportkit.min.css?gc={{ site.github.build_revision }}" />
 
 <div class="project__transport-kit">
   <h1>{{ page.title }}</h1>
-  {% assign tube = 'Bakerloo,Central,Circle,District,Hammersmith & City,Jubilee,Metropolitan,Northern,Piccadilly,Victoria,Waterloo & City' | split: ',' %}
-  {% assign overground = 'Overground,TfL Rail,DLR,Tram' | split: ',' %}
-  {% assign nycSubway = '1,2,3,4,5,6,6d,7,7d,a,c,e,b,d,f,m,g,l,s,n,q,r,w' | split: ',' %}
-  {% assign sbahn = 's,s1,s2,s3,s4,s6,s7,s8' | split: ',' %}
-  {% assign ubahn = 'u,u1,u2,u3,u4,u5,u6,u7,u8' | split: ',' %}
-  {% assign bus = '53,132,X30,X910,SEV 17' | split: ',' %}
-  {% assign tram = '17,N41' | split: ',' %}
-  {% assign styles = 'dark,light' | split: ',' %}
 
-  {% for style in styles %}
+  {% assign modes = site.data.projects.transportkit.modes | split: ',' %}
+  {% assign cities = site.data.projects.transportkit.cities %}
+  {% for style in modes %}
   <div class="transport-kit__{{ style }}">
     <div class="transport-kit-text">
-      <p>TransportKit ist ein SASS Projekt, das die Styles für die Linienanzeigen des öffentlichen Nahverkehrs in
-        München und NYC abbildet. So kann man auf einfache Weise die Linien im jeweiligen Formfaktor mit passender Farbe
-        darstellen.</p>
+      <p>
+        TransportKit ist ein SASS Projekt, das die Styles für die Linienanzeigen
+        des öffentlichen Nahverkehrs in München, NYC, London und weiteren Großstädten abbildet. So kann man
+        auf einfache Weise die Linien im jeweiligen Formfaktor mit passender
+        Farbe darstellen.
+      </p>
     </div>
     <div class="transport-kit-text">
-      <p>Die Linien sind für helle und dunklere Hintergründe angepasst und können so überall eingesetzt werden.</p>
+      <p>
+        Die Linien sind für helle und dunklere Hintergründe angepasst und können
+        so überall eingesetzt werden.
+      </p>
     </div>
     <div class="transport-kit-text">
-      <p>Das Projekt ist Open Source und kann auf <a href="https://github.com/schaechinger/transportkit">GitHub</a>
-        heruntergeladen werden. Viel Spaß bei der Nutzung. Bitte beachten Sie vorab mögliche Beschränkungen oder
-        benötigte Lizenzen durch die Rechteinhaber.</p>
+      <p>
+        Das Projekt ist Open Source und kann auf
+        <a href="https://github.com/schaechinger/transportkit">GitHub</a>
+        heruntergeladen werden. Viel Spaß bei der Nutzung. Bitte beachten Sie
+        vorab mögliche Beschränkungen oder benötigte Lizenzen durch die
+        Rechteinhaber.
+      </p>
     </div>
 
     <div class="transport-kit-headline">
       <h2>München</h2>
     </div>
-    <div class="transport-kit-sbahn">
-      <h3>S-Bahnen</h3>
-      {% for line in sbahn %}
-      <span
-        class="transportkit-munich{% if 'dark' == style %} transportkit-munich--contrast{% endif %} transportkit-munich--{{ line }}">{{ line }}</span>
-      {% endfor %}
-    </div>
 
     <div class="transport-kit-ubahn">
       <h3>U-Bahnen</h3>
-      {% for line in ubahn %}
+      {% assign uLines = cities.munich.ubahn | split: ',' %}
+      {% for line in uLines %}
       <span
-        class="transportkit-munich{% if 'dark' == style %} transportkit-munich--contrast{% endif %} transportkit-munich--{{ line }}">{{ line }}</span>
+        class="transportkit-munich transportkit-munich--{{ line }}{% if 'dark' == style %} transportkit-munich--contrast{% endif %}">{{ line }}</span>
+      {% endfor %}
+    </div>
+
+    <div class="transport-kit-sbahn">
+      <h3>S-Bahnen</h3>
+      {% assign sLines = cities.munich.sbahn | split: ',' %}
+      {% for line in sLines %}
+      <span
+        class="transportkit-munich transportkit-munich--{{ line }}{% if 'dark' == style %} transportkit-munich--contrast{% endif %}">{{ line }}</span>
       {% endfor %}
     </div>
 
     <div class="transport-kit-bus">
       <h3>Busse</h3>
-      {% for line in bus %}
+      {% assign bTypes = cities.munich.bus | split: ',' %}
+      {% for type in bTypes %}
+      {% assign t = type | split: ':' %}
+      {% assign bLines = t[1] | split: '.' %}
+      {% for line in bLines %}
       <span
-        class="transportkit-munich{% if 'dark' == style %} transportkit-munich--contrast{% endif %} transportkit-munich--bus">{{ line }}</span>
+        class="transportkit-munich transportkit-munich--{{ t[0] }}{% if 'dark' == style %} transportkit-munich--contrast{% endif %}">{{ line }}</span>
+      {% endfor %}
       {% endfor %}
     </div>
 
     <div class="transport-kit-tram">
       <h3>Trams</h3>
-      {% for line in tram %}
+      {% assign tdTypes = cities.munich.tram.default | split: ',' %}
+      {% for type in tdTypes %}
+      {% assign t = type | split: ':' %}
+      {% assign tdLines = t[1] | split: '.' %}
+      {% for line in tdLines %}
       <span
-        class="transportkit-munich{% if 'dark' == style %} transportkit-munich--contrast{% endif %} transportkit-munich--tram">{{ line }}</span>
+        class="transportkit-munich transportkit-munich--{{ t[0] }}{% if 'dark' == style %} transportkit-munich--contrast{% endif %}">{{ line }}</span>
+      {% endfor %}
+      {% endfor %}
+      <br><br>
+      {% assign tLines = cities.munich.tram.colored | split: ',' %}
+      {% for line in tLines %}
+      <span
+        class="transportkit-munich transportkit-munich--{{ line }}{% if 'dark' == style %} transportkit-munich--contrast{% endif %}">{{ line | slice: 1, 2 }}</span>
       {% endfor %}
     </div>
 
     <div class="transport-kit-headline">
-      <h2>New York City</h2>
+      <h2>Berlin</h2>
     </div>
 
-    <div class="transport-kit-subway">
-      <h3>Subway</h3>
-      {% for line in nycSubway %}
+    <div class="transport-kit-ubahn">
+      <h3>U-Bahn</h3>
+      {% assign uLines = cities.berlin.ubahn | split: ',' %}
+      {% for line in uLines %}
       <span
-        class="transportkit-nyc{% if 'dark' == style %} transportkit-nyc--contrast{% endif %} transportkit-nyc--{{ line }}">{{ line | slice: 0 }}</span>
+        class="transportkit-berlin transportkit-berlin--{{ line }}{% if 'dark' == style %} transportkit-berlin--contrast{% endif %}">{{ line }}</span>
+      {% endfor %}
+    </div>
+
+    <div class="transport-kit-sbahn">
+      <h3>S-Bahn</h3>
+      {% assign sLines = cities.berlin.sbahn | split: ',' %}
+      {% for line in sLines %}
+      <span
+        class="transportkit-berlin transportkit-berlin--{{ line }}{% if 'dark' == style %} transportkit-berlin--contrast{% endif %}">{{ line }}</span>
       {% endfor %}
     </div>
 
@@ -90,22 +124,92 @@ ref: transport-kit
 
     <div class="transport-kit-tube">
       <h3>Tube</h3>
-      {% for line in tube %}
+      {% assign tLines = cities.london.tube | split: ',' %}
+      {% for line in tLines %}
       <span
-        class="transportkit-london{% if 'dark' == style %} transportkit-london--contrast{% endif %} transportkit-london--{{ line | truncateWords: 1 | downcase }}">{{ line }}</span>
+        class="transportkit-london transportkit-london--{{ line | truncateWords: 1 | downcase }}{% if 'dark' == style %} transportkit-nyc--contrast{% endif %}">{{ line }}</span>
       {% endfor %}
     </div>
 
     <div class="transport-kit-overground">
       <h3>Overground</h3>
-      {% for line in overground %}
+      {% assign oLines = cities.london.overgrounds | split: ',' %}
+      {% for line in oLines %}
       <span
-        class="transportkit-london{% if 'dark' == style %} transportkit-london--contrast{% endif %} transportkit-london--{{ line | downcase | remove: ' ' }}">{{ line }}</span>
+        class="transportkit-london transportkit-london--{{ line | downcase | remove: ' ' }}{% if 'dark' == style %} transportkit-nyc--contrast{% endif %}">{{ line }}</span>
+      {% endfor %}
+    </div>
+
+    <div class="transport-kit-headline">
+      <h2>New York City</h2>
+    </div>
+
+    <div class="transport-kit-subway">
+      <h3>Subway</h3>
+      {% assign sLines = cities.nyc.subway | split: ',' %}
+      {% for line in sLines %}
+      <span
+        class="transportkit-nyc transportkit-nyc--{{ line }}{% if 'dark' == style %} transportkit-nyc--contrast{% endif %}">{{ line | slice: 0 }}</span>
+      {% endfor %}
+    </div>
+
+    <div class="transport-kit-headline">
+      <h2>Nürnberg</h2>
+    </div>
+
+    <div class="transport-kit-ubahn">
+      <h3>U-Bahn</h3>
+      {% assign uLines = cities.nuremberg.ubahn | split: ',' %}
+      {% for line in uLines %}
+      <span
+        class="transportkit-nuremberg transportkit-nuremberg--{{ line }}{% if 'dark' == style %} transportkit-nuremberg--contrast{% endif %}">{{ line }}</span>
+      {% endfor %}
+    </div>
+
+    <div class="transport-kit-sbahn">
+      <h3>S-Bahn</h3>
+      {% assign sLines = cities.nuremberg.sbahn | split: ',' %}
+      {% for line in sLines %}
+      <span
+        class="transportkit-nuremberg transportkit-nuremberg--{{ line }}{% if 'dark' == style %} transportkit-nuremberg--contrast{% endif %}">{{ line }}</span>
+      {% endfor %}
+    </div>
+
+    <div class="transport-kit-tram">
+      <h3>Tram</h3>
+      {% assign tLines = cities.nuremberg.tram | split: ',' %}
+      {% for line in tLines %}
+      <span
+        class="transportkit-nuremberg transportkit-nuremberg--{{ line }}{% if 'dark' == style %} transportkit-nuremberg--contrast{% endif %}">{{ line | slice: 1 }}</span>
+      {% endfor %}
+    </div>
+
+    <div class="transport-kit-rbahn">
+      <h3>R-Bahn</h3>
+      {% assign rLines = cities.nuremberg.rbahn | split: ',' %}
+      {% for line in rLines %}
+      <span
+        class="transportkit-nuremberg transportkit-nuremberg--{{ line | remove: ' ' }}{% if 'dark' == style %} transportkit-nuremberg--contrast{% endif %}">{{ line }}</span>
+      {% endfor %}
+    </div>
+
+    <div class="transport-kit-headline">
+      <h2>Regensburg</h2>
+    </div>
+
+    <div class="transport-kit-bus">
+      <h3>Busse</h3>
+      {% assign bLines = cities.regensburg.bus | split: ',' %}
+      {% for line in bLines %}
+      <span
+        class="transportkit-regensburg transportkit-regensburg--{{ line }}{% if 'dark' == style %} transportkit-regensburg--contrast{% endif %}">{{ line | slice: 1, 3 }}</span>
       {% endfor %}
     </div>
 
     <div class="transport-kit-link">
-      <p><a href="https://github.com/schaechinger/transportkit" class="button">Zur GitHub Page</a></p>
+      <p>
+        <a href="https://github.com/schaechinger/transportkit" class="button">Zur GitHub Page</a>
+      </p>
     </div>
   </div>
   {% endfor %}

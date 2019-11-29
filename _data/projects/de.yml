@@ -59,6 +59,36 @@ projects:
       - consulting
       - dev
       - proto
+  - title: TransportKit
+    key: transportkit
+    description: "TransportKit ist ein SASS Projekt, das die Styles für die Linienanzeigen des öffentlichen Nahverkehrs in München, NYC, London und weiteren Großstädten abbildet. So kann man auf einfache Weise die Linien im jeweiligen Formfaktor mit passender Farbe darstellen."
+    tags:
+      - SASS
+      - Deployment
+    year: 2019
+    type: private
+    customer:
+      title: transportkit
+      link: https://github.com/schaechinger/transportkit
+    roles:
+      - consulting
+      - dev
+      - proto
+  - title: Glühweintour
+    key: gluehweintour
+    description: "Gestaltung einer Plattform zur Organisation von geselligen Glühweintouren in und um München."
+    tags:
+      - Jekyll
+      - SASS
+      - JavaScript
+    year: 2019
+    type: volunteer
+    customer:
+      title: Glühweintour
+      link: https://www.gluehweintour.de
+    roles:
+      - dev
+      - design
   - title: Internetmarke
     key: internetmarke
     description: "Ein Wrapper für die Internetmarke API der Deutschen Post zum Erzeugen von digitalen Briefmarken mit Node.js"
@@ -90,7 +120,7 @@ projects:
       - consulting
       - dev
       - proto
-  - title: "Kundenverwaltungs<span class=\"brm\">-</span>programm"
+  - title: 'Kundenverwaltungs<span class="brm">-</span>programm'
     key: bc
     description: "Konzeption und PoC für ein Kundenverwaltungsprogramm für den gesamten Innendienst unter Berücksichtigung bestehender Strukturen und Daten."
     tags:
@@ -109,7 +139,7 @@ projects:
       - concept
   - title: Three Circles
     key: three-circles
-    description: "Einführung eines Kunden-Loyalitäts-Programms zur Steigerung der Kundenbindung (<a href=\"https://www.three-circles.de\">www.three-circles.de</a>). Das Projekt fokussierte sich auf die Anbindung des externen Systems und die Integration in die Systemlandschaft sowie der Verwaltung der Mitglieder durch Mitarbeiter."
+    description: 'Einführung eines Kunden-Loyalitäts-Programms zur Steigerung der Kundenbindung (<a href="https://www.three-circles.de">www.three-circles.de</a>). Das Projekt fokussierte sich auf die Anbindung des externen Systems und die Integration in die Systemlandschaft sowie der Verwaltung der Mitglieder durch Mitarbeiter.'
     tags:
       - PHP
       - JavaScript

@@ -20,7 +20,7 @@ ref: projects
 
 <div class="filters">
   <div class="filters__container">
-    {% assign types = 'all,freelance,private,employee' | split: ',' %}
+    {% assign types = 'all,freelance,private,employee,volunteer' | split: ',' %}
     <ul class="types">
       {% for filterType in types %}
       <li class="type{% if true == forloop.first %} type--active{% endif %}">
