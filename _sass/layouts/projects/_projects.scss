@@ -30,6 +30,10 @@
           @include media-columns(6);
 
           padding-top: 0.25rem;
+
+          &:last-of-type {
+            @include media-columns(12);
+          }
         }
       }
 
@@ -195,6 +199,41 @@
           .project__tags {
             text-align: right;
           }
+        }
+      }
+    }
+  }
+}
+
+.mode--dark .page.page__projects {
+  .filters {
+    ul.types li.type--active a {
+      color: $white;
+    }
+  }
+
+  .projects {
+    border-top-color: $gray-dark;
+
+    .project {
+      &__tags {
+        li.tag {
+          color: $blue-light;
+        }
+      }
+
+      &__more {
+        p strong {
+          color: $white;
+        }
+      }
+
+      @include grid-media($tablet) {
+        margin-bottom: 2.5rem;
+        margin-top: 2.5rem;
+
+        &:not(:first-of-type)::before {
+          border-bottom-color: $gray-dark;
         }
       }
     }

@@ -7,43 +7,51 @@
     <div class="footer__links">
       <ul>
         {% for element in site.data.lang[pageLang].footer.links %}
-          <li>
-            <a href="{{ element.url }}">{{ element.title }}</a>
-          </li>
+        <li>
+          <a href="{{ element.url }}">{{ element.title }}</a>
+        </li>
         {% endfor %}
       </ul>
     </div>
     <div class="footer__text">
-      {% comment %}
-      <ul class="lang-switch">
-        <li>
-          {% if "de" == pageLang %}
-            {% assign globeIcon = "419-world-east" %}
-          {% else %}
-            {% assign globeIcon = "418-world-west" %}
-          {% endif %}
-          {% include glyphicons.html icon=globeIcon %}
-        </li>
+      <div class="actions">
         {% assign pages = site.pages | where: "ref", page.ref | sort: 'lang' %}
-        {% for page in pages %}
+        {% if 1 < pages.size %}
+        <ul class="lang-switch">
+          <li>
+            {% if "de" == pageLang %}
+            {% assign globeIcon = "419-world-east" %}
+            {% else %}
+            {% assign globeIcon = "418-world-west" %}
+            {% endif %}
+            {% include glyphicons.html icon=globeIcon %}
+          </li>
+          {% assign pages = site.pages | where: "ref", page.ref | sort: 'lang' %}
+          {% for page in pages %}
           {% assign lang = page.lang | default: 'de' %}
           <li class="{{ lang }}">
             <a href="{{ page.url }}" class="{{ lang }}">{{ site.data.lang[lang].name }}</a>
           </li>
-        {% endfor %}
-        {% if 'post' == page.layout %}
+          {% endfor %}
+          {% if 'post' == page.layout %}
           <li class="de">
             <a href="" class="de">Deutsch</a>
           </li>
           <li class="en">
             <a href="/en/" class="en">English</a>
           </li>
+          {% endif %}
+        </ul>
         {% endif %}
-      </ul>
-      {% endcomment %}
+        {% comment %}
+        {% include mode-switch.html %}
+        {% endcomment %}
+      </div>
       <p>{{ site.data.lang[pageLang].footer.text }}</p>
-      <p class="copyright">&copy; <span class="copyright-year">{{ site.time | date: '%Y' }}</span> Manuel Schächinger. {{ site.data.lang[pageLang].footer.rights }}</p>
-      <p class="love">{{ site.data.lang[pageLang].footer.dev[0] }} {% include glyphicons.html icon="20-heart-empty" %} {{ site.data.lang[pageLang].footer.dev[1] }}</p>
+      <p class="copyright">&copy; <span class="copyright-year">{{ site.time | date: '%Y' }}</span> Manuel Schächinger.
+        {{ site.data.lang[pageLang].footer.rights }}</p>
+      <p class="love">{{ site.data.lang[pageLang].footer.dev[0] }} {% include glyphicons.html icon="20-heart-empty" %}
+        {{ site.data.lang[pageLang].footer.dev[1] }}</p>
     </div>
   </div>
 </footer>

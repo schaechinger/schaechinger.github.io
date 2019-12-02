@@ -44,7 +44,7 @@
       
       &:hover {
         border-bottom-color: transparent;
-        color: $white !important;
+        color: $white;
 
         &.email::before,
         &.call::before {

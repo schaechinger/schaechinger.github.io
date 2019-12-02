@@ -9,6 +9,7 @@ body {
   font-size: 1rem;
   margin: 0;
   padding: 0;
+  transition: background-color 0.125s ease-in-out;
 }
 
 body,
@@ -18,7 +19,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'ClearSans-Bk', $font-stack-helvetica;
+  font-family: "ClearSans-Bk", $font-stack-helvetica;
   word-wrap: break-word;
 
   span.brm {

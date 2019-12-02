@@ -45,3 +45,11 @@
     }
   }
 }
+
+.mode--dark .page.page__error {
+  .error__404 {
+    span.line {
+      color: $gray-dark;
+    }
+  }
+}

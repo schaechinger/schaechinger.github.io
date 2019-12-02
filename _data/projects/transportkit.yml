@@ -1,25 +1,52 @@
-modes: 'dark,light'
+modes: 'light'
 cities:
-  berlin:
-    sbahn: 's,s1,s2,s25,s26,s3,s41,s42,s45,s46,s47,s5,s7,s75,s8,s85,s9'
-    ubahn: 'u,u1,u2,u3,u4,u5,u55,u6,u7,u8,u9'
-  london:
-    overgrounds: 'Overground,TfL Rail,DLR,Tram'
-    tube: 'Bakerloo,Central,Circle,District,Hammersmith & City,Jubilee,Metropolitan,Northern,Piccadilly,Victoria,Waterloo & City'
   munich:
-    bus: 'b:132.263,bx:X30.X910,bm:54'
+    title:
+      de: München
+      en: Munich
+    bus: 'b:132.263,bx:X30.X910,bm:53,bn:N41,bnw:N80'
     sbahn: 's,s1,s2,s3,s4,s6,s7,s8,s20'
     tram:
       default: 't:17.N20,tp:22'
       colored: 't12,t15,t16,t17,t18,t19,t20,t21,t22,t23,t25,t27,t28'
     ubahn: 'u,u1,u2,u3,u4,u5,u6,u7,u8'
+  berlin:
+    title:
+      de: Berlin
+      en: Berlin
+    sbahn: 's,s1,s2,s25,s26,s3,s41,s42,s45,s46,s47,s5,s7,s75,s8,s85,s9'
+    ubahn: 'u,u1,u2,u3,u4,u5,u55,u6,u7,u8,u9'
+  london:
+    title:
+      de: London
+      en: London
+    overgrounds: 'Overground,TfL Rail,DLR,Tram'
+    tube: 'Bakerloo,Central,Circle,District,Hammersmith & City,Jubilee,Metropolitan,Northern,Piccadilly,Victoria,Waterloo & City'
+    bus: '14,139,N9'
+    riverBus: 'RB1,RB1X,RB2,RB4,RB5,RB6'
+    airline: 'Emirates Air Line'
   nyc:
+    title:
+      de: New York
+      en: NYC
     subway: '1,2,3,4,5,6,6d,7,7d,a,c,e,b,d,f,m,g,l,s,n,q,r,w'
   nuremberg:
+    title:
+      de: Nürnberg
+      en: Nuremberg
     sbahn: 's,s1,s2,s3,s4'
     rbahn: 'r 9,r 31'
     tram: 't4,t5,t6,t7,t8'
     ubahn: 'u,u1,u2,u3'
   regensburg:
+    title:
+      de: Regensburg
+      en: Regensburg
     bus: 'ba,bx4,bx9,b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13,b14,b15,b16,b17,b18,b19,b20,b21,b22,b23,b24,b25,b26,b27,b28,b29,b30,b31,b32,b33,b34,b35,b36,b37,b41,b42,b43,b77,b78'
-  #salzburg:
+  salzburg:
+    title:
+      de: Salzburg
+      en: Salzburg
+    bus: 'b23,b840'
+    obus: 'o1,o2,o3,o4,o5,o6,o7,o8,o9,o10,o12,o14'
+    sbahn: 's1,s2,s3,s4'

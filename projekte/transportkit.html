@@ -1,0 +1,242 @@
+---
+layout: default
+title: TransportKit
+description: "Ein SASS Projekt zur einfachen Nutzung von Styles des öffentlichen Nahverkehrs in München, NYC, London und
+weiteren Großstädten im Web."
+lang: de
+class: transport-kit
+ref: transport-kit
+---
+<link rel="stylesheet"
+  href="https://static.schaechinger.com/projects/transportkit/latest/transportkit.min.css?gc={{ site.github.build_revision }}" />
+
+{% assign cities = site.data.projects.transportkit.cities %}
+
+<div class="transport-kit">
+  <div class="intro">
+    <h1>{{ page.title }}</h1>
+
+    <p>
+      TransportKit ist ein SASS Projekt, das die Styles für die Linienanzeigen
+      des öffentlichen Nahverkehrs in München, NYC, London und weiteren Großstädten abbildet. So kann man
+      auf einfache Weise die Linien im jeweiligen Formfaktor mit passender
+      Farbe darstellen.
+    </p>
+    <p>
+      Die Linien sind für helle und dunklere Hintergründe angepasst und können
+      so überall eingesetzt werden.
+    </p>
+    <p>
+      Das Projekt ist Open Source und kann auf
+      <a href="https://github.com/schaechinger/transportkit">GitHub</a>
+      heruntergeladen werden. Viel Spaß bei der Nutzung. Bitte beachten Sie
+      vorab mögliche Beschränkungen oder benötigte Lizenzen durch die
+      Rechteinhaber.
+    </p>
+  </div>
+
+  <div class="subnav">
+    <div class="subnav__container">
+      <ul class="city-select">
+        {% for city in cities %}
+        <li class="city-select-{{ city[0] }}{% if 'munich' == city[0] %} active{% endif %}">
+          <a data-city="{{ city[0] }}" onclick="cityChange(this)">{{ city[1].title[page.lang] }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+      {% include mode-switch.html %}
+    </div>
+  </div>
+  <div class="city city-munich">
+    <h2>{{ cities.munich.title[page.lang] }}</h2>
+
+    <h3>U-Bahn</h3>
+    {% assign uLines = cities.munich.ubahn | split: ',' %}
+    {% for line in uLines %}
+    <span class="transportkit-munich transportkit-munich--{{ line }}">{{ line }}</span>
+    {% endfor %}
+
+    <h3>S-Bahn</h3>
+    {% assign sLines = cities.munich.sbahn | split: ',' %}
+    {% for line in sLines %}
+    <span class="transportkit-munich transportkit-munich--{{ line }}">{{ line }}</span>
+    {% endfor %}
+
+    <h3>Bus</h3>
+    {% assign bTypes = cities.munich.bus | split: ',' %}
+    {% for type in bTypes %}
+    {% assign t = type | split: ':' %}
+    {% assign bLines = t[1] | split: '.' %}
+    {% for line in bLines %}
+    <span class="transportkit-munich transportkit-munich--{{ t[0] }}">{{ line }}</span>
+    {% endfor %}
+    {% endfor %}
+
+    <h3>Tram</h3>
+    {% assign tdTypes = cities.munich.tram.default | split: ',' %}
+    {% for type in tdTypes %}
+    {% assign t = type | split: ':' %}
+    {% assign tdLines = t[1] | split: '.' %}
+    {% for line in tdLines %}
+    <span class="transportkit-munich transportkit-munich--{{ t[0] }}">{{ line }}</span>
+    {% endfor %}
+    {% endfor %}
+    <br><br>
+    {% assign tLines = cities.munich.tram.colored | split: ',' %}
+    {% for line in tLines %}
+    <span class="transportkit-munich transportkit-munich--{{ line }}">{{ line | slice: 1, 2 }}</span>
+    {% endfor %}
+  </div>
+
+  <div class="city city-berlin">
+    <h2>{{ cities.berlin.title[page.lang] }}</h2>
+
+    <h3>U-Bahn</h3>
+    {% assign uLines = cities.berlin.ubahn | split: ',' %}
+    {% for line in uLines %}
+    <span class="transportkit-berlin transportkit-berlin--{{ line }}">{{ line }}</span>
+    {% endfor %}
+
+    <h3>S-Bahn</h3>
+    {% assign sLines = cities.berlin.sbahn | split: ',' %}
+    {% for line in sLines %}
+    <span class="transportkit-berlin transportkit-berlin--{{ line }}">{{ line }}</span>
+    {% endfor %}
+  </div>
+
+  <div class="city city-london">
+    <h2>{{ cities.london.title[page.lang] }}</h2>
+
+    <h3>Tube</h3>
+    {% assign tLines = cities.london.tube | split: ',' %}
+    {% for line in tLines %}
+    <span
+      class="transportkit-london transportkit-london--{{ line | truncatewords: 1, '' | downcase }}">{{ line }}</span>
+    {% endfor %}
+
+    <h3>Overground</h3>
+    {% assign oLines = cities.london.overgrounds | split: ',' %}
+    {% for line in oLines %}
+    <span class="transportkit-london transportkit-london--{{ line | downcase | remove: ' ' }}">{{ line }}</span>
+    {% endfor %}
+
+    <h3>Bus & River Bus</h3>
+    {% assign bLines = cities.london.bus | split: ',' %}
+    {% for line in bLines %}
+    <span class="transportkit-london transportkit-london--b">{{ line }}</span>
+    {% endfor %}
+    <br>
+    {% assign rbLines = cities.london.riverBus | split: ',' %}
+    <span class="transportkit-london transportkit-london--rbwoolwich">Woolwich Ferry</span>
+    {% for line in rbLines %}
+    <span class="transportkit-london transportkit-london--{{ line | downcase }}">{{ line }}</span>
+    {% endfor %}
+
+    <h3>Air Line</h3>
+    {% assign aLines = cities.london.airline | split: ',' %}
+    {% for line in aLines %}
+    <span
+      class="transportkit-london transportkit-london--a{{ line | truncatewords: 1, '' | downcase }}">{{ line }}</span>
+    {% endfor %}
+  </div>
+
+  <div class="city city-nyc">
+    <h2>{{ cities.nyc.title[page.lang] }}</h2>
+
+    <h3>Subway</h3>
+    {% assign sLines = cities.nyc.subway | split: ',' %}
+    {% for line in sLines %}
+    <span class="transportkit-nyc transportkit-nyc--{{ line }}">{{ line | slice: 0 }}</span>
+    {% endfor %}
+  </div>
+
+  <div class="city city-nuremberg">
+    <h2>{{ cities.nuremberg.title[page.lang] }}</h2>
+
+    <h3>U-Bahn</h3>
+    {% assign uLines = cities.nuremberg.ubahn | split: ',' %}
+    {% for line in uLines %}
+    <span class="transportkit-nuremberg transportkit-nuremberg--{{ line }}">{{ line }}</span>
+    {% endfor %}
+
+    <h3>S-Bahn</h3>
+    {% assign sLines = cities.nuremberg.sbahn | split: ',' %}
+    {% for line in sLines %}
+    <span class="transportkit-nuremberg transportkit-nuremberg--{{ line }}">{{ line }}</span>
+    {% endfor %}
+
+    <h3>Tram</h3>
+    {% assign tLines = cities.nuremberg.tram | split: ',' %}
+    {% for line in tLines %}
+    <span class="transportkit-nuremberg transportkit-nuremberg--{{ line }}">{{ line | slice: 1 }}</span>
+    {% endfor %}
+
+    <h3>R-Bahn</h3>
+    {% assign rLines = cities.nuremberg.rbahn | split: ',' %}
+    {% for line in rLines %}
+    <span class="transportkit-nuremberg transportkit-nuremberg--{{ line | remove: ' ' }}">{{ line }}</span>
+    {% endfor %}
+  </div>
+
+  <div class="city city-regensburg">
+    <h2>{{ cities.regensburg.title[page.lang] }}</h2>
+
+    <h3>Bus</h3>
+    {% assign bLines = cities.regensburg.bus | split: ',' %}
+    {% for line in bLines %}
+    <span class="transportkit-regensburg transportkit-regensburg--{{ line }}">{{ line | slice: 1, 3 }}</span>
+    {% endfor %}
+  </div>
+
+  <div class="city city-salzburg">
+    <h2>{{ cities.salzburg.title[page.lang] }}</h2>
+
+    <h3>O-Bus</h3>
+    {% assign oLines = cities.salzburg.obus | split: ',' %}
+    {% for line in oLines %}
+    <span class="transportkit-salzburg transportkit-salzburg--{{ line }}">{{ line | slice: 1, 2 }}</span>
+    {% endfor %}
+
+    <h3>S-Bahn</h3>
+    {% assign sLines = cities.salzburg.sbahn | split: ',' %}
+    {% for line in sLines %}
+    <span class="transportkit-salzburg transportkit-salzburg--{{ line }}">{{ line }}</span>
+    {% endfor %}
+
+    <h3>Bus</h3>
+    {% assign bLines = cities.salzburg.bus | split: ',' %}
+    {% for line in bLines %}
+    <span class="transportkit-salzburg transportkit-salzburg--b">{{ line | slice: 1, 3 }}</span>
+    {% endfor %}
+  </div>
+
+  <div class="transport-kit-link">
+    <p>
+      <a href="https://github.com/schaechinger/transportkit" class="button">Zum GitHub Repository</a>
+    </p>
+  </div>
+</div>
+
+<script>
+  var cities = document.getElementsByClassName('city');
+
+  function cityChange(a) {
+    var cityName = a.dataset.city || 'munich';
+
+    document.querySelector('.city-select li.active').classList.remove('active');
+    document.querySelector('.city-select-' + cityName).classList.add('active');
+
+    for (i = 0; cities.length > i; i++) {
+      var city = cities[i];
+
+      if (city.classList.contains(`city-${cityName}`)) {
+        city.style.display = 'block';
+      } else {
+        city.style.display = 'none';
+      }
+    }
+
+    return false;
+  }
+  switchMode();
+</script>

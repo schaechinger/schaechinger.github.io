@@ -61,7 +61,7 @@ projects:
       - proto
   - title: TransportKit
     key: transportkit
-    description: "TransportKit ist ein SASS Projekt, das die Styles für die Linienanzeigen des öffentlichen Nahverkehrs in München, NYC, London und weiteren Großstädten abbildet. So kann man auf einfache Weise die Linien im jeweiligen Formfaktor mit passender Farbe darstellen."
+    description: "TransportKit ist ein SASS Projekt, das die Styles für die Linienanzeigen des öffentlichen Nahverkehrs in München, NYC, London und weiteren Großstädten abbildet. So kann man auf einfache Weise die Linien im jeweiligen Formfaktor mit passender Farbe darstellen. Eine Demo gibt es <a href=\"/projekte/transportkit\">hier</a>."
     tags:
       - SASS
       - Deployment

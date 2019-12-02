@@ -1,0 +1,92 @@
+.page.page__transport-kit {
+  @include outer-container;
+
+  .transport-kit {
+    .intro,
+    &-link {
+      @include media-columns(12);
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .city,
+    &-link {
+      @include media-columns(12, 8, 6);
+      @include media-push(0, 1, 2);
+    }
+
+    .city {
+      &:not(.city-munich) {
+        display: none;
+      }
+    }
+
+    &-link {
+      padding-top: 1.5rem;
+    }
+
+    [class*="transportkit-"] {
+      margin-right: 0.5rem;
+    }
+
+    .subnav {
+      @include grid-collapse;
+      @include clearfix;
+
+      border: 1px solid $gray-middle;
+      border-left: none;
+      border-right: none;
+      overflow-y: hidden;
+      padding: 0.5rem 1.25rem;
+
+      .city-select {
+        background-color: $white;
+        border: 1px solid $blue;
+        border-radius: 0.5rem;
+        margin-left: 1.25rem;
+        max-width: 75%;
+        position: absolute;
+        width: 12rem;
+        z-index: 400;
+
+        &:hover li {
+          display: block;
+        }
+
+        li {
+          display: none;
+          padding: 0.25rem 0.5rem;
+          width: 100%;
+
+          &.active {
+            display: block;
+            left: 0;
+            position: relative;
+            top: 0;
+          }
+
+          a {
+            cursor: pointer;
+          }
+        }
+      }
+
+      .mode-switch {
+        float: right;
+        margin-right: 1.25rem;
+      }
+    }
+  }
+}
+
+.mode--dark .page.page__transport-kit {
+  .transport-kit .subnav {
+    border-color: $gray-dark;
+
+    .city-select {
+      background-color: #1e1e1e;
+    }
+  }
+}

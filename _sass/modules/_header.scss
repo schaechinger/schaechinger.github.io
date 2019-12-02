@@ -141,4 +141,17 @@
   }
 }
 
+/*.subnav {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid $gray-middle;
+  height: 3rem;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 3.0625;
+  z-index: 1000;
 
+  &__container {
+    @include outer-container;
+  }
+}*/

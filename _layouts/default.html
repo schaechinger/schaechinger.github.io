@@ -4,6 +4,7 @@ layout: compress
 {% assign pageLang = page.lang | default: 'de' %}
 <!DOCTYPE html>
 <html lang="{{ pageLang }}">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
@@ -23,20 +24,32 @@ layout: compress
   <!-- language links -->
   {% assign pages = site.pages | where: "ref", page.ref | sort: 'lang' %}
   {% for page in pages %}
-    {% assign lang = page.lang | default: 'de' %}
-    <link rel="alternate" hreflang="{{ lang }}" href="{{ site.url | append: page.url }}">
+  {% assign lang = page.lang | default: 'de' %}
+  <link rel="alternate" hreflang="{{ lang }}" href="{{ site.url | append: page.url }}">
   {% endfor %}
   {% if 'post' == page.layout and page.imagePosition %}
-    <!-- post specials -->
-    {% assign postImage = site.imageBase | append: page.url | append: "/header-thumb.jpg" %}
-    <link rel="image_src" type="image/jpeg" href="{{ postImage }}">
-    <meta property="og:image" content="{{ postImage }}">
+  <!-- post specials -->
+  {% assign postImage = site.imageBase | append: page.url | append: "/header-thumb.jpg" %}
+  <link rel="image_src" type="image/jpeg" href="{{ postImage }}">
+  <meta property="og:image" content="{{ postImage }}">
   {% endif %}
   {% seo title=false %}
 </head>
 
 <body class="app">
-  <script>window.procStorage = [];</script>
+  <script>
+    window.procStorage = [];
+    window.switchMode = function () {
+      document.getElementsByTagName('html')[0].classList.toggle('mode--dark');
+
+      /* TODO: move so event listener callback for transportkit only */
+      var lines = document.querySelectorAll('span[class^="transportkit-"]');
+      for (var i = 0; lines.length > i; i++) {
+        var line = lines[i];
+        line.classList.toggle(`${line.classList[0]}--contrast`);
+      }
+    };
+  </script>
   {% include header.html %}
   <main class="page{% if page.class %} page__{{ page.class }}{% endif %}">
     {{ content }}
@@ -48,4 +61,5 @@ layout: compress
   <!-- app code -->
   {% include js.html %}
 </body>
+
 </html>

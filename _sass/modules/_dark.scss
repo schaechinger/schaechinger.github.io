@@ -1,0 +1,93 @@
+.mode--dark {
+  &,
+  .app {
+    background-color: #1e1e1e;
+    color: $white;
+  }
+
+  .app {
+    header {
+      background-color: rgba(30, 30, 30, 0.9);
+      border-bottom: 1px solid $gray-dark;
+
+      nav {
+        ul.main {
+          li {
+            &.logo {
+              a {
+                color: $white;
+
+                &:hover {
+                  color: $blue;
+
+                  .small {
+                    color: $white;
+                  }
+                }
+              }
+            }
+
+            a {
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+
+    footer {
+      background-color: #1e1e1e;
+
+      &::before {
+        border-top-color: $gray-dark;
+      }
+
+      .footer {
+        > span.glyphicons {
+          color: $gray;
+        }
+
+        &__links ul li a::after {
+          color: $white;
+        }
+      }
+    }
+
+    a {
+      &.button {
+        background-color: #1e1e1e;
+      }
+    }
+
+    .block--inverted a.button,
+    a.button.button--inverted {
+      background-color: $blue;
+      color: $white;
+
+      &:hover {
+        background-color: $white;
+        color: $blue;
+      }
+    }
+
+    ul.socials {
+      li a {
+        &::before {
+          background-color: rgba(30, 30, 30, 0.4);
+        }
+
+        &.github {
+          color: $white;
+
+          &:hover {
+            color: $github;
+
+            &::before {
+              background-color: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+}

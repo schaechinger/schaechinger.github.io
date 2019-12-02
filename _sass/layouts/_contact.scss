@@ -51,9 +51,9 @@
 
           input,
           textarea {
-            border:none;
-            background-image:none;
-            background-color:transparent;
+            border: none;
+            background-image: none;
+            background-color: transparent;
             box-shadow: none;
             margin: 0;
             padding: 0.6875rem 1rem;
@@ -87,7 +87,7 @@
 
             border-bottom: 1px solid $gray-middle;
             border-left: 1px solid $gray-middle;
-            
+
             @include grid-media($mobile-only) {
               border-right: 1px solid $gray-middle;
               border-bottom: none;
@@ -117,7 +117,7 @@
             }
 
             @include grid-media($desktop) {
-              width: calc(100% / 6 - 0.3125rem) !important;
+              width: calc(100% / 6 - 0.1875rem) !important;
             }
 
             &,
@@ -163,7 +163,7 @@
           position: relative;
 
           &::before {
-            content: '';
+            content: "";
             height: 2px;
             position: absolute;
             top: 0;
@@ -187,7 +187,7 @@
               border-bottom: 3px solid $gray-middle;
               border-right: 3px solid $gray-middle;
               bottom: 2px;
-              content: '';
+              content: "";
               height: 1rem;
               right: 0;
               position: absolute;
@@ -205,7 +205,7 @@
             text-align: right;
             transition: background-color 0.25s ease-in-out, opacity 0.25s ease-in-out;
             width: 6rem;
-            
+
             &.days-available {
               bottom: 0;
               font-size: 1.25rem;
@@ -224,7 +224,7 @@
               padding: 0.5rem;
               position: absolute;
               top: 0;
-              
+
               @include grid-media($mobile-only) {
                 right: -6rem;
                 text-align: left;
@@ -275,7 +275,7 @@
         @include grid-media($tablet) {
           &::before {
             background: linear-gradient(-90deg, $gray-middle, $white);
-            content: '';
+            content: "";
             height: 2px;
             position: absolute;
             top: 0;
@@ -340,7 +340,24 @@
               }
             }
           }
-        } 
+        }
+      }
+    }
+  }
+}
+
+.mode--dark .page.page__contact {
+  .availability {
+    .timeline {
+      li.arrow::before {
+        border-bottom-color: $gray-dark;
+        border-right-color: $gray-dark;
+      }
+
+      @include grid-media($tablet) {
+        &::before {
+          background: linear-gradient(-90deg, $gray-dark, #1e1e1e);
+        }
       }
     }
   }

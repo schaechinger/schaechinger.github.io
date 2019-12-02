@@ -6,7 +6,7 @@ footer {
 
   &::before {
     border-top: 1px dashed $gray;
-    content: '';
+    content: "";
     left: 0;
     position: absolute;
     right: 0;
@@ -17,14 +17,14 @@ footer {
     @include outer-container;
     font-size: 0.875rem;
     position: relative;
-  
+
     > span.glyphicons {
       color: $gray-dark;
       font-size: 1.25rem;
       left: 1rem;
       position: absolute;
       top: -4.75rem;
-      transform: rotate(90deg)
+      transform: rotate(90deg);
     }
 
     .socials {
@@ -43,14 +43,14 @@ footer {
 
         li a::after {
           color: $black;
-          content: '.';
+          content: ".";
           font-weight: bold;
         }
 
         @include grid-media($mobile-only) {
           text-align: left;
           padding-bottom: 1.25rem;
-          
+
           li {
             display: inline-block;
             padding-right: 0.5rem;
@@ -63,6 +63,7 @@ footer {
       @include media-columns(12, 6, 5);
 
       ul.lang-switch {
+        display: inline;
         padding-bottom: 0.25rem;
 
         li {
@@ -75,13 +76,18 @@ footer {
             top: 0.25rem;
           }
         }
+
+        & + .mode-switch {
+          display: inline;
+          padding-left: 1rem;
+        }
       }
 
       .love {
         &:after {
           animation: cursor 1s infinite;
           color: $blue;
-          content:" |";
+          content: " |";
           font-weight: bold;
           opacity: 0;
           right: 0;
