@@ -1,8 +1,8 @@
 schchngr.availability = {
   forecast: {
     current: 0,
-    '20201': 3,
-    '20206': 5
+    '20207': 3,
+    '20211': 5
   },
   months: [
     'Jan',
