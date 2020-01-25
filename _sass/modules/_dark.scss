@@ -72,10 +72,6 @@
 
     ul.socials {
       li a {
-        &::before {
-          background-color: rgba(30, 30, 30, 0.4);
-        }
-
         &.github {
           color: $white;
 

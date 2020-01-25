@@ -10,9 +10,9 @@
       position: relative;
 
       &::before {
-        background-color: $white-transparent;
+        background-color: transparent;
         border-radius: 50%;
-        content: '';
+        content: "";
         height: 1.75em;
         left: calc(50% - 0.875em);
         position: absolute;
@@ -41,7 +41,7 @@
         color: $xing;
         top: -0.0625em;
       }
-      
+
       &:hover {
         border-bottom-color: transparent;
         color: $white;
