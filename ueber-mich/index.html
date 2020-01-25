@@ -14,7 +14,9 @@ ref: about
 {% endif %}
 <div class="text space-block">
   <div class="center">
-    <img src="{{ site.imageBase }}/2/schaechinger.jpg" class="me">
+    <div class="me">
+      <img src="{{ site.imageBase }}/2/schaechinger.jpg">
+    </div>
   </div>
   <div class="text__container">
     <h1>Hi, ich bin Manuel.</h1>
@@ -54,21 +56,20 @@ ref: about
 <div class="year block--inverted">
   <div class="year__container">
     <h2>Mein Jahr in Zahlen</h2>
-    <div>
+    <div class="marathons">
       {% include glyphicons.html icon="393-medal" %}
       <p>{{ site.data.about.year.marathons }}</p>
       <h3>Marathon{% if 1 != site.data.about.year.marathons %}s{% endif %}</h3>
     </div>
-    <div>
+    <div class="projects">
       {% include glyphicons.html icon="554-handshake" %}
       <p>{{ site.data.about.year.projects }}</p>
       <h3>Projekt{% if 1 != site.data.about.year.projects %}e{% endif %}</h3>
     </div>
-    <div>
+    <div class="coffees">
       {% include glyphicons.html icon="281-coffee-to-go" %}
-      <p class="calc-coffees">318</p>
+      <p>318</p>
       <h3>Kaffees</h3>
-      <script>window.procStorage.push('calc-coffees');</script>
     </div>
   </div>
 </div>
@@ -134,3 +135,4 @@ ref: about
     </p>
   </div>
 </div>
+<script>window.procStorage.push('year-in-figures');</script>

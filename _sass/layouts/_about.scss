@@ -1,11 +1,26 @@
 .page.page__about {
   .me {
-    border: 0.25rem solid #d6d6d6;
-    border-radius: 50%;
     display: inline-block;
     height: 10em;
+    position: relative;
     width: 10em;
     z-index: 310;
+
+    &::after {
+      background-color: transparent;
+      border: 0.25rem solid $gray-middle;
+      content: "";
+      height: 11rem;
+      left: -0.5rem;
+      position: absolute;
+      top: -0.5rem;
+      width: 11rem;
+    }
+
+    img,
+    &::after {
+      border-radius: 50%;
+    }
   }
 
   .hero {

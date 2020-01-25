@@ -32,8 +32,8 @@ window.procStorage.forEach(function (doing) {
       window.schchngr.availability.show();
       break;
 
-    case 'calc-coffees':
-      window.schchngr.data.calcCoffees();
+    case 'year-in-figures':
+      window.schchngr.data.yearInFigures();
       break;
 
     case 'calc-age':

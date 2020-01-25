@@ -1,9 +1,15 @@
 schchngr.data = {
-  calcCoffees: function () {
-    document.getElementsByClassName('calc-coffees')[0].innerHTML = this.calcDays(2.15);
-  },
   setYear: function () {
     document.getElementsByClassName('copyright-year')[0].innerHTML = new Date().getFullYear();
+  },
+  yearInFigures: function () {
+    window.schchngr.api.get('/about/year-in-figures', function (data) {
+      data.figures.forEach(function (figure) {
+        var div = document.getElementsByClassName(figure.className)[0];
+        div.querySelector('p').innerHTML = figure.count;
+        div.querySelector('h3').innerHTML = figure.label;
+      });
+    });
   },
   calcDays: function (factor) {
     factor = factor || 1;
