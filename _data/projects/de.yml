@@ -26,6 +26,39 @@ filters:
     lead: Lead Entwickler
     proto: Prototyping
 projects:
+  - title: Digitale Lieferbox
+    key: flyby
+    description: "Konzeption und Umsetzung einer Software zur Steuerung und Verwaltung von Lieferboxen, die digitale Werbung schalten und Sensordaten lesen und auswerten können."
+    tags:
+      - Node.js
+      - TypeScript
+      - Docker
+      - Preact
+      - AWS
+    year: 2021
+    type: freelance
+    customer:
+      title: Kalaan GmbH
+      link: https://www.kalaan.de
+    roles:
+      - dev
+      - concept
+      - consulting
+  - title: Smarte Mensch-Maschine-Interaktion
+    key: wifi-gateway
+    description: "Management von Fahrzeugdaten und Steuerung durch eine iOS App. Interaktion mit dem Fahrer mittels gesten- und mimikbasierter Personenerkennung."
+    tags:
+      - Node.js
+      - TypeScript
+      - MQTT
+    year: 2020
+    type: freelance
+    customer:
+      title: Motius GmbH
+      link: https://www.motius.de
+    roles:
+      - dev
+      - proto
   - title: Fahrerassistenzsystem
     key: betalabs
     description: "Implementierung einer sprachgesteuerten Oberfläche zur Abwicklung produktiver Aufgaben während der Fahrt."
@@ -61,7 +94,7 @@ projects:
       - proto
   - title: TransportKit
     key: transportkit
-    description: "TransportKit ist ein SASS Projekt, das die Styles für die Linienanzeigen des öffentlichen Nahverkehrs in München, NYC, London und weiteren Großstädten abbildet. So kann man auf einfache Weise die Linien im jeweiligen Formfaktor mit passender Farbe darstellen. Eine Demo gibt es <a href=\"/projekte/transportkit\">hier</a>."
+    description: 'TransportKit ist ein SASS Projekt, das die Styles für die Linienanzeigen des öffentlichen Nahverkehrs in München, NYC, London und weiteren Großstädten abbildet. So kann man auf einfache Weise die Linien im jeweiligen Formfaktor mit passender Farbe darstellen. Eine Demo gibt es <a href="/projekte/transportkit">hier</a>.'
     tags:
       - SASS
       - Deployment
