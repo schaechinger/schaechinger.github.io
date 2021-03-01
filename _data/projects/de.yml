@@ -59,6 +59,20 @@ projects:
     roles:
       - dev
       - proto
+  - title: Housemaid
+    key: housemaid
+    description: "Smart Home Verwaltungsoberfläche für einem Raspberry Pi Touch Display zur einfachen Steuerung von Licht, Heizung, Steckdosen und weiteren Geräten"
+    tags:
+      - Node.js
+      - TypeScript
+      - Preact
+    year: 2020
+    type: private
+    customer:
+      title: housemaid
+      link: https://code.schaechinger.one/schaechinger/housemaid
+    roles:
+      - dev
   - title: Fahrerassistenzsystem
     key: betalabs
     description: "Implementierung einer sprachgesteuerten Oberfläche zur Abwicklung produktiver Aufgaben während der Fahrt."
