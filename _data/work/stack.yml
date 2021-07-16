@@ -2,6 +2,7 @@
   label: Frontend
   tech:
     - - (P)React
+      - Vue
       - CSS / SASS
       - Redux
       - Foundation
@@ -20,6 +21,7 @@
   tech:
     - - PostgreSQL
       - MySQL
+      - Neo4j
       - MongoDB
       - CouchDB
       - Oracle DB
