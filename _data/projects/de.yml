@@ -43,7 +43,7 @@ projects:
       - dev
   - title: Event-Management für Biker
     key: candy-event
-    description: "Erstellung eines Frontends zur Verwaltung von Sportevents für namhafte Fahrradhersteller inklusive Kundenanmeldung für Events und Fahrradtests mit Umfragefunktionen."
+    description: "Erstellung eines Frontends zur Verwaltung von Sportevents für namhafte Fahrradhersteller inklusive Kundenanmeldung für Events und Fahrradtests."
     tags:
       - Vue
       - TypeScript
@@ -57,12 +57,12 @@ projects:
       - dev
   - title: Internetmarke
     key: internetmarke
-    description: 'Eine Implementierung mehrerer APIs der Deutschen Post zum Erzeugen von digitalen Briefmarken in Node Anwendungen.  Eine Demo gibt es <a href="/projekte/internetmarke">hier</a>.'
+    description: 'Eine Implementierung mehrerer APIs der Deutschen Post zum Erzeugen von digitalen Briefmarken in Node Anwendungen.  Weitere Informationen gibt es <a href="/projekte/internetmarke">hier</a>.'
     tags:
       - Node.js
       - TypeScript
       - API
-    year: 2018
+    year: 2021
     type: private
     customer:
       title: internetmarke

@@ -1,0 +1,9 @@
+.page.page__generic {
+  .content {
+    @include outer-container;
+
+    &__container {
+      @include media-columns(12);
+    }
+  }
+}
