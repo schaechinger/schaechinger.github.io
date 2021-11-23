@@ -1,6 +1,6 @@
 schchngr.error = {
   init: function () {
-    if (window.reportError) {
+    if (window.encountered404Error) {
       this.report();
     }
   },
