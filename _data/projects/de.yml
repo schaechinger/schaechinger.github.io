@@ -26,6 +26,65 @@ filters:
     lead: Lead Entwickler
     proto: Prototyping
 projects:
+  - title: Verleihplattform für Firmenfahrzeuge
+    key: brettl
+    description: "Implementierung einer Plattform zur internen Vergabe von Fahrzeugen."
+    tags:
+      - Vue
+      - TypeScript
+      - Quasar
+      - Node.js
+    year: 2021
+    type: freelance
+    customer:
+      title: Motius GmbH
+      link: https://www.motius.de
+    roles:
+      - dev
+  - title: Event-Management für Biker
+    key: candy-event
+    description: "Erstellung eines Frontends zur Verwaltung von Sportevents für namhafte Fahrradhersteller inklusive Kundenanmeldung für Events und Fahrradtests mit Umfragefunktionen."
+    tags:
+      - Vue
+      - TypeScript
+      - Quasar
+    year: 2021
+    type: freelance
+    customer:
+      title: munchie Konsilium GmbH
+      link: http://www.munchiekonsilium.com
+    roles:
+      - dev
+  - title: Internetmarke
+    key: internetmarke
+    description: 'Eine Implementierung mehrerer APIs der Deutschen Post zum Erzeugen von digitalen Briefmarken in Node Anwendungen.  Eine Demo gibt es <a href="/projekte/internetmarke">hier</a>.'
+    tags:
+      - Node.js
+      - TypeScript
+      - API
+    year: 2018
+    type: private
+    customer:
+      title: internetmarke
+      link: https://github.com/schaechinger/internetmarke
+    roles:
+      - dev
+  - title: Knowledge Graph
+    key: knowledge-graph
+    description: "Konzeption und Entwicklung eines PoC für einen auf Neo4j basierenden Knowledge Graph für ein DAX-Unternehmen."
+    tags:
+      - Node.js
+      - TypeScript
+      - Neo4j
+      - GraphQL
+    year: 2021
+    type: freelance
+    customer:
+      title: Motius GmbH
+      link: https://www.motius.de
+    roles:
+      - dev
+      - proto
   - title: Digitale Lieferbox
     key: flyby
     description: "Konzeption und Umsetzung einer Software zur Steuerung und Verwaltung von Lieferboxen, die digitale Werbung schalten und Sensordaten lesen und auswerten können."
@@ -136,21 +195,6 @@ projects:
     roles:
       - dev
       - design
-  - title: Internetmarke
-    key: internetmarke
-    description: "Ein Wrapper für die Internetmarke API der Deutschen Post zum Erzeugen von digitalen Briefmarken mit Node.js"
-    tags:
-      - JavaScript
-      - Node.js
-      - Deployment
-      - API
-    year: 2018
-    type: private
-    customer:
-      title: internetmarke
-      link: https://github.com/schaechinger/internetmarke
-    roles:
-      - dev
   - title: schaechinger.com
     key: dotcom
     description: "Auch diese Webseite musste schließlich entwickelt werden. Seit 2013 über arbeite ich sie regelmäßig und passe sie den Trends und meinem Geschmack an. Seit 2018 basiert sie auf GitHub Pages und damit Jekyll."
