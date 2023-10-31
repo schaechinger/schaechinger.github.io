@@ -62,13 +62,17 @@ ref: projects
       <p class="description">{{ project.description }}</p>
 
       <div class="project__more">
-        <p class="year"><strong>Jahr</strong>{{ project.year }}</p>
+        <p class="year"><strong>Jahr</strong>{% if project.active %}seit {% endif %}{{ project.year }}</p>
         <p class="customer">
           {% assign customer = site.data.projects[page.lang].filters.types[project.type] %}
           <span title="{{ customer.label }}">
             {% include glyphicons.html icon=customer.icon %}
           </span>
+          {% if project.customer %}
           <strong>{{ customer.headline }}</strong><a href="{{ project.customer.link }}">{{ project.customer.title }}</a>
+          {% else %}
+          <strong>Projektart</strong>{{ customer.label }}
+          {% endif %}
         </p>
         <p class="roles"><strong>Aufgabenbereiche</strong>
           {% for role in project.roles %}

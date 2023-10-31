@@ -14,6 +14,10 @@ filters:
       label: Freiberuflich
       headline: Auftraggeber
       icon: 220-banknotes
+    founder:
+      label: Gründer
+      headline: Firma
+      icon: 20-heart-empty
     private:
       label: Privat
       headline: GitHub
@@ -26,6 +30,65 @@ filters:
     lead: Lead Entwickler
     proto: Prototyping
 projects:
+  - title: Digitale Wettkampfplattform
+    key: medalmonday
+    description: "2022 gründete ich mit einem Freund Medal Monday, um Sportlern ein digitales Zuhause für ihre Wettkampfe im Ausdauersport zu geben."
+    tags:
+      - Vue
+      - Quasar
+      - Node.js
+      - Elasticsearch
+    year: 2022
+    active: true
+    type: founder
+    customer:
+      title: Medal Monday GmbH
+      link: https://www.medalmonday.de
+    roles:
+      - dev
+      - concept
+      - proto
+  - title: Digitale Lieferbox
+    key: flyby
+    description: "Konzeption und Umsetzung einer Software zur Steuerung und Verwaltung von Lieferboxen, die digitale Werbung schalten und Sensordaten lesen und auswerten können."
+    tags:
+      - Node.js
+      - Vue
+      - DynamoDB
+      - MQTT
+      - Docker
+    year: 2021
+    active: true
+    type: freelance
+    customer:
+      title: Kalaan GmbH
+      link: https://www.kalaan.de
+    roles:
+      - dev
+      - concept
+      - consulting
+  - title: Patientenverwaltung digitale Praxis
+    key: informme
+    description: "App für Patientenfragebögen sowie Webportal für das Praxisteam. Generierung von Dokumenten für ausgefüllte Bögen udn Anbindung an interne Praxis-Systeme"
+    tags:
+      - Node.js
+      - PDFKit
+      - Vue
+    year: 2022
+    type: freelance
+    roles:
+      - dev
+  - title: Strawberry Analysis
+    key: strawberry
+    description: "Backend zur Sammlung von Nährstoffdaten von Pflanzen/Früchten für Landwirte."
+    tags:
+      - Node.js
+      - GraphQL
+      - Prisma
+    year: 2021
+    type: freelance
+    roles:
+      - dev
   - title: Verleihplattform für Firmenfahrzeuge
     key: brettl
     description: "Implementierung einer Plattform zur internen Vergabe von Fahrzeugen."
@@ -36,9 +99,6 @@ projects:
       - Node.js
     year: 2021
     type: freelance
-    customer:
-      title: Motius GmbH
-      link: https://www.motius.de
     roles:
       - dev
   - title: Event-Management für Biker
@@ -47,12 +107,9 @@ projects:
     tags:
       - Vue
       - TypeScript
-      - Quasar
+      - Kotlin
     year: 2021
     type: freelance
-    customer:
-      title: munchie Konsilium GmbH
-      link: http://www.munchiekonsilium.com
     roles:
       - dev
   - title: Internetmarke
@@ -79,30 +136,9 @@ projects:
       - GraphQL
     year: 2021
     type: freelance
-    customer:
-      title: Motius GmbH
-      link: https://www.motius.de
     roles:
       - dev
       - proto
-  - title: Digitale Lieferbox
-    key: flyby
-    description: "Konzeption und Umsetzung einer Software zur Steuerung und Verwaltung von Lieferboxen, die digitale Werbung schalten und Sensordaten lesen und auswerten können."
-    tags:
-      - Node.js
-      - TypeScript
-      - Docker
-      - Preact
-      - AWS
-    year: 2021
-    type: freelance
-    customer:
-      title: Kalaan GmbH
-      link: https://www.kalaan.de
-    roles:
-      - dev
-      - concept
-      - consulting
   - title: Smarte Mensch-Maschine-Interaktion
     key: wifi-gateway
     description: "Management von Fahrzeugdaten und Steuerung durch eine iOS App. Interaktion mit dem Fahrer mittels gesten- und mimikbasierter Personenerkennung."
@@ -112,9 +148,6 @@ projects:
       - MQTT
     year: 2020
     type: freelance
-    customer:
-      title: Motius GmbH
-      link: https://www.motius.de
     roles:
       - dev
       - proto
@@ -127,9 +160,6 @@ projects:
       - Preact
     year: 2020
     type: private
-    customer:
-      title: housemaid
-      link: https://code.schaechinger.one/schaechinger/housemaid
     roles:
       - dev
   - title: Fahrerassistenzsystem
@@ -142,9 +172,6 @@ projects:
       - Azure
     year: 2019
     type: freelance
-    customer:
-      title: Motius GmbH
-      link: https://www.motius.de
     roles:
       - dev
       - proto
@@ -158,9 +185,6 @@ projects:
       - Deployment
     year: 2019
     type: freelance
-    customer:
-      title: Fonds Finanz Maklerservice GmbH
-      link: https://www.fondsfinanz.de
     roles:
       - consulting
       - dev
